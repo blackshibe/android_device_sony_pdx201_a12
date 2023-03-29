@@ -32,7 +32,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := pdx201
 PRODUCT_NAME := twrp_pdx201
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia 10 II
+PRODUCT_MODEL := Sony Xperia 10 II
 PRODUCT_MANUFACTURER := Sony
 
 # Inherit from hardware-specific part of the product configuration

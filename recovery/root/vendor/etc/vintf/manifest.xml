@@ -717,6 +717,16 @@
         </interface>
         <fqname>@1.0::IPasrManager/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.sony.hardware.displayfeature</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayFeature</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IDisplayFeature/default</fqname>
+    </hal>
     <sepolicy>
         <version>30.0</version>
     </sepolicy>

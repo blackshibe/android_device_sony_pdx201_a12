@@ -1,6 +1,14 @@
 # TWRP device tree for Xperia 10 II
 
-Adapted for Android 12 based on kernel info from from https://github.com/lineageos-on-pdx201 and twrpdtgen.
+adapted for Android 12 based on kernel info from from https://github.com/lineageos-on-pdx201 and twrpdtgen.
+
+## Status
+
+-   boots to kernel
+-   adb connects
+-   display works
+-   touchscreen is broken
+-   FBE is broken
 
 ## Compiling
 
