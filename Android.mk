@@ -25,7 +25,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),ginkgo)
+ifeq ($(TARGET_DEVICE),pdx201)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

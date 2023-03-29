@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_ginkgo.mk
+    $(LOCAL_DIR)/twrp_pdx201.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_ginkgo-eng
+    twrp_pdx201-eng
