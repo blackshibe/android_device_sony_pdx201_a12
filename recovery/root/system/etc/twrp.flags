@@ -1,8 +1,9 @@
 # mount point	fstype	device					device2				flags
+/system_root    ext4    system                  flags=slotselect;logical
+/vendor 	    ext4    vendor                  flags=slotselect;display="Vendor";logical
+/product 	    ext4    product                 flags=slotselect;display="Product";logical
+
 /boot		emmc	/dev/block/bootdevice/by-name/boot					flags=slotselect
-system		/system			ext4		slotselect;logical
-vendor		/vendor			ext4		slotselect;display="Vendor";logical
-product		/product		ext4			slotselect;display="Product";logical
 /odm        ext4	/dev/block/bootdevice/by-name/oem			flags=slotselect;backup=1;display="OEM"
 /super      emmc    /dev/block/bootdevice/by-name/super        flags=display="super";backup=1;flashimg=1
 /metadata	ext4	/dev/block/bootdevice/by-name/metadata 					
