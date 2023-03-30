@@ -7,6 +7,7 @@ adapted for Android 12 based on kernel info from from https://github.com/lineage
 -   boots
 -   adb connects
 -   decryption is broken
+-   mounting partitions is broken
 
 ## Compiling
 
