@@ -1,5 +1,5 @@
-Starting TWRP 3.7.0_12-0-2fa94a72 on Fri Sep  4 20:23:10 1970
- (pid 464)
+Starting TWRP 3.7.0_12-0-2fa94a72 on Sat Sep  5 10:34:17 1970
+ (pid 466)
 RECOVERY_SDCARD_ON_DATA := true
 I:Lun file '/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file'
 TW_INCLUDE_CRYPTO := true
@@ -181,128 +181,128 @@ ro.bootmode=unknown
 ro.hardware=qcom
 ro.revision=0
 ro.bootloader=xboot
-ro.boottime.adbd=3947400391
-ro.boottime.init=1507066502
-ro.boottime.init.selinux=84194279
-ro.boottime.init.first_stage=2039246245
-ro.boottime.init.cold_boot_wait=234
-ro.boottime.logd=3910715700
-ro.boottime.ueventd=3668582290
-ro.boottime.recovery=3928600806
-ro.boottime.keystore2=3920529346
-ro.boottime.servicemanager=3915225700
-ro.boottime.hwservicemanager=3912941429
-ro.boottime.vndservicemanager=3917745544
+ro.boottime.adbd=1989820404
+ro.boottime.init=1486305302
+ro.boottime.init.selinux=90675269
+ro.boottime.init.first_stage=78982352
+ro.boottime.init.cold_boot_wait=221
+ro.boottime.logd=1926706023
+ro.boottime.ueventd=1697376209
+ro.boottime.recovery=1945151754
+ro.boottime.keystore2=1936993732
+ro.boottime.servicemanager=1931286128
+ro.boottime.hwservicemanager=1928894565
+ro.boottime.vndservicemanager=1933831753
 ro.product.bootimage.name=twrp_pdx201
-ro.product.bootimage.brand=Xiaomi
-ro.product.bootimage.model=Xiaomi Redmi Note 8
+ro.product.bootimage.brand=Sony
+ro.product.bootimage.model=Sony Xperia 10 II
 ro.product.bootimage.device=pdx201
-ro.product.bootimage.manufacturer=Xiaomi
+ro.product.bootimage.manufacturer=Sony
 ro.bootimage.build.id=SP2A.220405.004
-ro.bootimage.build.date=Thu Mar 30 00:03:22 CEST 2023
-ro.bootimage.build.date.utc=1680127402
+ro.bootimage.build.date=Thu Mar 30 01:20:02 CEST 2023
+ro.bootimage.build.date.utc=1680132002
 ro.bootimage.build.tags=test-keys
 ro.bootimage.build.type=eng
 ro.bootimage.build.version.sdk=32
 ro.bootimage.build.version.release=16.1.0
-ro.bootimage.build.version.incremental=eng.blacks.20230330.000138
+ro.bootimage.build.version.incremental=eng.blacks.20230330.012004
 ro.bootimage.build.version.release_or_codename=16.1.0
-ro.bootimage.build.fingerprint=Xiaomi/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300003:eng/test-keys
-ro.odm.build.date=Wed Mar 29 23:25:32 CEST 2023
-ro.odm.build.date.utc=1680125132
-ro.odm.build.version.incremental=eng.blacks.20230329.232440
-ro.odm.build.fingerprint=Xiaomi/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03292325:eng/test-keys
+ro.bootimage.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300120:eng/test-keys
+ro.odm.build.date=Thu Mar 30 01:20:02 CEST 2023
+ro.odm.build.date.utc=1680132002
+ro.odm.build.version.incremental=eng.blacks.20230330.012004
+ro.odm.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300120:eng/test-keys
 ro.product.odm.name=twrp_pdx201
-ro.product.odm.brand=Xiaomi
-ro.product.odm.model=Xiaomi Redmi Note 8
+ro.product.odm.brand=Sony
+ro.product.odm.model=Sony Xperia 10 II
 ro.product.odm.device=pdx201
-ro.product.odm.manufacturer=Xiaomi
+ro.product.odm.manufacturer=Sony
 ro.build.id=SP2A.220405.004
-ro.build.date=Wed Mar 29 23:25:32 CEST 2023
-ro.build.date.utc=1680125132
+ro.build.date=Thu Mar 30 15:07:56 CEST 2023
+ro.build.date.utc=1680181676
 ro.build.host=blackshibe-pc
 ro.build.tags=test-keys
 ro.build.type=eng
 ro.build.user=blackshibe
 ro.build.flavor=twrp_pdx201-eng
-ro.build.display.id=twrp_pdx201-eng 16.1.0 SP2A.220405.004 eng.blacks.20230329.232440 test-keys
+ro.build.display.id=twrp_pdx201-eng 16.1.0 SP2A.220405.004 eng.blacks.20230330.150757 test-keys
 ro.build.product=pdx201
 ro.build.version.sdk=32
 ro.build.version.base_os=
 ro.build.version.release=16.1.0
 ro.build.version.codename=REL
-ro.build.version.incremental=eng.blacks.20230329.232440
+ro.build.version.incremental=eng.blacks.20230330.150757
 ro.build.version.preview_sdk=0
 ro.build.version.all_codenames=REL
 ro.build.version.security_patch=2099-12-31
 ro.build.version.release_or_codename=16.1.0
 ro.build.version.preview_sdk_fingerprint=REL
 ro.build.version.min_supported_target_sdk=23
-ro.build.description=twrp_pdx201-eng 16.1.0 SP2A.220405.004 eng.blacks.20230329.232440 test-keys
+ro.build.description=twrp_pdx201-eng 16.1.0 SP2A.220405.004 eng.blacks.20230330.150757 test-keys
 ro.build.characteristics=default
 ro.build.system_root_image=true
 ro.secure=0
 ro.system.build.id=SP2A.220405.004
-ro.system.build.date=Wed Mar 29 23:40:21 CEST 2023
-ro.system.build.date.utc=1680126021
+ro.system.build.date=Thu Mar 30 15:07:56 CEST 2023
+ro.system.build.date.utc=1680181676
 ro.system.build.tags=test-keys
 ro.system.build.type=eng
 ro.system.build.version.sdk=32
 ro.system.build.version.release=16.1.0
-ro.system.build.version.incremental=eng.blacks.20230329.234126
+ro.system.build.version.incremental=eng.blacks.20230330.150757
 ro.system.build.version.release_or_codename=16.1.0
-ro.system.build.fingerprint=Xiaomi/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03292340:eng/test-keys
+ro.system.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03301507:eng/test-keys
 ro.treble.enabled=true
 ro.product.cpu.abi=arm64-v8a
 ro.product.cpu.abilist=arm64-v8a
 ro.product.cpu.abilist32=
 ro.product.cpu.abilist64=arm64-v8a
 ro.product.name=twrp_pdx201
-ro.product.brand=Xiaomi
-ro.product.model=Xiaomi Redmi Note 8
+ro.product.brand=Sony
+ro.product.model=Sony Xperia 10 II
 ro.product.device=pdx201
 ro.product.system.name=twrp_pdx201
-ro.product.system.brand=Xiaomi
-ro.product.system.model=Xiaomi Redmi Note 8
+ro.product.system.brand=Sony
+ro.product.system.model=Sony Xperia 10 II
 ro.product.system.device=pdx201
-ro.product.system.manufacturer=Xiaomi
+ro.product.system.manufacturer=Sony
 ro.product.system_ext.name=twrp_pdx201
-ro.product.system_ext.brand=Xiaomi
-ro.product.system_ext.model=Xiaomi Redmi Note 8
+ro.product.system_ext.brand=Sony
+ro.product.system_ext.model=Sony Xperia 10 II
 ro.product.system_ext.device=pdx201
-ro.product.system_ext.manufacturer=Xiaomi
-ro.product.manufacturer=Xiaomi
+ro.product.system_ext.manufacturer=Sony
+ro.product.manufacturer=Sony
 ro.debuggable=1
 ro.system_ext.build.id=SP2A.220405.004
-ro.system_ext.build.date=Wed Mar 29 23:25:32 CEST 2023
-ro.system_ext.build.date.utc=1680125132
+ro.system_ext.build.date=Thu Mar 30 01:20:02 CEST 2023
+ro.system_ext.build.date.utc=1680132002
 ro.system_ext.build.tags=test-keys
 ro.system_ext.build.type=eng
 ro.system_ext.build.version.sdk=32
 ro.system_ext.build.version.release=16.1.0
-ro.system_ext.build.version.incremental=eng.blacks.20230329.232440
+ro.system_ext.build.version.incremental=eng.blacks.20230330.012004
 ro.system_ext.build.version.release_or_codename=16.1.0
-ro.system_ext.build.fingerprint=Xiaomi/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03292325:eng/test-keys
+ro.system_ext.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300120:eng/test-keys
 ro.actionable_compatible_property.enabled=true
 ro.vendor.build.id=SP2A.220405.004
-ro.vendor.build.date=Wed Mar 29 23:40:21 CEST 2023
-ro.vendor.build.date.utc=1680126021
+ro.vendor.build.date=Thu Mar 30 01:20:02 CEST 2023
+ro.vendor.build.date.utc=1680132002
 ro.vendor.build.tags=test-keys
 ro.vendor.build.type=eng
 ro.vendor.build.version.sdk=32
 ro.vendor.build.version.release=16.1.0
-ro.vendor.build.version.incremental=eng.blacks.20230329.234126
+ro.vendor.build.version.incremental=eng.blacks.20230330.012004
 ro.vendor.build.version.release_or_codename=16.1.0
-ro.vendor.build.fingerprint=Xiaomi/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03292340:eng/test-keys
+ro.vendor.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300120:eng/test-keys
 ro.vendor.product.cpu.abilist=arm64-v8a
 ro.vendor.product.cpu.abilist32=
 ro.vendor.product.cpu.abilist64=arm64-v8a
 ro.product.board=trinket
 ro.product.vendor.name=twrp_pdx201
-ro.product.vendor.brand=Xiaomi
-ro.product.vendor.model=Xiaomi Redmi Note 8
+ro.product.vendor.brand=Sony
+ro.product.vendor.model=Sony Xperia 10 II
 ro.product.vendor.device=pdx201
-ro.product.vendor.manufacturer=Xiaomi
+ro.product.vendor.manufacturer=Sony
 ro.product.first_api_level=29
 ro.cold_boot_done=true
 ro.bionic.arch=arm64
@@ -369,7 +369,7 @@ pm.dexopt.install-fast=skip
 pm.dexopt.install-bulk-secondary=verify
 pm.dexopt.install-bulk-downgraded=verify
 pm.dexopt.install-bulk-secondary-downgraded=extract
-ro.build.fingerprint=Xiaomi/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/eng.blacks.20230329.232440:eng/test-keys
+ro.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/eng.blacks.20230330.150757:eng/test-keys
 ro.gsid.image_running=0
 gsid.image_installed=0
 hwservicemanager.ready=true
@@ -382,14 +382,14 @@ init.svc.servicemanager=running
 init.svc.hwservicemanager=running
 init.svc.vndservicemanager=running
 init.svc.adbd=restarting
-init.svc_debug_pid.adbd=484
-init.svc_debug_pid.logd=454
-init.svc_debug_pid.ueventd=444
-init.svc_debug_pid.recovery=464
-init.svc_debug_pid.keystore2=458
-init.svc_debug_pid.servicemanager=456
-init.svc_debug_pid.hwservicemanager=455
-init.svc_debug_pid.vndservicemanager=457
+init.svc_debug_pid.adbd=488
+init.svc_debug_pid.logd=456
+init.svc_debug_pid.ueventd=446
+init.svc_debug_pid.recovery=466
+init.svc_debug_pid.keystore2=460
+init.svc_debug_pid.servicemanager=458
+init.svc_debug_pid.hwservicemanager=457
+init.svc_debug_pid.vndservicemanager=459
 keystore.crash_count=0
 ro.logd.kernel=true
 persist.debug.dalvik.vm.core_platform_api_policy=just-warn
@@ -430,46 +430,74 @@ ro.crypto.allow_encrypt_override=true
 => Processing /etc/recovery.fstab
 I:Reading /etc/twrp.flags
 I:Reading /etc/recovery.fstab
-I:Processing '/'
+I:Processing '/system'
 I:Created '/system_root' folder.
+I:Unhandled flag: 'avb=vbmeta_system'
+I:Unhandled flag: 'first_stage_mount'
+I:Unhandled flag: 'avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey'
+I:Processing '/system_ext'
+I:Created '/system_ext' folder.
+I:Unhandled flag: 'avb=vbmeta_system'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/product'
+I:Created '/product' folder.
+I:Unhandled flag: 'avb=vbmeta_system'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/vendor'
+I:Unhandled flag: 'avb'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/vendor_dlkm'
+I:Unhandled flag: 'avb'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/odm'
+I:Unhandled flag: 'avb'
+I:Unhandled flag: 'first_stage_mount'
 I:Processing '/metadata'
+I:Unhandled flag: 'first_stage_mount'
 I:Processing '/data'
 I:Unhandled flag: 'latemount'
-I:FBE contents 'ice', filenames ''
+I:FBE contents 'aes-256-xts', filenames 'aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0'
 I:setting Key_Directory to: /metadata/vold/metadata_encryption
+I:Metadata contents 'aes-256-xts', filenames 'wrappedkey_v0'
+I:Unhandled flag: 'reservedsize=128M'
+I:Unhandled flag: 'sysfs_path=/sys/devices/platform/soc/1d84000.ufshc'
+I:Unhandled flag: 'checkpoint=fs'
+I:FBE contents 'aes-256-xts', filenames 'aes-256-cts:v2+inlinecrypt_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0,keydirectory=/metadata/vold/metadata_encryption'
 I:Processing '/misc'
 I:Processing remaining twrp.flags
 I:Processing '/bluetooth'
+I:Created '/bluetooth' folder.
+I:Processing '/bluetooth_image'
 I:Processing '/boot'
-I:Processing '/cache'
-I:Processing '/cust'
-I:Created '/cust' folder.
+I:Processing '/devcfg'
 I:Processing '/dsp'
+I:Created '/dsp' folder.
+I:Processing '/dsp_image'
 I:Processing '/dtbo'
-I:Processing '/efs1'
-I:Processing '/efs2'
-I:Processing '/efsc'
-I:Processing '/efsg'
-I:Processing '/external_sd'
-I:Created '/external_sd' folder.
-I:Processing '/firmware'
-I:Created '/firmware' folder.
 I:Processing '/modem'
-I:Processing '/persist'
-I:Created '/persist' folder.
-I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-09-04--20-23-11
-I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
-I:TWFunc::Fixup_Time: will attempt to use the ats files now.
-I:TWFunc::Fixup_Time: Setting time offset from file /persist/time/ats_2, offset 1658802918230
-I:TWFunc::Fixup_Time: Date and time corrected: 2023-03-29--22-58-29
-I:Processing '/persist_image'
-I:Processing '/recovery'
-I:Processing '/system_image'
-I:Processing '/usb_otg'
-I:Created '/usb_otg' folder.
-I:Processing '/vendor'
-I:Processing '/vendor_image'
+I:Created '/modem' folder.
+I:Processing '/sdcard1'
+I:Created '/sdcard1' folder.
+I:Processing '/spunvm'
+I:Created '/spunvm' folder.
+I:Processing '/usbotg'
+I:Created '/usbotg' folder.
+I:Processing '/vbmeta'
+I:Processing '/vbmeta_system'
+I:Processing '/vendor_boot'
 I:Done processing fstab files
+I:Trying to prepare system from super partition
+I:unable to update logical partition: /system_root
+I:Trying to prepare system_ext from super partition
+I:unable to update logical partition: /system_ext
+I:Trying to prepare product from super partition
+I:unable to update logical partition: /product
+I:Trying to prepare vendor from super partition
+I:unable to update logical partition: /vendor
+I:Trying to prepare vendor_dlkm from super partition
+I:unable to update logical partition: /vendor_dlkm
+I:Trying to prepare odm from super partition
+I:unable to update logical partition: /odm
 I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
 I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
@@ -477,11 +505,10 @@ I:Setting up '/data' as data/media emulated storage.
 I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
 I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-Failed to mount '/cache' (Invalid argument)
-I:Actual block device: '', current file system: 'ext4'
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
 DEBUG:prepdecrypt::Running prepdecrypt script for TWRP...
-I:prepdecrypt::File Based Encryption (FBE) is present.
+I:Unable to decrypt metadata encryption
+I:FBE setup failed. Trying FDE...I:prepdecrypt::File Based Encryption (FBE) is present.
 DEBUG:prepdecrypt::SDK version: 32
 DEBUG:prepdecrypt::DEFAULTPROP variable set to prop.default.
 DEBUG:prepdecrypt::No recovery partition found.
@@ -492,56 +519,17 @@ DEBUG:prepdecrypt::Build tree is Oreo or above. Proceed with setting props...
 DEBUG:prepdecrypt::Temporary vendor folder created at /v.
 E:prepdecrypt::Unable to mount vendor to temporary folder.
 E:prepdecrypt::Script run incomplete. Device may not be ready for decryption.
-I:Successfully decrypted metadata encrypted data partition with new block device: '/dev/block/dm-7'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Failed to mount data after metadata decrypt
-I:FBE setup failed. Trying FDE...I:Can't probe device /dev/block/dm-7
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-E:Cannot decrypt adopted storage because /data will not mount
 Updating partition details...
-I:checking for twrp app
-I:Unable to mount '/system_root'
-I:Actual block device: '', current file system: 'ext4'
-I:Can't probe device /dev/block/dm-7
+I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Can't probe device /dev/block/mmcblk0p67
+Failed to mount '/spunvm' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p67', current file system: 'vfat'
 ...done
-I:Can't probe device /dev/block/dm-7
+I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 Unable to mount storage
 /super | /dev/block/by-name/super | Size: 0MB
    Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
@@ -549,54 +537,45 @@ Unable to mount storage
    Display_Name: super
    Backup_Path: /super
    Backup_Name: super
-   Backup_Display_Name: Super ()
+   Backup_Display_Name: Super (system system_ext product vendor)
    Current_File_System: emmc
    Backup_Method: dd
 
 I:Unmounting main partitions...
-Failed to mount '/system_root' (Invalid argument)
-I:Actual block device: '', current file system: 'ext4'
+Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
 I:Unable to override property ro.build.product: property not found in /system/build.prop
-Failed to mount '/system_root' (Invalid argument)
-I:Actual block device: '', current file system: 'ext4'
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
 I:Unable to override property ro.build.fingerprint: property not found in /system/build.prop
-Failed to mount '/system_root' (Invalid argument)
-I:Actual block device: '', current file system: 'ext4'
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
 I:Unable to override property ro.build.version.incremental: property not found in /system/build.prop
-Failed to mount '/system_root' (Invalid argument)
-I:Actual block device: '', current file system: 'ext4'
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
 I:Unable to override property ro.product.device: property not found in /system/build.prop
-Failed to mount '/system_root' (Invalid argument)
-I:Actual block device: '', current file system: 'ext4'
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
 I:Unable to override property ro.product.model: property not found in /system/build.prop
-Failed to mount '/system_root' (Invalid argument)
-I:Actual block device: '', current file system: 'ext4'
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
 I:Unable to override property ro.product.name: property not found in /system/build.prop
+I:UnMount: Unable to find partition for path '/system_root'
 copying '/data/misc/keystore/persistent.sqlite' to '/tmp/misc/keystore/persistent.sqlite'
 SELinux contexts loaded from /file_contexts
-I:Unable to mount '/cache'
-I:Actual block device: '', current file system: 'ext4'
 Full SELinux support is present.
 I:Switching packages (TWRP)
 
 
 Partition Logs:
-/system_root |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Mount_Read_Only 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/system
-   Display_Name: System
-   Storage_Name: System
-   Backup_Path: /system_root
-   Backup_Name: system
-   Backup_Display_Name: System
-   Storage_Path: /system_root
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-   Mount_Flags: 0, Mount_Options: barrier=1,discard
-
 /metadata | /dev/block/mmcblk0p66 | Size: 11MB Used: 0MB Free: 11MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI IsPresent 
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent 
    Primary_Block_Device: /dev/block/mmcblk0p66
    Display_Name: metadata
    Storage_Name: metadata
@@ -609,12 +588,11 @@ Partition Logs:
    Backup_Method: files
    Mount_Flags: 1030, Mount_Options: discard
 
-/data | /dev/block/dm-7 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Is_Encrypted Is_Decrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+/data | /dev/block/mmcblk0p86 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Is_Encrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
    Symlink_Path: /data/media
    Symlink_Mount_Point: /sdcard
    Primary_Block_Device: /dev/block/mmcblk0p86
-   Decrypted_Block_Device: /dev/block/dm-7
    Display_Name: Data
    Storage_Name: Internal Storage
    Backup_Path: /data
@@ -624,7 +602,7 @@ Partition Logs:
    Current_File_System: f2fs
    Fstab_File_System: f2fs
    Backup_Method: files
-   Mount_Flags: 1030, Mount_Options: nodiscard,alloc_mode=reuse,fsync_mode=nobarrier,inlinecrypt
+   Mount_Flags: 1030, Mount_Options: discard,inlinecrypt,reserve_root=32768,resgid=1065,fsync_mode=nobarrier
    MTP_Storage_ID: 65537
    Metadata Key Directory: /metadata/vold/metadata_encryption
 
@@ -641,9 +619,8 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/bluetooth |  | Size: 0MB
-   Flags: Can_Be_Backed_Up Is_SubPartition 
-   SubPartition_Of: /modem
+/bluetooth |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Mount_Read_Only 
    Primary_Block_Device: /dev/block/bootdevice/by-name/bluetooth
    Display_Name: bluetooth
    Storage_Name: bluetooth
@@ -651,52 +628,52 @@ Partition Logs:
    Backup_Name: bluetooth
    Backup_Display_Name: bluetooth
    Storage_Path: /bluetooth
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   Mount_Flags: 0, Mount_Options: shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait
+
+/bluetooth_image | /dev/block/bootdevice/by-name/bluetooth_b | Size: 1MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/bootdevice/by-name/bluetooth
+   Display_Name: bluetooth
+   Storage_Name: bluetooth
+   Backup_Path: /bluetooth_image
+   Backup_Name: bluetooth_image
+   Backup_Display_Name: bluetooth
+   Storage_Path: /bluetooth_image
    Current_File_System: emmc
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/boot |  | Size: 0MB
-   Flags: Can_Be_Backed_Up Can_Flash_Img 
+/boot | /dev/block/bootdevice/by-name/boot_b | Size: 64MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
    Primary_Block_Device: /dev/block/bootdevice/by-name/boot
-   Display_Name: Boot
+   Display_Name: boot
    Storage_Name: boot
    Backup_Path: /boot
    Backup_Name: boot
-   Backup_Display_Name: Boot
+   Backup_Display_Name: boot
    Storage_Path: /boot
    Current_File_System: emmc
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/cache |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/cache
-   Display_Name: Cache
-   Storage_Name: Cache
-   Backup_Path: /cache
-   Backup_Name: cache
-   Backup_Display_Name: Cache
-   Storage_Path: /cache
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
+/devcfg | /dev/block/bootdevice/by-name/devcfg_b | Size: 0MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/bootdevice/by-name/devcfg
+   Display_Name: devcfg
+   Storage_Name: devcfg
+   Backup_Path: /devcfg
+   Backup_Name: devcfg
+   Backup_Display_Name: devcfg
+   Storage_Path: /devcfg
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
 
-/cust |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/cust
-   Display_Name: Cust
-   Storage_Name: Cust
-   Backup_Path: /cust
-   Backup_Name: cust
-   Backup_Display_Name: Cust
-   Storage_Path: /cust
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/dsp |  | Size: 0MB
-   Flags: Can_Be_Backed_Up Is_SubPartition 
-   SubPartition_Of: /modem
+/dsp | /dev/block/bootdevice/by-name/dsp_b | Size: 27MB Used: 13MB Free: 14MB Backup Size: 13MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent SlotSelect 
    Primary_Block_Device: /dev/block/bootdevice/by-name/dsp
    Display_Name: dsp
    Storage_Name: dsp
@@ -704,208 +681,131 @@ Partition Logs:
    Backup_Name: dsp
    Backup_Display_Name: dsp
    Storage_Path: /dsp
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/dsp_image | /dev/block/bootdevice/by-name/dsp_b | Size: 32MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/bootdevice/by-name/dsp
+   Display_Name: dsp
+   Storage_Name: dsp
+   Backup_Path: /dsp_image
+   Backup_Name: dsp_image
+   Backup_Display_Name: dsp
+   Storage_Path: /dsp_image
    Current_File_System: emmc
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/dtbo |  | Size: 0MB
-   Flags: Can_Be_Backed_Up Can_Flash_Img 
+/dtbo | /dev/block/bootdevice/by-name/dtbo_b | Size: 24MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
    Primary_Block_Device: /dev/block/bootdevice/by-name/dtbo
-   Display_Name: Dtbo
-   Storage_Name: Dtbo
+   Display_Name: dtbo
+   Storage_Name: dtbo
    Backup_Path: /dtbo
    Backup_Name: dtbo
-   Backup_Display_Name: Dtbo
+   Backup_Display_Name: dtbo
    Storage_Path: /dtbo
    Current_File_System: emmc
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/efs1 | /dev/block/mmcblk0p39 | Size: 2MB
-   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent 
-   Primary_Block_Device: /dev/block/mmcblk0p39
-   Display_Name: EFS
-   Storage_Name: EFS
-   Backup_Path: /efs1
-   Backup_Name: efs1
-   Backup_Display_Name: EFS
-   Storage_Path: /efs1
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
+/modem | /dev/block/bootdevice/by-name/modem_b | Size: 359MB Used: 97MB Free: 262MB Backup Size: 97MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent SlotSelect Mount_Read_Only 
+   Primary_Block_Device: /dev/block/bootdevice/by-name/modem
+   Display_Name: modem
+   Storage_Name: modem
+   Backup_Path: /modem
+   Backup_Name: modem
+   Backup_Display_Name: modem
+   Storage_Path: /modem
+   Current_File_System: vfat
+   Fstab_File_System: ext4
+   Backup_Method: files
+   Mount_Flags: 0, Mount_Options: shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 wait
 
-/efs2 | /dev/block/mmcblk0p40 | Size: 2MB
-   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
-   SubPartition_Of: /efs1
-   Primary_Block_Device: /dev/block/mmcblk0p40
-   Display_Name: efs2
-   Storage_Name: efs2
-   Backup_Path: /efs2
-   Backup_Name: efs2
-   Backup_Display_Name: efs2
-   Storage_Path: /efs2
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/efsc | /dev/block/mmcblk0p38 | Size: 0MB
-   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
-   SubPartition_Of: /efs1
-   Primary_Block_Device: /dev/block/mmcblk0p38
-   Display_Name: efsc
-   Storage_Name: efsc
-   Backup_Path: /efsc
-   Backup_Name: efsc
-   Backup_Display_Name: efsc
-   Storage_Path: /efsc
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/efsg | /dev/block/mmcblk0p41 | Size: 2MB
-   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
-   SubPartition_Of: /efs1
-   Primary_Block_Device: /dev/block/mmcblk0p41
-   Display_Name: efsg
-   Storage_Name: efsg
-   Backup_Path: /efsg
-   Backup_Name: efsg
-   Backup_Display_Name: efsg
-   Storage_Path: /efsg
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/external_sd | /dev/block/mmcblk1p1 | Size: 30428MB Used: 11632MB Free: 18795MB Backup Size: 11632MB
+/sdcard1 | /dev/block/mmcblk1p1 | Size: 30428MB Used: 11654MB Free: 18773MB Backup Size: 11654MB
    Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable IsPresent Is_Storage 
    Primary_Block_Device: /dev/block/mmcblk1p1
-   Display_Name: MicroSD
-   Storage_Name: MicroSD
-   Backup_Path: /external_sd
-   Backup_Name: external_sd
-   Backup_Display_Name: MicroSD
-   Storage_Path: /external_sd
+   Alternate_Block_Device: /dev/block/mmcblk1
+   Display_Name: microsd
+   Storage_Name: microsd
+   Backup_Path: /sdcard1
+   Backup_Name: sdcard1
+   Backup_Display_Name: microsd
+   Storage_Path: /sdcard1
    Current_File_System: vfat
    Fstab_File_System: auto
    Backup_Method: files
+   Mount_Flags: 0, Mount_Options: utf8
    MTP_Storage_ID: 65538
 
-/firmware |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Mount_To_Decrypt 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/modem
-   Display_Name: Firmware
-   Storage_Name: Firmware
-   Backup_Path: /firmware
-   Backup_Name: firmware
-   Backup_Display_Name: Firmware
-   Storage_Path: /firmware
+/spunvm | /dev/block/mmcblk0p67 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p67
+   Display_Name: spunvm
+   Storage_Name: spunvm
+   Backup_Path: /spunvm
+   Backup_Name: spunvm
+   Backup_Display_Name: spunvm
+   Storage_Path: /spunvm
    Current_File_System: vfat
    Fstab_File_System: vfat
    Backup_Method: files
+   Mount_Flags: 1024, Mount_Options: shortname=lower,uid=1000,gid=1000,dmask=007,fmask=007,context=u:object_r:spunvm_file:s0 wait
 
-/modem |  | Size: 0MB
-   Flags: Can_Be_Backed_Up Has_SubPartition 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/modem
-   Display_Name: Modem
-   Storage_Name: Modem
-   Backup_Path: /modem
-   Backup_Name: modem
-   Backup_Display_Name: Modem
-   Storage_Path: /modem
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/persist | /dev/block/mmcblk0p2 | Size: 26MB Used: 1MB Free: 25MB Backup Size: 1MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/mmcblk0p2
-   Display_Name: Persist
-   Storage_Name: Persist
-   Backup_Path: /persist
-   Backup_Name: persist
-   Backup_Display_Name: Persist
-   Storage_Path: /persist
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
-/persist_image | /dev/block/mmcblk0p2 | Size: 32MB
-   Flags: IsPresent Can_Flash_Img 
-   Primary_Block_Device: /dev/block/mmcblk0p2
-   Display_Name: Persist
-   Storage_Name: Persist
-   Backup_Path: /persist_image
-   Backup_Name: persist_image
-   Backup_Display_Name: Persist
-   Storage_Path: /persist_image
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/recovery |  | Size: 0MB
-   Flags: Can_Be_Backed_Up Can_Flash_Img 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/recovery
-   Display_Name: Recovery
-   Storage_Name: recovery
-   Backup_Path: /recovery
-   Backup_Name: recovery
-   Backup_Display_Name: Recovery
-   Storage_Path: /recovery
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/system_image |  | Size: 0MB
-   Flags: Can_Be_Backed_Up Can_Flash_Img 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/system
-   Display_Name: System Image
-   Storage_Name: system_image
-   Backup_Path: /system_image
-   Backup_Name: system_image
-   Backup_Display_Name: System Image
-   Storage_Path: /system_image
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/usb_otg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+/usbotg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
    Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
-   Primary_Block_Device: /dev/block/sda1
-   Alternate_Block_Device: /dev/block/sda
-   Display_Name: USB-Storage
-   Storage_Name: USB-Storage
-   Backup_Path: /usb_otg
-   Backup_Name: usb_otg
-   Backup_Display_Name: USB-Storage
-   Storage_Path: /usb_otg
-   Current_File_System: vfat
-   Fstab_File_System: vfat
+   Primary_Block_Device: /dev/block/sdd1
+   Alternate_Block_Device: /dev/block/sdd
+   Display_Name: otg
+   Storage_Name: otg
+   Backup_Path: /usbotg
+   Backup_Name: usbotg
+   Backup_Display_Name: otg
+   Storage_Path: /usbotg
+   Current_File_System: auto
+   Fstab_File_System: auto
    Backup_Method: files
    Mount_Flags: 0, Mount_Options: utf8
    MTP_Storage_ID: 65539
 
-/vendor |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/vendor
-   Display_Name: Vendor
-   Storage_Name: Vendor
-   Backup_Path: /vendor
-   Backup_Name: vendor
-   Backup_Display_Name: Vendor
-   Storage_Path: /vendor
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
+/vbmeta | /dev/block/bootdevice/by-name/vbmeta_b | Size: 0MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/bootdevice/by-name/vbmeta
+   Display_Name: vbmeta
+   Storage_Name: vbmeta
+   Backup_Path: /vbmeta
+   Backup_Name: vbmeta
+   Backup_Display_Name: vbmeta
+   Storage_Path: /vbmeta
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
 
-/vendor_image |  | Size: 0MB
-   Flags: Can_Be_Backed_Up Can_Flash_Img 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/vendor
-   Display_Name: Vendor Image
-   Storage_Name: vendor_image
-   Backup_Path: /vendor_image
-   Backup_Name: vendor_image
-   Backup_Display_Name: Vendor Image
-   Storage_Path: /vendor_image
+/vbmeta_system | /dev/block/bootdevice/by-name/vbmeta_system_b | Size: 0MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/bootdevice/by-name/vbmeta_system
+   Display_Name: vbmeta_system
+   Storage_Name: vbmeta_system
+   Backup_Path: /vbmeta_system
+   Backup_Name: vbmeta_system
+   Backup_Display_Name: vbmeta_system
+   Storage_Path: /vbmeta_system
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/vendor_boot |  | Size: 0MB
+   Flags: Can_Be_Backed_Up Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/bootdevice/by-name/vendor_boot
+   Display_Name: Vendor Boot
+   Storage_Name: Vendor Boot
+   Backup_Path: /vendor_boot
+   Backup_Name: vendor_boot
+   Backup_Display_Name: Vendor Boot
+   Storage_Path: /vendor_boot
    Current_File_System: emmc
    Fstab_File_System: emmc
    Backup_Method: dd
@@ -916,24 +816,78 @@ Partition Logs:
    Display_Name: super
    Backup_Path: /super
    Backup_Name: super
-   Backup_Display_Name: Super ()
+   Backup_Display_Name: Super (system system_ext product vendor)
    Current_File_System: emmc
    Backup_Method: dd
 
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-09-05--10-34-20
+I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
+I:TWFunc::Fixup_Time: will attempt to use the ats files now.
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 I:Attempt to load settings from settings file...
 I:InfoManager file '/.twrps' not found.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
-I:Unable to mount '/cache'
-I:Actual block device: '', current file system: 'ext4'
-I:Unable to mount '' to write version number.
-I:Can't probe device /dev/block/dm-7
+I:Unable to open: /data/recovery/.version. Data may be unmounted. Error: No such file or directory
+I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
-I:Actual block device: '/dev/block/dm-7', current file system: 'f2fs'
-I:Unable to mount '/usb_otg'
-I:Actual block device: '', current file system: 'vfat'
-__bionic_open_tzdata: couldn't find any tzdata when looking for CST6CDT,M3.2.0,M11.1.0!
-__bionic_open_tzdata: couldn't find any tzdata when looking for posixrules!
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Unable to mount '/usbotg'
+I:Actual block device: '', current file system: 'auto'
 I:TWFunc::Set_Brightness: Setting brightness control to 1200
+I:Recreating /data/recovery/ folder.
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Path /data/recovery/log.gz does not exist. Unable to copy file to /data/recovery/last_log.gz
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Starting Adb Backup FIFO
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
+I:Unable to read sdk version from build prop
 I:Switching packages (TWRP)
-I:Skipping screen timeout: TW_NO_SCREEN_TIMEOUT is set
-I:Set page: 'system_readonly'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'mount'
+I:Set page: 'system_readonly_check'
+I:operation_start: 'Check Partition Lifetime Writes'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/vendor'
+I:operation_start: 'Toggle System Mount'
+Unable to find partition for path '/system_root'
+I:operation_end - status=1
+I:Set page: 'mount'
+I:operation_end - status=1
+I:Is_Mounted: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/vendor'
+I:operation_start: 'Toggle System Mount'
+Unable to find partition for path '/system_root'
+I:operation_end - status=1
+I:Set page: 'mount'
+I:Can't probe device /dev/block/mmcblk0p86
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Can't probe device /dev/block/mmcblk0p67
+Failed to mount '/spunvm' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p67', current file system: 'vfat'
+I:Unable to mount '/usbotg'
+I:Actual block device: '', current file system: 'auto'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'install'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'

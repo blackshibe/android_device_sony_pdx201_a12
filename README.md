@@ -4,11 +4,9 @@ adapted for Android 12 based on kernel info from from https://github.com/lineage
 
 ## Status
 
--   boots to kernel
+-   boots
 -   adb connects
--   display works
--   touchscreen is broken
--   FBE is broken
+-   decryption is broken
 
 ## Compiling
 
