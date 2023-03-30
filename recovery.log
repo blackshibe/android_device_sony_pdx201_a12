@@ -1,0 +1,711 @@
+Starting TWRP 3.7.0_12-0-2fa94a72 on Sat Sep  5 14:03:01 1970
+ (pid 458)
+RECOVERY_SDCARD_ON_DATA := true
+I:Lun file '/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file'
+I:TW_BRIGHTNESS_PATH := /sys/class/backlight/panel0-backlight/brightness
+I:Found brightness file at '/sys/class/backlight/panel0-backlight/brightness'
+I:TWFunc::Set_Brightness: Setting brightness control to 1200
+I:TW_EXCLUDE_ENCRYPTED_BACKUPS := true
+I:LANG: en
+I:TW_EXCLUDE_NANO := true
+Starting the UI...
+Skipping adf graphics -- not present in build tree
+setting DRM_FORMAT_XBGR8888 and GGL_PIXEL_FORMAT_RGBA_8888
+setting DRM_FORMAT_XBGR8888 and GGL_PIXEL_FORMAT_RGBA_8888
+Using drm graphics.
+I:TWFunc::Set_Brightness: Setting brightness control to 1200
+I:Loading package: splash (/twres/splash.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/splash.xml' directly
+I:Checking resolution...
+I:Scaling theme width 1.000000x and height 1.312500x, offsets x: 0 y: 0 w: 0 h: 0
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page splash
+I:Switching packages (splash)
+I:No recovery folder found. Using default folder.
+I:Loading package: TWRP (/TWRP/theme/ui.zip)
+I:Loading zip theme
+I:Loading package: TWRP (/twres/ui.xml)
+I:Load XML directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_TW.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/zh_CN.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/uk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/tr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sv.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/sk.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ru.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_PT.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pt_BR.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/pl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/nl.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/ja.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/it.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/id.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/hu.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/fr.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/es.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/el.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/de.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/cz.xml' directly
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:PageManager::LoadFileToBuffer loading filename: '/twres/ui.xml' directly
+I:Checking resolution...
+I:Scaling theme width 1.000000x and height 1.312500x, offsets x: 0 y: 0 w: 0 h: 0
+I:Loading resources...
+I:Failed to load image from indeterminate013, error -1
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Including file: /twres/portrait.xml...
+I:PageManager::LoadFileToBuffer loading filename: '/twres/portrait.xml' directly
+I:Loading resources...
+I:Loading variables...
+I:Loading mouse cursor...
+I:Loading pages...
+I:Loading page main
+I:Loading page main2
+I:Loading page install
+I:Loading page flash_confirm
+I:Loading page flash_zip
+I:Loading page flash_done
+I:Loading page flash_sleep_and_reboot
+I:Loading page flashimage_confirm
+I:Loading page clear_vars
+I:Loading page reboot_system_routine
+I:Loading page confirm_action
+I:Loading page action_page
+I:Loading page singleaction_page
+I:Loading page action_complete
+I:Loading page filecheck
+I:Loading page rebootcheck
+I:Loading page wipe
+I:Loading page advancedwipe
+I:Loading page formatdata
+I:Loading page formatdata_confirm
+I:Loading page checkpartitionlist
+I:Loading page partitionoptions
+I:Loading page refreshfilesystem
+I:Loading page selectfilesystem
+I:Loading page backup
+I:Loading page multiuser_warning
+I:Loading page backup_options
+I:Loading page backupname1
+I:Loading page backupname2
+I:Loading page backupencryption
+I:Loading page backupencryption2
+I:Loading page checkbackuppassword
+I:Loading page backup_run
+I:Loading page restore
+I:Unable to open '//TWRP/BACKUPS/QV723P9B3A'
+I:Loading page restore_force
+I:Unable to open '//TWRP/BACKUPS'
+I:Loading page restore_read
+I:Loading page restore_decrypt
+I:Loading page try_restore_decrypt
+I:Loading page restore_select
+I:Loading page renamebackup
+I:Loading page restore_run
+I:Loading page mount
+I:Loading page usb_mount
+I:Loading page usb_umount
+I:Loading page system_readonly_check
+I:Loading page fastbootreboot
+I:Loading page reboot
+I:Loading page installapp
+I:Loading page system_readonly
+I:Loading page settings
+I:Loading page settings_timezone
+I:Loading page settings_screen
+I:Loading page settings_vibration
+I:Loading page settings_language
+I:Loading page copylog
+I:Loading page advanced
+I:Loading page partsdcardsel
+I:Loading page partsdcardcheck
+I:Loading page partsdcard
+I:Loading page htcdumlock
+I:Loading page repackselect
+I:Loading page repackconfirm
+I:Loading page lock
+I:Loading page filemanagerlist
+I:Loading page filemanageroptions
+I:Loading page choosedestinationfolder
+I:Loading page filemanagerrenamefile
+I:Loading page filemanagerrenamefolder
+I:Loading page filemanagerchmod
+I:Loading page filemanagerconfirm
+I:Loading page filemanageraction
+I:Loading page decrypt
+I:Loading page decrypt_pattern
+I:Loading page decrypt_pin
+I:Loading page trydecrypt
+I:Loading page canceldecrypt
+I:Loading page terminalcommand
+I:Loading page fastboot
+I:Loading page sideload
+I:Loading page fixcontexts
+I:Loading page slideout
+I:Loading page select_storage
+I:Loading page select_language
+I:Loading page decrypt_users
+I:Loading page changeTwrpFolder
+I:Loading page restore_keymaster
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Switching packages (TWRP)
+boot command: boot-recovery
+I:Startup Commands: 
+ro.boot.memcg=1
+ro.boot.vbmeta.avb_version=1.0
+ro.boot.dtb_idx=7
+ro.boot.selinux=permissive
+ro.boot.baseband=msm
+ro.boot.dtbo_idx=0
+ro.boot.hardware=qcom
+ro.boot.keymaster=1
+ro.boot.bootdevice=4744000.sdhci
+ro.boot.bootloader=xboot
+ro.boot.avb_version=1.0
+ro.boot.boot_devices=soc/4744000.sdhci
+ro.boot.verifiedbootstate=orange
+ro.baseband=msm
+ro.bootmode=unknown
+ro.hardware=qcom
+ro.revision=0
+ro.bootloader=xboot
+ro.boottime.adbd=2084163539
+ro.boottime.init=1596145886
+ro.boottime.init.selinux=91511311
+ro.boottime.init.first_stage=78817091
+ro.boottime.init.cold_boot_wait=227
+ro.boottime.logd=2042863118
+ro.boottime.ueventd=1807346636
+ro.boottime.recovery=2050076869
+ro.product.bootimage.name=twrp_pdx201
+ro.product.bootimage.brand=Sony
+ro.product.bootimage.model=Sony Xperia 10 II
+ro.product.bootimage.device=pdx201
+ro.product.bootimage.manufacturer=Sony
+ro.bootimage.build.id=SP2A.220405.004
+ro.bootimage.build.date=Thu Mar 30 01:20:02 CEST 2023
+ro.bootimage.build.date.utc=1680132002
+ro.bootimage.build.tags=test-keys
+ro.bootimage.build.type=eng
+ro.bootimage.build.version.sdk=32
+ro.bootimage.build.version.release=16.1.0
+ro.bootimage.build.version.incremental=eng.blacks.20230330.012004
+ro.bootimage.build.version.release_or_codename=16.1.0
+ro.bootimage.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300120:eng/test-keys
+ro.odm.build.date=Thu Mar 30 01:20:02 CEST 2023
+ro.odm.build.date.utc=1680132002
+ro.odm.build.version.incremental=eng.blacks.20230330.012004
+ro.odm.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300120:eng/test-keys
+ro.product.odm.name=twrp_pdx201
+ro.product.odm.brand=Sony
+ro.product.odm.model=Sony Xperia 10 II
+ro.product.odm.device=pdx201
+ro.product.odm.manufacturer=Sony
+ro.build.id=SP2A.220405.004
+ro.build.date=Thu Mar 30 18:37:02 CEST 2023
+ro.build.date.utc=1680194222
+ro.build.host=blackshibe-pc
+ro.build.tags=test-keys
+ro.build.type=eng
+ro.build.user=blackshibe
+ro.build.flavor=twrp_pdx201-eng
+ro.build.display.id=twrp_pdx201-eng 16.1.0 SP2A.220405.004 eng.blacks.20230330.183704 test-keys
+ro.build.product=pdx201
+ro.build.version.sdk=32
+ro.build.version.base_os=
+ro.build.version.release=16.1.0
+ro.build.version.codename=REL
+ro.build.version.incremental=eng.blacks.20230330.183704
+ro.build.version.preview_sdk=0
+ro.build.version.all_codenames=REL
+ro.build.version.security_patch=2099-12-31
+ro.build.version.release_or_codename=16.1.0
+ro.build.version.preview_sdk_fingerprint=REL
+ro.build.version.min_supported_target_sdk=23
+ro.build.description=twrp_pdx201-eng 16.1.0 SP2A.220405.004 eng.blacks.20230330.183704 test-keys
+ro.build.characteristics=default
+ro.secure=0
+ro.system.build.id=SP2A.220405.004
+ro.system.build.date=Thu Mar 30 18:37:02 CEST 2023
+ro.system.build.date.utc=1680194222
+ro.system.build.tags=test-keys
+ro.system.build.type=eng
+ro.system.build.version.sdk=32
+ro.system.build.version.release=16.1.0
+ro.system.build.version.incremental=eng.blacks.20230330.183704
+ro.system.build.version.release_or_codename=16.1.0
+ro.system.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03301837:eng/test-keys
+ro.treble.enabled=true
+ro.product.cpu.abi=arm64-v8a
+ro.product.cpu.abilist=arm64-v8a
+ro.product.cpu.abilist32=
+ro.product.cpu.abilist64=arm64-v8a
+ro.product.name=twrp_pdx201
+ro.product.brand=Sony
+ro.product.model=Sony Xperia 10 II
+ro.product.device=pdx201
+ro.product.system.name=twrp_pdx201
+ro.product.system.brand=Sony
+ro.product.system.model=Sony Xperia 10 II
+ro.product.system.device=pdx201
+ro.product.system.manufacturer=Sony
+ro.product.system_ext.name=twrp_pdx201
+ro.product.system_ext.brand=Sony
+ro.product.system_ext.model=Sony Xperia 10 II
+ro.product.system_ext.device=pdx201
+ro.product.system_ext.manufacturer=Sony
+ro.product.manufacturer=Sony
+ro.debuggable=1
+ro.system_ext.build.id=SP2A.220405.004
+ro.system_ext.build.date=Thu Mar 30 01:20:02 CEST 2023
+ro.system_ext.build.date.utc=1680132002
+ro.system_ext.build.tags=test-keys
+ro.system_ext.build.type=eng
+ro.system_ext.build.version.sdk=32
+ro.system_ext.build.version.release=16.1.0
+ro.system_ext.build.version.incremental=eng.blacks.20230330.012004
+ro.system_ext.build.version.release_or_codename=16.1.0
+ro.system_ext.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300120:eng/test-keys
+ro.actionable_compatible_property.enabled=true
+ro.vendor.build.id=SP2A.220405.004
+ro.vendor.build.date=Thu Mar 30 01:20:02 CEST 2023
+ro.vendor.build.date.utc=1680132002
+ro.vendor.build.tags=test-keys
+ro.vendor.build.type=eng
+ro.vendor.build.version.sdk=32
+ro.vendor.build.version.release=16.1.0
+ro.vendor.build.version.incremental=eng.blacks.20230330.012004
+ro.vendor.build.version.release_or_codename=16.1.0
+ro.vendor.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03300120:eng/test-keys
+ro.vendor.product.cpu.abilist=arm64-v8a
+ro.vendor.product.cpu.abilist32=
+ro.vendor.product.cpu.abilist64=arm64-v8a
+ro.product.board=trinket
+ro.product.vendor.name=twrp_pdx201
+ro.product.vendor.brand=Sony
+ro.product.vendor.model=Sony Xperia 10 II
+ro.product.vendor.device=pdx201
+ro.product.vendor.manufacturer=Sony
+ro.product.first_api_level=29
+ro.cold_boot_done=true
+ro.bionic.arch=arm64
+ro.bionic.2nd_arch=arm
+ro.bionic.cpu_variant=kryo
+ro.bionic.2nd_cpu_variant=cortex-a73
+ro.dalvik.vm.native.bridge=0
+ro.zygote=zygote64
+dalvik.vm.isa.arm.variant=cortex-a73
+dalvik.vm.isa.arm.features=default
+dalvik.vm.isa.arm64.variant=kryo
+dalvik.vm.isa.arm64.features=default
+dalvik.vm.dexopt.secondary=true
+dalvik.vm.dexopt.thermal-cutoff=2
+dalvik.vm.usejit=true
+dalvik.vm.madvise.artfile.size=4294967295
+dalvik.vm.madvise.odexfile.size=104857600
+dalvik.vm.madvise.vdexfile.size=104857600
+dalvik.vm.lockprof.threshold=500
+dalvik.vm.dex2oat-Xms=64m
+dalvik.vm.dex2oat-Xmx=512m
+dalvik.vm.minidebuginfo=true
+dalvik.vm.appimageformat=lz4
+dalvik.vm.usejitprofiles=true
+dalvik.vm.image-dex2oat-Xms=64m
+dalvik.vm.image-dex2oat-Xmx=64m
+dalvik.vm.image-dex2oat-filter=extract
+dalvik.vm.dex2oat-minidebuginfo=true
+dalvik.vm.dex2oat-max-image-block-size=524288
+dalvik.vm.dex2oat-resolve-startup-strings=true
+dalvik.vm.dex2oat-updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt
+persist.sys.dalvik.vm.lib.2=libart.so
+debug.atrace.tags.enableflags=0
+ro.twrp.boot=1
+ro.twrp.target.devices=pdx201
+ro.twrp.version=3.7.0_12-0
+ro.wifi.channels=
+ro.allow.mock.location=1
+ro.build.selinux=1
+ro.iorapd.enable=true
+ro.kernel.android.checkjni=1
+ro.kernel.version=4.14
+ro.system.product.cpu.abilist=arm64-v8a
+ro.system.product.cpu.abilist32=
+ro.system.product.cpu.abilist64=arm64-v8a
+ro.postinstall.fstab.prefix=/system
+twrp.crash_counter=0
+twrp.action_complete=0
+prepdecrypt.loglevel=2
+ro.boot.slot_suffix=_b
+ro.boot.fstab_suffix=emmc
+ro.hwui.use_vulkan=
+ro.board.platform=trinket
+ro.hardware.keystore_desede=true
+pm.dexopt.ab-ota=speed-profile
+pm.dexopt.shared=speed
+pm.dexopt.cmdline=verify
+pm.dexopt.install=speed-profile
+pm.dexopt.inactive=verify
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.first-boot=extract
+pm.dexopt.install-bulk=speed-profile
+pm.dexopt.install-fast=skip
+pm.dexopt.install-bulk-secondary=verify
+pm.dexopt.install-bulk-downgraded=verify
+pm.dexopt.install-bulk-secondary-downgraded=extract
+ro.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/eng.blacks.20230330.183704:eng/test-keys
+ro.gsid.image_running=0
+gsid.image_installed=0
+sys.init.perf_lsm_hooks=1
+init.svc.logd=running
+init.svc.ueventd=running
+init.svc.recovery=running
+init.svc.adbd=restarting
+init.svc_debug_pid.adbd=483
+init.svc_debug_pid.logd=455
+init.svc_debug_pid.ueventd=444
+init.svc_debug_pid.recovery=458
+ro.logd.kernel=true
+persist.debug.dalvik.vm.core_platform_api_policy=just-warn
+pm.dexopt.post-boot=extract
+pm.dexopt.boot-after-ota=extract
+ro.property_service.version=2
+ro.minui.pixel_format=RGBX_8888
+ro.boot.serialno=QV723P9B3A
+ro.serialno=QV723P9B3A
+service.adb.root=1
+net.bt.name=Android
+sys.usb.rmnet.func.name=rmnet_bam
+sys.usb.rndis.func.name=rndis_bam
+persist.sys.usb.config=adb
+persist.sys.disable_rescue=true
+persist.sys.isUsbOtgEnabled=true
+persist.traced.enable=1
+sys.usb.config=adb
+sys.usb.configfs=1
+sys.usb.controller=4e00000.dwc3
+ro.odm.build.id=SP2A.220405.004
+ro.odm.build.tags=test-keys
+ro.odm.build.type=eng
+ro.odm.build.version.sdk=32
+ro.odm.build.version.release=16.1.0
+ro.odm.build.version.release_or_codename=16.1.0
+ro.odm.product.cpu.abilist=arm64-v8a
+ro.odm.product.cpu.abilist32=
+ro.odm.product.cpu.abilist64=arm64-v8a
+vendor.usb.controller=4e00000.dwc3
+vendor.gatekeeper.disable_spu=true
+ro.vendor.build.security_patch=2099-12-31
+ro.vndk.version=32
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.crypto.allow_encrypt_override=true
+
+=> Linking mtab
+=> Processing /etc/recovery.fstab
+I:Reading /etc/twrp.flags
+I:Reading /etc/recovery.fstab
+I:Processing '/system'
+I:Created '/system_root' folder.
+I:Unhandled flag: 'avb=vbmeta_system'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/system_ext'
+I:Created '/system_ext' folder.
+I:Unhandled flag: 'avb=vbmeta_system'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/product'
+I:Created '/product' folder.
+I:Unhandled flag: 'avb=vbmeta_system'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/vendor'
+I:Unhandled flag: 'avb'
+I:Unhandled flag: 'first_stage_mount'
+I:Processing '/data'
+I:Processing '/metadata'
+I:Processing '/sdcard'
+I:Processing '/boot'
+I:Processing '/misc'
+I:Processing '/modem_fs1'
+I:Processing '/modem_fs2'
+I:Processing remaining twrp.flags
+I:Processing 'emmc'
+E:Unknown File System: '/boot'
+I:Processing 'ext4'
+E:Unknown File System: '/metadata'
+I:Processing 'emmc'
+E:Unknown File System: '/misc'
+I:Processing 'emmc'
+E:Unknown File System: '/modem_fs1'
+I:Processing 'emmc'
+E:Unknown File System: '/modem_fs2'
+I:Processing 'f2fs'
+E:Unknown File System: '/data'
+I:Processing 'vfat'
+E:Unknown File System: '/sdcard'
+I:Done processing fstab files
+I:Trying to prepare system from super partition
+I:unable to update logical partition: /system_root
+I:Trying to prepare system_ext from super partition
+I:unable to update logical partition: /system_ext
+I:Trying to prepare product from super partition
+I:unable to update logical partition: /product
+I:Trying to prepare vendor from super partition
+I:unable to update logical partition: /vendor
+I:Setting up '/data' as data/media emulated storage.
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Can't probe device /dev/block/mmcblk0p86
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+Unable to recreate /data/media folder.
+I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
+Updating partition details...
+I:Can't probe device /dev/block/mmcblk0p86
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+...done
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+Unable to mount storage
+/super | /dev/block/by-name/super | Size: 0MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Alternate_Block_Device: /dev/block/by-name/super
+   Display_Name: super
+   Backup_Path: /super
+   Backup_Name: super
+   Backup_Display_Name: Super (system system_ext product vendor)
+   Current_File_System: emmc
+   Backup_Method: dd
+
+I:Unmounting main partitions...
+Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
+I:Unable to override property ro.build.product: property not found in /system/build.prop
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
+I:Unable to override property ro.build.fingerprint: property not found in /system/build.prop
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
+I:Unable to override property ro.build.version.incremental: property not found in /system/build.prop
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
+I:Unable to override property ro.product.device: property not found in /system/build.prop
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
+I:Unable to override property ro.product.model: property not found in /system/build.prop
+I:UnMount: Unable to find partition for path '/system_root'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
+I:Unable to override property ro.product.name: property not found in /system/build.prop
+I:UnMount: Unable to find partition for path '/system_root'
+Updating partition details...
+I:Can't probe device /dev/block/mmcblk0p86
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+...done
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+Unable to mount storage
+tw_get_context failed to get selinux context, file 
+I:Failed to get default contexts and file mode for storage files.
+SELinux contexts loaded from /file_contexts
+Full SELinux support is present.
+I:Switching packages (TWRP)
+
+
+Partition Logs:
+/data | /dev/block/mmcblk0p86 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+   Symlink_Path: /data/media
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/mmcblk0p86
+   Crypto_Key_Location: footer
+   Display_Name: Data
+   Storage_Name: Internal Storage
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Data
+   Storage_Path: /data/media
+   Current_File_System: f2fs
+   Fstab_File_System: f2fs
+   Backup_Method: files
+   Mount_Flags: 1030, Mount_Options: discard
+   MTP_Storage_ID: 65537
+
+/metadata | /dev/block/mmcblk0p66 | Size: 11MB Used: 0MB Free: 11MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p66
+   Display_Name: metadata
+   Storage_Name: metadata
+   Backup_Path: /metadata
+   Backup_Name: metadata
+   Backup_Display_Name: metadata
+   Storage_Path: /metadata
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   Mount_Flags: 1030, Mount_Options: discard
+
+/sdcard | /dev/block/mmcblk1p1 | Size: 30428MB Used: 11654MB Free: 18773MB Backup Size: 11654MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable IsPresent Is_Storage 
+   Primary_Block_Device: /dev/block/mmcblk1p1
+   Display_Name: sdcard
+   Storage_Name: sdcard
+   Backup_Path: /sdcard
+   Backup_Name: sdcard
+   Backup_Display_Name: sdcard
+   Storage_Path: /sdcard
+   Current_File_System: vfat
+   Fstab_File_System: vfat
+   Backup_Method: files
+   Mount_Flags: 6, Mount_Options: 
+   MTP_Storage_ID: 65538
+
+/boot |  | Size: 0MB
+   Flags: Can_Be_Backed_Up Can_Flash_Img 
+   Primary_Block_Device: /dev/block/bootdevice/by-name/boot
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/misc | /dev/block/mmcblk0p62 | Size: 1MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p62
+   Display_Name: misc
+   Storage_Name: misc
+   Backup_Path: /misc
+   Backup_Name: misc
+   Backup_Display_Name: misc
+   Storage_Path: /misc
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/modem_fs1 | /dev/block/mmcblk0p39 | Size: 2MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p39
+   Display_Name: modem_fs1
+   Storage_Name: modem_fs1
+   Backup_Path: /modem_fs1
+   Backup_Name: modem_fs1
+   Backup_Display_Name: modem_fs1
+   Storage_Path: /modem_fs1
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/modem_fs2 | /dev/block/mmcblk0p40 | Size: 2MB
+   Flags: IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p40
+   Display_Name: modem_fs2
+   Storage_Name: modem_fs2
+   Backup_Path: /modem_fs2
+   Backup_Name: modem_fs2
+   Backup_Display_Name: modem_fs2
+   Storage_Path: /modem_fs2
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/super | /dev/block/by-name/super | Size: 12288MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
+   Alternate_Block_Device: /dev/block/by-name/super
+   Display_Name: super
+   Backup_Path: /super
+   Backup_Name: super
+   Backup_Display_Name: Super (system system_ext product vendor)
+   Current_File_System: emmc
+   Backup_Method: dd
+
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-09-05--14-03-02
+I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
+I:TWFunc::Fixup_Time: will attempt to use the ats files now.
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Attempt to load settings from settings file...
+I:InfoManager file '/.twrps' not found.
+I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
+I:Unable to open: /data/recovery/.version. Data may be unmounted. Error: No such file or directory
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:TWFunc::Set_Brightness: Setting brightness control to 1200
+I:Starting MTP
+I:Cannot find file /sys/class/android_usb/android0/idVendor
+I:Cannot find file /sys/class/android_usb/android0/idProduct
+I:[MTP] Starting MTP
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:sending message to add 65538 '/sdcard' 'sdcard'
+I:Message sent, add storage ID: 65538 '/sdcard'
+MTP Enabled
+I:Recreating /data/recovery/ folder.
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Path /data/recovery/log.gz does not exist. Unable to copy file to /data/recovery/last_log.gz
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Starting Adb Backup FIFO
+I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
+parsing languageFile
+parsing languageFile done
+I:Translating partition display names
+I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
+I:Is_Mounted: Unable to find partition for path '/system_root'
+Unable to find partition for path '/system_root'
+I:Unable to read sdk version from build prop
+I:Switching packages (TWRP)
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:[MTP] created new mtpserver object
+E:[MTP] Failed to start usb driver!
+I:[MTP] mtppipe add storage 65538 '/sdcard'
+I:Set page: 'mount'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'install'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'settings'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'install'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'install'
+I:TWFunc::Set_Brightness: Setting brightness control to 0
