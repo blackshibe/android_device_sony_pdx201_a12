@@ -2,17 +2,18 @@
 
 adapted for Android 12 based on kernel info from from https://github.com/lineageos-on-pdx201 and twrpdtgen.
 
-## Status
+## Working
 
 -   boots
 -   adb connects
 -   core partitions are mountable, magisk apk installs correctly
 
-## Testing
+## Problems
 
--   get every partition working [ ]
--   get backups working [ ]
--   possibly get FBE working [ ]
+-   some partitions aren't mounted [ ]
+-   ALWAYS reboots back to recovery after booting into recovery once [ ]
+-   backups and flash partitions aren't configured [ ]
+-   FBE [ ]
 
 ## Compiling
 
