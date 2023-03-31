@@ -29,6 +29,7 @@ import /init.recovery.qcom_decrypt.rc
 
 on init
     setprop prepdecrypt.loglevel 2
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/vendor/lib64
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}

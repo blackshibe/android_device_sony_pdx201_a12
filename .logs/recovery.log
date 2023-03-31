@@ -1,7 +1,8 @@
-Starting TWRP 3.7.0_12-0-2fa94a72 on Sat Sep  5 19:39:07 1970
- (pid 457)
+Starting TWRP 3.7.0_12-0-2fa94a72 on Sat Sep  5 21:18:25 1970
+ (pid 465)
 RECOVERY_SDCARD_ON_DATA := true
 I:Lun file '/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file'
+TW_INCLUDE_CRYPTO := true
 I:TW_BRIGHTNESS_PATH := /sys/class/backlight/panel0-backlight/brightness
 I:Found brightness file at '/sys/class/backlight/panel0-backlight/brightness'
 I:TWFunc::Set_Brightness: Setting brightness control to 1200
@@ -180,14 +181,18 @@ ro.bootmode=unknown
 ro.hardware=qcom
 ro.revision=0
 ro.bootloader=xboot
-ro.boottime.adbd=1897827687
-ro.boottime.init=1418034931
-ro.boottime.init.selinux=90249540
-ro.boottime.init.first_stage=79134487
-ro.boottime.init.cold_boot_wait=220
-ro.boottime.logd=1857453777
-ro.boottime.ueventd=1628604015
-ro.boottime.recovery=1864332059
+ro.boottime.adbd=3991959822
+ro.boottime.init=1508735669
+ro.boottime.init.selinux=84695113
+ro.boottime.init.first_stage=2039253432
+ro.boottime.init.cold_boot_wait=236
+ro.boottime.logd=3914899606
+ro.boottime.ueventd=3670330207
+ro.boottime.recovery=3933984869
+ro.boottime.keystore2=3924894034
+ro.boottime.servicemanager=3919524815
+ro.boottime.hwservicemanager=3917212680
+ro.boottime.vndservicemanager=3922051743
 ro.odm.build.date=Thu Mar 30 23:55:10 CEST 2023
 ro.odm.build.date.utc=1680213310
 ro.odm.build.version.incremental=eng.blacks.20230330.235354
@@ -351,15 +356,25 @@ pm.dexopt.install-bulk-secondary-downgraded=extract
 ro.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/eng.blacks.20230330.235354:eng/test-keys
 ro.gsid.image_running=0
 gsid.image_installed=0
+hwservicemanager.ready=true
 sys.init.perf_lsm_hooks=1
 init.svc.logd=running
 init.svc.ueventd=running
 init.svc.recovery=running
+init.svc.keystore2=running
+init.svc.servicemanager=running
+init.svc.hwservicemanager=running
+init.svc.vndservicemanager=running
 init.svc.adbd=restarting
-init.svc_debug_pid.adbd=482
-init.svc_debug_pid.logd=454
-init.svc_debug_pid.ueventd=444
-init.svc_debug_pid.recovery=457
+init.svc_debug_pid.adbd=492
+init.svc_debug_pid.logd=455
+init.svc_debug_pid.ueventd=445
+init.svc_debug_pid.recovery=465
+init.svc_debug_pid.keystore2=459
+init.svc_debug_pid.servicemanager=457
+init.svc_debug_pid.hwservicemanager=456
+init.svc_debug_pid.vndservicemanager=458
+keystore.crash_count=0
 ro.logd.kernel=true
 persist.debug.dalvik.vm.core_platform_api_policy=just-warn
 pm.dexopt.post-boot=extract
@@ -399,66 +414,29 @@ ro.crypto.allow_encrypt_override=true
 => Processing /etc/recovery.fstab
 I:Reading /etc/twrp.flags
 I:Reading /etc/recovery.fstab
-I:Processing '/system'
-I:Created '/system_root' folder.
-I:Unhandled flag: 'avb=vbmeta_system'
-I:Unhandled flag: 'first_stage_mount'
-I:Unhandled flag: 'avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey'
-I:Processing '/product'
-I:Created '/product' folder.
-I:Unhandled flag: 'avb=vbmeta_system'
-I:Unhandled flag: 'first_stage_mount'
-I:Processing '/vendor'
-I:Unhandled flag: 'avb'
-I:Unhandled flag: 'first_stage_mount'
-I:Processing '/odm'
-I:Processing '/metadata'
-I:Unhandled flag: 'first_stage_mount'
-I:Processing '/data'
-I:Unhandled flag: 'latemount'
-I:FBE contents 'ice', filenames ''
-I:Unhandled flag: 'reservedsize=128M'
-I:Unhandled flag: 'checkpoint=fs'
-I:FBE contents 'ice', filenames 'aes-256-cts'
 I:Processing '/mnt/vendor/persist'
 I:Created '/mnt/vendor/persist' folder.
-I:Processing '/misc'
-I:Found an additional entry for '/vendor/firmware_mnt'
-I:Processing '/vendor/firmware_mnt'
-I:Found an additional entry for '/vendor/dsp'
-I:Processing '/vendor/dsp'
-I:Found an additional entry for '/vendor/bt_firmware'
-I:Processing '/vendor/bt_firmware'
-I:Processing 'auto'
-I:Created '/auto0' folder.
-I:Processing 'auto'
-I:Created '/auto1' folder.
-I:Processing 'auto'
-I:Created '/auto2' folder.
-I:Processing remaining twrp.flags
-I:Processing '/bluetooth'
 I:Processing '/boot'
-I:Processing '/dsp'
-I:Processing '/efs1'
-I:Processing '/efs2'
-I:Processing '/efsc'
-I:Processing '/efsg'
-I:Processing '/firmware'
-I:Created '/firmware' folder.
-I:Processing '/modem'
-I:Processing '/recovery'
+I:Created '/boot' folder.
+I:Processing '/misc'
+I:Processing remaining twrp.flags
+I:Processing '/data'
+I:Processing '/metadata'
+I:Processing '/odm'
+I:Processing '/product'
+I:Created '/product' folder.
 I:Processing '/sdcard1'
 I:Created '/sdcard1' folder.
-I:Processing '/super'
+I:Processing '/system'
+I:Created '/system_root' folder.
 I:Processing '/usb_otg'
 I:Created '/usb_otg' folder.
+I:Processing '/vendor'
 I:Done processing fstab files
-I:Trying to prepare system from super partition
-I:unable to update logical partition: /system_root
-I:Trying to prepare product from super partition
-I:unable to update logical partition: /product
-I:Trying to prepare vendor from super partition
-I:unable to update logical partition: /vendor
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+Could not mount /data and unable to find crypto footer.
 I:Setting up '/data' as data/media emulated storage.
 I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
@@ -468,10 +446,18 @@ Failed to mount '/data' (Invalid argument)
 I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 Unable to recreate /data/media folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+E:Cannot decrypt adopted storage because /data will not mount
 Updating partition details...
+I:Can't probe device /dev/block/by-name/boot_b
+Failed to mount '/boot' (Invalid argument)
+I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
 I:Can't probe device /dev/block/mmcblk0p86
 Failed to mount '/data' (Invalid argument)
 I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:checking for twrp app
 ...done
 I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
@@ -483,98 +469,24 @@ Unable to mount storage
    Display_Name: super
    Backup_Path: /super
    Backup_Name: super
-   Backup_Display_Name: Super (system product vendor)
+   Backup_Display_Name: Super ()
    Current_File_System: emmc
    Backup_Method: dd
 
 I:Unmounting main partitions...
-Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-Unable to find partition for path '/system_root'
-I:Unable to override property ro.build.product: property not found in /system/build.prop
-I:UnMount: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-Unable to find partition for path '/system_root'
-I:Unable to override property ro.build.fingerprint: property not found in /system/build.prop
-I:UnMount: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-Unable to find partition for path '/system_root'
-I:Unable to override property ro.build.version.incremental: property not found in /system/build.prop
-I:UnMount: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-Unable to find partition for path '/system_root'
-I:Unable to override property ro.product.device: property not found in /system/build.prop
-I:UnMount: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-Unable to find partition for path '/system_root'
-I:Unable to override property ro.product.model: property not found in /system/build.prop
-I:UnMount: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-Unable to find partition for path '/system_root'
-I:Unable to override property ro.product.name: property not found in /system/build.prop
-I:UnMount: Unable to find partition for path '/system_root'
-Updating partition details...
-I:Can't probe device /dev/block/mmcblk0p86
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-...done
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-Unable to mount storage
-tw_get_context failed to get selinux context, file 
-I:Failed to get default contexts and file mode for storage files.
+I:Overriding ro.build.product with value: "pdx201" from property ro.build.product in /system/build.prop
+I:Overriding ro.build.fingerprint with value: "Sony/XQ-AU52_EEA/XQ-AU52:12/59.2.A.0.463/059002A000046302402528438:user/release-keys" from property ro.system.build.fingerprint in /system/build.prop
+I:Overriding ro.build.version.incremental with value: "eng.blacks.20230328.180951" from property ro.build.version.incremental in /system/build.prop
+I:Overriding ro.product.device with value: "pdx201" from property ro.product.system.device in /system/build.prop
+I:Overriding ro.product.model with value: "Xperia 10 II" from property ro.product.system.model in /system/build.prop
+I:Overriding ro.product.name with value: "lineage_pdx201" from property ro.product.system.name in /system/build.prop
+copying '/data/misc/keystore/persistent.sqlite' to '/tmp/misc/keystore/persistent.sqlite'
 SELinux contexts loaded from /file_contexts
 Full SELinux support is present.
 I:Switching packages (TWRP)
 
 
 Partition Logs:
-/odm | /dev/block/bootdevice/by-name/oem_b | Size: 371MB Used: 0MB Free: 371MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent SlotSelect Mount_Read_Only 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/oem
-   Display_Name: OEM
-   Storage_Name: ODM
-   Backup_Path: /odm
-   Backup_Name: ODM
-   Backup_Display_Name: ODM
-   Storage_Path: /odm
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-   Mount_Flags: 0, Mount_Options: barrier=1,discard
-
-/metadata | /dev/block/mmcblk0p66 | Size: 11MB Used: 0MB Free: 11MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI IsPresent 
-   Primary_Block_Device: /dev/block/mmcblk0p66
-   Display_Name: metadata
-   Storage_Name: metadata
-   Backup_Path: /metadata
-   Backup_Name: metadata
-   Backup_Display_Name: metadata
-   Storage_Path: /metadata
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-   Mount_Flags: 1030, Mount_Options: discard
-
-/data | /dev/block/mmcblk0p86 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
-   Symlink_Path: /data/media
-   Symlink_Mount_Point: /sdcard
-   Primary_Block_Device: /dev/block/mmcblk0p86
-   Display_Name: Data
-   Storage_Name: Internal Storage
-   Backup_Path: /data
-   Backup_Name: data
-   Backup_Display_Name: Data
-   Storage_Path: /data/media
-   Current_File_System: f2fs
-   Fstab_File_System: f2fs
-   Backup_Method: files
-   Mount_Flags: 1030, Mount_Options: discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier
-   MTP_Storage_ID: 65537
-
 /mnt/vendor/persist | /dev/block/mmcblk0p2 | Size: 26MB Used: 1MB Free: 25MB Backup Size: 1MB
    Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
    Primary_Block_Device: /dev/block/mmcblk0p2
@@ -589,6 +501,20 @@ Partition Logs:
    Backup_Method: files
    Mount_Flags: 1030, Mount_Options: barrier=1
 
+/boot | /dev/block/by-name/boot_b | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent SlotSelect Mount_Read_Only 
+   Primary_Block_Device: /dev/block/by-name/boot
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+   Mount_Flags: 0, Mount_Options: barrier=1,discard
+
 /misc | /dev/block/mmcblk0p62 | Size: 1MB
    Flags: IsPresent 
    Primary_Block_Device: /dev/block/mmcblk0p62
@@ -602,183 +528,60 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/auto0 |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
-   Display_Name: Storage
-   Storage_Name: Storage
-   Backup_Path: /auto0
-   Backup_Name: auto0
-   Backup_Display_Name: Storage
-   Storage_Path: /auto0
-   Current_File_System: auto
-   Fstab_File_System: auto
+/data | /dev/block/mmcblk0p86 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+   Symlink_Path: /data/media
+   Symlink_Mount_Point: /sdcard
+   Primary_Block_Device: /dev/block/mmcblk0p86
+   Display_Name: Userdata
+   Storage_Name: Userdata
+   Backup_Path: /data
+   Backup_Name: data
+   Backup_Display_Name: Userdata
+   Storage_Path: /data/media
+   Current_File_System: f2fs
+   Fstab_File_System: f2fs
    Backup_Method: files
-   MTP_Storage_ID: 65538
+   MTP_Storage_ID: 65537
 
-/auto1 |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
-   Crypto_Key_Location: userdata
-   Display_Name: Storage
-   Storage_Name: Storage
-   Backup_Path: /auto1
-   Backup_Name: auto1
-   Backup_Display_Name: Storage
-   Storage_Path: /auto1
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-   Mount_Flags: 6, Mount_Options: 
-   MTP_Storage_ID: 65539
-
-/auto2 |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
-   Crypto_Key_Location: userdata
-   Display_Name: Storage
-   Storage_Name: Storage
-   Backup_Path: /auto2
-   Backup_Name: auto2
-   Backup_Display_Name: Storage
-   Storage_Path: /auto2
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-   Mount_Flags: 6, Mount_Options: 
-   MTP_Storage_ID: 65540
-
-/bluetooth | /dev/block/bootdevice/by-name/bluetooth_b | Size: 1MB
-   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent SlotSelect 
-   SubPartition_Of: /modem
-   Primary_Block_Device: /dev/block/bootdevice/by-name/bluetooth
-   Display_Name: bluetooth
-   Storage_Name: bluetooth
-   Backup_Path: /bluetooth
-   Backup_Name: bluetooth
-   Backup_Display_Name: bluetooth
-   Storage_Path: /bluetooth
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/boot | /dev/block/bootdevice/by-name/boot_b | Size: 64MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/boot
-   Display_Name: Boot
-   Storage_Name: boot
-   Backup_Path: /boot
-   Backup_Name: boot
-   Backup_Display_Name: Boot
-   Storage_Path: /boot
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/dsp | /dev/block/bootdevice/by-name/dsp_b | Size: 32MB
-   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent SlotSelect 
-   SubPartition_Of: /modem
-   Primary_Block_Device: /dev/block/bootdevice/by-name/dsp
-   Display_Name: dsp
-   Storage_Name: dsp
-   Backup_Path: /dsp
-   Backup_Name: dsp
-   Backup_Display_Name: dsp
-   Storage_Path: /dsp
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/efs1 | /dev/block/mmcblk0p39 | Size: 2MB
-   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent 
-   Primary_Block_Device: /dev/block/mmcblk0p39
-   Display_Name: EFS
-   Storage_Name: EFS
-   Backup_Path: /efs1
-   Backup_Name: efs1
-   Backup_Display_Name: EFS
-   Storage_Path: /efs1
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/efs2 | /dev/block/mmcblk0p40 | Size: 2MB
-   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
-   SubPartition_Of: /efs1
-   Primary_Block_Device: /dev/block/mmcblk0p40
-   Display_Name: efs2
-   Storage_Name: efs2
-   Backup_Path: /efs2
-   Backup_Name: efs2
-   Backup_Display_Name: efs2
-   Storage_Path: /efs2
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/efsc | /dev/block/mmcblk0p38 | Size: 0MB
-   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
-   SubPartition_Of: /efs1
-   Primary_Block_Device: /dev/block/mmcblk0p38
-   Display_Name: efsc
-   Storage_Name: efsc
-   Backup_Path: /efsc
-   Backup_Name: efsc
-   Backup_Display_Name: efsc
-   Storage_Path: /efsc
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/efsg | /dev/block/mmcblk0p41 | Size: 2MB
-   Flags: Can_Be_Backed_Up Is_SubPartition IsPresent 
-   SubPartition_Of: /efs1
-   Primary_Block_Device: /dev/block/mmcblk0p41
-   Display_Name: efsg
-   Storage_Name: efsg
-   Backup_Path: /efsg
-   Backup_Name: efsg
-   Backup_Display_Name: efsg
-   Storage_Path: /efsg
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
-
-/firmware | /dev/block/bootdevice/by-name/modem_b | Size: 359MB Used: 97MB Free: 262MB Backup Size: 97MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent Mount_To_Decrypt SlotSelect Mount_Read_Only 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/modem
-   Display_Name: Firmware
-   Storage_Name: Firmware
-   Backup_Path: /firmware
-   Backup_Name: firmware
-   Backup_Display_Name: Firmware
-   Storage_Path: /firmware
-   Current_File_System: vfat
-   Fstab_File_System: vfat
+/metadata | /dev/block/mmcblk0p66 | Size: 11MB Used: 0MB Free: 11MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p66
+   Display_Name: Metadata
+   Storage_Name: Metadata
+   Backup_Path: /metadata
+   Backup_Name: metadata
+   Backup_Display_Name: Metadata
+   Storage_Path: /metadata
+   Current_File_System: ext4
+   Fstab_File_System: ext4
    Backup_Method: files
 
-/modem | /dev/block/bootdevice/by-name/modem_b | Size: 360MB
-   Flags: Can_Be_Backed_Up Has_SubPartition IsPresent SlotSelect 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/modem
-   Display_Name: Modem
-   Storage_Name: Modem
-   Backup_Path: /modem
-   Backup_Name: modem
-   Backup_Display_Name: Modem
-   Storage_Path: /modem
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
+/odm | /dev/block/by-name/oem_b | Size: 371MB Used: 0MB Free: 371MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent SlotSelect 
+   Primary_Block_Device: /dev/block/by-name/oem
+   Display_Name: OEM
+   Storage_Name: OEM
+   Backup_Path: /odm
+   Backup_Name: ODM
+   Backup_Display_Name: OEM
+   Storage_Path: /odm
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
 
-/recovery | /dev/block/bootdevice/by-name/recovery_b | Size: 96MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
-   Primary_Block_Device: /dev/block/bootdevice/by-name/recovery
-   Display_Name: Recovery
-   Storage_Name: Recovery
-   Backup_Path: /recovery
-   Backup_Name: recovery
-   Backup_Display_Name: Recovery
-   Storage_Path: /recovery
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
+/product | /dev/block/mapper/product_b | Size: 939MB Used: 369MB Free: 570MB Backup Size: 369MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent SlotSelect 
+   Primary_Block_Device: /dev/block/mapper/product
+   Display_Name: Product
+   Storage_Name: Product
+   Backup_Path: /product
+   Backup_Name: Product
+   Backup_Display_Name: Product
+   Storage_Path: /product
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
 
 /sdcard1 | /dev/block/mmcblk1p1 | Size: 30428MB Used: 11654MB Free: 18773MB Backup Size: 11654MB
    Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable IsPresent Is_Storage 
@@ -793,20 +596,20 @@ Partition Logs:
    Current_File_System: vfat
    Fstab_File_System: auto
    Backup_Method: files
-   MTP_Storage_ID: 65541
+   MTP_Storage_ID: 65538
 
-/super | /dev/block/mmcblk0p85 | Size: 12288MB
-   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
-   Primary_Block_Device: /dev/block/mmcblk0p85
-   Display_Name: super
-   Storage_Name: super
-   Backup_Path: /super
-   Backup_Name: super
-   Backup_Display_Name: super
-   Storage_Path: /super
-   Current_File_System: emmc
-   Fstab_File_System: emmc
-   Backup_Method: dd
+/system_root | /dev/block/mapper/system_b | Size: 2087MB Used: 826MB Free: 1260MB Backup Size: 826MB
+   Flags: Can_Be_Mounted IsPresent SlotSelect 
+   Primary_Block_Device: /dev/block/mapper/system
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system_root
+   Backup_Name: system
+   Backup_Display_Name: System
+   Storage_Path: /system_root
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
 
 /usb_otg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
    Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
@@ -821,19 +624,32 @@ Partition Logs:
    Current_File_System: vfat
    Fstab_File_System: vfat
    Backup_Method: files
-   MTP_Storage_ID: 65542
+   MTP_Storage_ID: 65539
 
-/super | /dev/block/by-name/super | Size: 12288MB
+/vendor | /dev/block/mapper/vendor_b | Size: 463MB Used: 434MB Free: 29MB Backup Size: 434MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent SlotSelect 
+   Primary_Block_Device: /dev/block/mapper/vendor
+   Display_Name: Vendor
+   Storage_Name: Vendor
+   Backup_Path: /vendor
+   Backup_Name: vendor
+   Backup_Display_Name: Vendor
+   Storage_Path: /vendor
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/super | /dev/block/by-name/super | Size: 0MB
    Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
    Alternate_Block_Device: /dev/block/by-name/super
    Display_Name: super
    Backup_Path: /super
    Backup_Name: super
-   Backup_Display_Name: Super (system product vendor)
+   Backup_Display_Name: Super ()
    Current_File_System: emmc
    Backup_Method: dd
 
-I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-09-05--19-39-08
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-09-05--21-18-26
 I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
 I:TWFunc::Fixup_Time: will attempt to use the ats files now.
 I:Can't probe device /dev/block/mmcblk0p86
@@ -846,25 +662,19 @@ I:Unable to open: /data/recovery/.version. Data may be unmounted. Error: No such
 I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
 I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-I:Unable to mount '/auto0'
-I:Actual block device: '', current file system: 'auto'
-I:Unable to mount '/auto1'
-I:Actual block device: '', current file system: 'auto'
-I:Unable to mount '/auto2'
-I:Actual block device: '', current file system: 'auto'
 I:Unable to mount '/usb_otg'
 I:Actual block device: '', current file system: 'vfat'
 I:TWFunc::Set_Brightness: Setting brightness control to 1200
-I:Starting MTP
-I:Cannot find file /sys/class/android_usb/android0/idVendor
-I:Cannot find file /sys/class/android_usb/android0/idProduct
-I:[MTP] Starting MTP
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-I:sending message to add 65541 '/sdcard1' 'MicroSD'
-I:Message sent, add storage ID: 65541 '/sdcard1'
-MTP Enabled
+I:Switching packages (TWRP)
+I:Set page: 'system_readonly'
+I:operation_start: 'Toggle System Mount'
+I:operation_end - status=0
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
 I:Recreating /data/recovery/ folder.
 I:Can't probe device /dev/block/mmcblk0p86
 I:Unable to mount '/data'
@@ -882,1652 +692,16 @@ parsing languageFile
 parsing languageFile done
 I:Translating partition display names
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-Unable to find partition for path '/system_root'
-I:Unable to read sdk version from build prop
+I:checking for twrp app
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Data partition cannot be mounted during app check
+I:App not installed
 I:Switching packages (TWRP)
 I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
-I:Found a match 'mmcblk0' '/devices/platform/soc/'
-I:Decrypt_Adopted: no crypto support
-I:No adopted storage so finding actual block device
-I:Processing '/auto0-1'
-I:Created '/auto0-1' folder.
-I:Can't probe device /dev/block//mmcblk0p32
-I:Unable to mount '/auto0-1'
-I:Actual block device: '/dev/block//mmcblk0p32', current file system: 'auto'
-/auto0-1 | /dev/block//mmcblk0p32 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p32
-   Display_Name: Storage 1
-   Storage_Name: Storage 1
-   Backup_Path: /auto0-1
-   Backup_Name: auto0-1
-   Backup_Display_Name: auto0-1
-   Storage_Path: /auto0-1
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-2'
-I:Created '/auto0-2' folder.
-I:Can't probe device /dev/block//mmcblk0p62
-I:Unable to mount '/auto0-2'
-I:Actual block device: '/dev/block//mmcblk0p62', current file system: 'auto'
-/auto0-2 | /dev/block//mmcblk0p62 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p62
-   Display_Name: Storage 2
-   Storage_Name: Storage 2
-   Backup_Path: /auto0-2
-   Backup_Name: auto0-2
-   Backup_Display_Name: auto0-2
-   Storage_Path: /auto0-2
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-3'
-I:Created '/auto0-3' folder.
-I:Can't probe device /dev/block//mmcblk0p26
-I:Unable to mount '/auto0-3'
-I:Actual block device: '/dev/block//mmcblk0p26', current file system: 'auto'
-/auto0-3 | /dev/block//mmcblk0p26 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p26
-   Display_Name: Storage 3
-   Storage_Name: Storage 3
-   Backup_Path: /auto0-3
-   Backup_Name: auto0-3
-   Backup_Display_Name: auto0-3
-   Storage_Path: /auto0-3
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-4'
-I:Created '/auto0-4' folder.
-I:Can't probe device /dev/block//mmcblk0p70
-I:Unable to mount '/auto0-4'
-I:Actual block device: '/dev/block//mmcblk0p70', current file system: 'auto'
-/auto0-4 | /dev/block//mmcblk0p70 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p70
-   Display_Name: Storage 4
-   Storage_Name: Storage 4
-   Backup_Path: /auto0-4
-   Backup_Name: auto0-4
-   Backup_Display_Name: auto0-4
-   Storage_Path: /auto0-4
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-5'
-I:Created '/auto0-5' folder.
-I:Can't probe device /dev/block//mmcblk0p6
-I:Unable to mount '/auto0-5'
-I:Actual block device: '/dev/block//mmcblk0p6', current file system: 'auto'
-/auto0-5 | /dev/block//mmcblk0p6 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p6
-   Display_Name: Storage 5
-   Storage_Name: Storage 5
-   Backup_Path: /auto0-5
-   Backup_Name: auto0-5
-   Backup_Display_Name: auto0-5
-   Storage_Path: /auto0-5
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-6'
-I:Created '/auto0-6' folder.
-I:Can't probe device /dev/block//mmcblk0p34
-I:Unable to mount '/auto0-6'
-I:Actual block device: '/dev/block//mmcblk0p34', current file system: 'auto'
-/auto0-6 | /dev/block//mmcblk0p34 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p34
-   Display_Name: Storage 6
-   Storage_Name: Storage 6
-   Backup_Path: /auto0-6
-   Backup_Name: auto0-6
-   Backup_Display_Name: auto0-6
-   Storage_Path: /auto0-6
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-7'
-I:Created '/auto0-7' folder.
-/auto0-7 | /dev/block//mmcblk0p64 | Size: 11MB Used: 8MB Free: 3MB Backup Size: 8MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p64
-   Display_Name: Storage 7
-   Storage_Name: Storage 7
-   Backup_Path: /auto0-7
-   Backup_Name: auto0-7
-   Backup_Display_Name: auto0-7
-   Storage_Path: /auto0-7
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-8'
-I:Created '/auto0-8' folder.
-I:Can't probe device /dev/block//mmcblk0p8
-I:Unable to mount '/auto0-8'
-I:Actual block device: '/dev/block//mmcblk0p8', current file system: 'auto'
-/auto0-8 | /dev/block//mmcblk0p8 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p8
-   Display_Name: Storage 8
-   Storage_Name: Storage 8
-   Backup_Path: /auto0-8
-   Backup_Name: auto0-8
-   Backup_Display_Name: auto0-8
-   Storage_Path: /auto0-8
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-9'
-I:Created '/auto0-9' folder.
-I:Can't probe device /dev/block//mmcblk0p28
-I:Unable to mount '/auto0-9'
-I:Actual block device: '/dev/block//mmcblk0p28', current file system: 'auto'
-/auto0-9 | /dev/block//mmcblk0p28 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p28
-   Display_Name: Storage 9
-   Storage_Name: Storage 9
-   Backup_Path: /auto0-9
-   Backup_Name: auto0-9
-   Backup_Display_Name: auto0-9
-   Storage_Path: /auto0-9
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-10'
-I:Created '/auto0-10' folder.
-I:Can't probe device /dev/block//mmcblk0p14
-I:Unable to mount '/auto0-10'
-I:Actual block device: '/dev/block//mmcblk0p14', current file system: 'auto'
-/auto0-10 | /dev/block//mmcblk0p14 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p14
-   Display_Name: Storage 10
-   Storage_Name: Storage 10
-   Backup_Path: /auto0-10
-   Backup_Name: auto0-10
-   Backup_Display_Name: auto0-10
-   Storage_Path: /auto0-10
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-11'
-I:Created '/auto0-11' folder.
-I:Can't probe device /dev/block//mmcblk0p68
-I:Unable to mount '/auto0-11'
-I:Actual block device: '/dev/block//mmcblk0p68', current file system: 'auto'
-/auto0-11 | /dev/block//mmcblk0p68 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p68
-   Display_Name: Storage 11
-   Storage_Name: Storage 11
-   Backup_Path: /auto0-11
-   Backup_Name: auto0-11
-   Backup_Display_Name: auto0-11
-   Storage_Path: /auto0-11
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-12'
-I:Created '/auto0-12' folder.
-I:Can't probe device /dev/block//mmcblk0p44
-I:Unable to mount '/auto0-12'
-I:Actual block device: '/dev/block//mmcblk0p44', current file system: 'auto'
-/auto0-12 | /dev/block//mmcblk0p44 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p44
-   Display_Name: Storage 12
-   Storage_Name: Storage 12
-   Backup_Path: /auto0-12
-   Backup_Name: auto0-12
-   Backup_Display_Name: auto0-12
-   Storage_Path: /auto0-12
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-13'
-I:Created '/auto0-13' folder.
-/auto0-13 | /dev/block//mmcblk0p51 | Size: 27MB Used: 13MB Free: 14MB Backup Size: 13MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p51
-   Display_Name: Storage 13
-   Storage_Name: Storage 13
-   Backup_Path: /auto0-13
-   Backup_Name: auto0-13
-   Backup_Display_Name: auto0-13
-   Storage_Path: /auto0-13
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-14'
-I:Created '/auto0-14' folder.
-I:Can't probe device /dev/block//mmcblk0p1
-I:Unable to mount '/auto0-14'
-I:Actual block device: '/dev/block//mmcblk0p1', current file system: 'auto'
-/auto0-14 | /dev/block//mmcblk0p1 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p1
-   Display_Name: Storage 14
-   Storage_Name: Storage 14
-   Backup_Path: /auto0-14
-   Backup_Name: auto0-14
-   Backup_Display_Name: auto0-14
-   Storage_Path: /auto0-14
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-15'
-I:Created '/auto0-15' folder.
-I:Can't probe device /dev/block//mmcblk0p74
-I:Unable to mount '/auto0-15'
-I:Actual block device: '/dev/block//mmcblk0p74', current file system: 'auto'
-/auto0-15 | /dev/block//mmcblk0p74 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p74
-   Display_Name: Storage 15
-   Storage_Name: Storage 15
-   Backup_Path: /auto0-15
-   Backup_Name: auto0-15
-   Backup_Display_Name: auto0-15
-   Storage_Path: /auto0-15
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-16'
-I:Created '/auto0-16' folder.
-I:Can't probe device /dev/block//mmcblk0p53
-I:Unable to mount '/auto0-16'
-I:Actual block device: '/dev/block//mmcblk0p53', current file system: 'auto'
-/auto0-16 | /dev/block//mmcblk0p53 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p53
-   Display_Name: Storage 16
-   Storage_Name: Storage 16
-   Backup_Path: /auto0-16
-   Backup_Name: auto0-16
-   Backup_Display_Name: auto0-16
-   Storage_Path: /auto0-16
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-17'
-I:Created '/auto0-17' folder.
-I:Can't probe device /dev/block//mmcblk0p38
-I:Unable to mount '/auto0-17'
-I:Actual block device: '/dev/block//mmcblk0p38', current file system: 'auto'
-/auto0-17 | /dev/block//mmcblk0p38 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p38
-   Display_Name: Storage 17
-   Storage_Name: Storage 17
-   Backup_Path: /auto0-17
-   Backup_Name: auto0-17
-   Backup_Display_Name: auto0-17
-   Storage_Path: /auto0-17
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-18'
-I:Created '/auto0-18' folder.
-I:Can't probe device /dev/block//mmcblk0p17
-I:Unable to mount '/auto0-18'
-I:Actual block device: '/dev/block//mmcblk0p17', current file system: 'auto'
-/auto0-18 | /dev/block//mmcblk0p17 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p17
-   Display_Name: Storage 18
-   Storage_Name: Storage 18
-   Backup_Path: /auto0-18
-   Backup_Name: auto0-18
-   Backup_Display_Name: auto0-18
-   Storage_Path: /auto0-18
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-19'
-I:Created '/auto0-19' folder.
-I:Can't probe device /dev/block//mmcblk0p81
-I:Unable to mount '/auto0-19'
-I:Actual block device: '/dev/block//mmcblk0p81', current file system: 'auto'
-/auto0-19 | /dev/block//mmcblk0p81 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p81
-   Display_Name: Storage 19
-   Storage_Name: Storage 19
-   Backup_Path: /auto0-19
-   Backup_Name: auto0-19
-   Backup_Display_Name: auto0-19
-   Storage_Path: /auto0-19
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-20'
-I:Created '/auto0-20' folder.
-I:Can't probe device /dev/block//mmcblk0p42
-I:Unable to mount '/auto0-20'
-I:Actual block device: '/dev/block//mmcblk0p42', current file system: 'auto'
-/auto0-20 | /dev/block//mmcblk0p42 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p42
-   Display_Name: Storage 20
-   Storage_Name: Storage 20
-   Backup_Path: /auto0-20
-   Backup_Name: auto0-20
-   Backup_Display_Name: auto0-20
-   Storage_Path: /auto0-20
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-21'
-I:Created '/auto0-21' folder.
-/auto0-21 | /dev/block//mmcblk0p47 | Size: 63MB Used: 0MB Free: 63MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p47
-   Display_Name: Storage 21
-   Storage_Name: Storage 21
-   Backup_Path: /auto0-21
-   Backup_Name: auto0-21
-   Backup_Display_Name: auto0-21
-   Storage_Path: /auto0-21
-   Current_File_System: vfat
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-22'
-I:Created '/auto0-22' folder.
-I:Can't probe device /dev/block//mmcblk0p61
-I:Unable to mount '/auto0-22'
-I:Actual block device: '/dev/block//mmcblk0p61', current file system: 'auto'
-/auto0-22 | /dev/block//mmcblk0p61 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p61
-   Display_Name: Storage 22
-   Storage_Name: Storage 22
-   Backup_Path: /auto0-22
-   Backup_Name: auto0-22
-   Backup_Display_Name: auto0-22
-   Storage_Path: /auto0-22
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-23'
-I:Created '/auto0-23' folder.
-I:Can't probe device /dev/block//mmcblk0p72
-I:Unable to mount '/auto0-23'
-I:Actual block device: '/dev/block//mmcblk0p72', current file system: 'auto'
-/auto0-23 | /dev/block//mmcblk0p72 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p72
-   Display_Name: Storage 23
-   Storage_Name: Storage 23
-   Backup_Path: /auto0-23
-   Backup_Name: auto0-23
-   Backup_Display_Name: auto0-23
-   Storage_Path: /auto0-23
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-24'
-I:Created '/auto0-24' folder.
-I:Can't probe device /dev/block//mmcblk0p10
-I:Unable to mount '/auto0-24'
-I:Actual block device: '/dev/block//mmcblk0p10', current file system: 'auto'
-/auto0-24 | /dev/block//mmcblk0p10 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p10
-   Display_Name: Storage 24
-   Storage_Name: Storage 24
-   Backup_Path: /auto0-24
-   Backup_Name: auto0-24
-   Backup_Display_Name: auto0-24
-   Storage_Path: /auto0-24
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-25'
-I:Created '/auto0-25' folder.
-I:Can't probe device /dev/block//mmcblk0p45
-I:Unable to mount '/auto0-25'
-I:Actual block device: '/dev/block//mmcblk0p45', current file system: 'auto'
-/auto0-25 | /dev/block//mmcblk0p45 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p45
-   Display_Name: Storage 25
-   Storage_Name: Storage 25
-   Backup_Path: /auto0-25
-   Backup_Name: auto0-25
-   Backup_Display_Name: auto0-25
-   Storage_Path: /auto0-25
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-26'
-I:Created '/auto0-26' folder.
-I:Can't probe device /dev/block//mmcblk0p25
-I:Unable to mount '/auto0-26'
-I:Actual block device: '/dev/block//mmcblk0p25', current file system: 'auto'
-/auto0-26 | /dev/block//mmcblk0p25 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p25
-   Display_Name: Storage 26
-   Storage_Name: Storage 26
-   Backup_Path: /auto0-26
-   Backup_Name: auto0-26
-   Backup_Display_Name: auto0-26
-   Storage_Path: /auto0-26
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-27'
-I:Created '/auto0-27' folder.
-I:Can't probe device /dev/block//mmcblk0p36
-I:Unable to mount '/auto0-27'
-I:Actual block device: '/dev/block//mmcblk0p36', current file system: 'auto'
-/auto0-27 | /dev/block//mmcblk0p36 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p36
-   Display_Name: Storage 27
-   Storage_Name: Storage 27
-   Backup_Path: /auto0-27
-   Backup_Name: auto0-27
-   Backup_Display_Name: auto0-27
-   Storage_Path: /auto0-27
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-28'
-I:Created '/auto0-28' folder.
-I:Can't probe device /dev/block//mmcblk0p69
-I:Unable to mount '/auto0-28'
-I:Actual block device: '/dev/block//mmcblk0p69', current file system: 'auto'
-/auto0-28 | /dev/block//mmcblk0p69 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p69
-   Display_Name: Storage 28
-   Storage_Name: Storage 28
-   Backup_Path: /auto0-28
-   Backup_Name: auto0-28
-   Backup_Display_Name: auto0-28
-   Storage_Path: /auto0-28
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-29'
-I:Created '/auto0-29' folder.
-I:Can't probe device /dev/block//mmcblk0p55
-I:Unable to mount '/auto0-29'
-I:Actual block device: '/dev/block//mmcblk0p55', current file system: 'auto'
-/auto0-29 | /dev/block//mmcblk0p55 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p55
-   Display_Name: Storage 29
-   Storage_Name: Storage 29
-   Backup_Path: /auto0-29
-   Backup_Name: auto0-29
-   Backup_Display_Name: auto0-29
-   Storage_Path: /auto0-29
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-30'
-I:Created '/auto0-30' folder.
-/auto0-30 | /dev/block//mmcblk0p2 | Size: 26MB Used: 1MB Free: 25MB Backup Size: 1MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p2
-   Display_Name: Storage 30
-   Storage_Name: Storage 30
-   Backup_Path: /auto0-30
-   Backup_Name: auto0-30
-   Backup_Display_Name: auto0-30
-   Storage_Path: /auto0-30
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-31'
-I:Created '/auto0-31' folder.
-I:Can't probe device /dev/block//mmcblk0p75
-I:Unable to mount '/auto0-31'
-I:Actual block device: '/dev/block//mmcblk0p75', current file system: 'auto'
-/auto0-31 | /dev/block//mmcblk0p75 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p75
-   Display_Name: Storage 31
-   Storage_Name: Storage 31
-   Backup_Path: /auto0-31
-   Backup_Name: auto0-31
-   Backup_Display_Name: auto0-31
-   Storage_Path: /auto0-31
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-32'
-I:Created '/auto0-32' folder.
-I:Can't probe device /dev/block//mmcblk0p11
-I:Unable to mount '/auto0-32'
-I:Actual block device: '/dev/block//mmcblk0p11', current file system: 'auto'
-/auto0-32 | /dev/block//mmcblk0p11 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p11
-   Display_Name: Storage 32
-   Storage_Name: Storage 32
-   Backup_Path: /auto0-32
-   Backup_Name: auto0-32
-   Backup_Display_Name: auto0-32
-   Storage_Path: /auto0-32
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-33'
-I:Created '/auto0-33' folder.
-I:Can't probe device /dev/block//mmcblk0p54
-I:Unable to mount '/auto0-33'
-I:Actual block device: '/dev/block//mmcblk0p54', current file system: 'auto'
-/auto0-33 | /dev/block//mmcblk0p54 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p54
-   Display_Name: Storage 33
-   Storage_Name: Storage 33
-   Backup_Path: /auto0-33
-   Backup_Name: auto0-33
-   Backup_Display_Name: auto0-33
-   Storage_Path: /auto0-33
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-34'
-I:Created '/auto0-34' folder.
-/auto0-34 | /dev/block//mmcblk0p84 | Size: 371MB Used: 0MB Free: 371MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p84
-   Display_Name: Storage 34
-   Storage_Name: Storage 34
-   Backup_Path: /auto0-34
-   Backup_Name: auto0-34
-   Backup_Display_Name: auto0-34
-   Storage_Path: /auto0-34
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-35'
-I:Created '/auto0-35' folder.
-I:Can't probe device /dev/block//mmcblk0p23
-I:Unable to mount '/auto0-35'
-I:Actual block device: '/dev/block//mmcblk0p23', current file system: 'auto'
-/auto0-35 | /dev/block//mmcblk0p23 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p23
-   Display_Name: Storage 35
-   Storage_Name: Storage 35
-   Backup_Path: /auto0-35
-   Backup_Name: auto0-35
-   Backup_Display_Name: auto0-35
-   Storage_Path: /auto0-35
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-36'
-I:Created '/auto0-36' folder.
-I:Can't probe device /dev/block//mmcblk0p39
-I:Unable to mount '/auto0-36'
-I:Actual block device: '/dev/block//mmcblk0p39', current file system: 'auto'
-/auto0-36 | /dev/block//mmcblk0p39 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p39
-   Display_Name: Storage 36
-   Storage_Name: Storage 36
-   Backup_Path: /auto0-36
-   Backup_Name: auto0-36
-   Backup_Display_Name: auto0-36
-   Storage_Path: /auto0-36
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-37'
-I:Created '/auto0-37' folder.
-I:Can't probe device /dev/block//mmcblk0p86
-I:Unable to mount '/auto0-37'
-I:Actual block device: '/dev/block//mmcblk0p86', current file system: 'auto'
-/auto0-37 | /dev/block//mmcblk0p86 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p86
-   Display_Name: Storage 37
-   Storage_Name: Storage 37
-   Backup_Path: /auto0-37
-   Backup_Name: auto0-37
-   Backup_Display_Name: auto0-37
-   Storage_Path: /auto0-37
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-38'
-I:Created '/auto0-38' folder.
-/auto0-38 | /dev/block//mmcblk0p3 | Size: 11MB Used: 1MB Free: 9MB Backup Size: 1MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p3
-   Display_Name: Storage 38
-   Storage_Name: Storage 38
-   Backup_Path: /auto0-38
-   Backup_Name: auto0-38
-   Backup_Display_Name: auto0-38
-   Storage_Path: /auto0-38
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-39'
-I:Created '/auto0-39' folder.
-/auto0-39 | /dev/block//mmcblk0p49 | Size: 359MB Used: 97MB Free: 262MB Backup Size: 97MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p49
-   Display_Name: Storage 39
-   Storage_Name: Storage 39
-   Backup_Path: /auto0-39
-   Backup_Name: auto0-39
-   Backup_Display_Name: auto0-39
-   Storage_Path: /auto0-39
-   Current_File_System: vfat
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-40'
-I:Created '/auto0-40' folder.
-I:Can't probe device /dev/block//mmcblk0p41
-I:Unable to mount '/auto0-40'
-I:Actual block device: '/dev/block//mmcblk0p41', current file system: 'auto'
-/auto0-40 | /dev/block//mmcblk0p41 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p41
-   Display_Name: Storage 40
-   Storage_Name: Storage 40
-   Backup_Path: /auto0-40
-   Backup_Name: auto0-40
-   Backup_Display_Name: auto0-40
-   Storage_Path: /auto0-40
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-41'
-I:Created '/auto0-41' folder.
-/auto0-41 | /dev/block//mmcblk0p83 | Size: 374MB Used: 65MB Free: 309MB Backup Size: 65MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p83
-   Display_Name: Storage 41
-   Storage_Name: Storage 41
-   Backup_Path: /auto0-41
-   Backup_Name: auto0-41
-   Backup_Display_Name: auto0-41
-   Storage_Path: /auto0-41
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-42'
-I:Created '/auto0-42' folder.
-I:Can't probe device /dev/block//mmcblk0p19
-I:Unable to mount '/auto0-42'
-I:Actual block device: '/dev/block//mmcblk0p19', current file system: 'auto'
-/auto0-42 | /dev/block//mmcblk0p19 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p19
-   Display_Name: Storage 42
-   Storage_Name: Storage 42
-   Backup_Path: /auto0-42
-   Backup_Name: auto0-42
-   Backup_Display_Name: auto0-42
-   Storage_Path: /auto0-42
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-43'
-I:Created '/auto0-43' folder.
-I:Can't probe device /dev/block//mmcblk0p30
-I:Unable to mount '/auto0-43'
-I:Actual block device: '/dev/block//mmcblk0p30', current file system: 'auto'
-/auto0-43 | /dev/block//mmcblk0p30 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p30
-   Display_Name: Storage 43
-   Storage_Name: Storage 43
-   Backup_Path: /auto0-43
-   Backup_Name: auto0-43
-   Backup_Display_Name: auto0-43
-   Storage_Path: /auto0-43
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-44'
-I:Created '/auto0-44' folder.
-I:Can't probe device /dev/block//mmcblk0p73
-I:Unable to mount '/auto0-44'
-I:Actual block device: '/dev/block//mmcblk0p73', current file system: 'auto'
-/auto0-44 | /dev/block//mmcblk0p73 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p73
-   Display_Name: Storage 44
-   Storage_Name: Storage 44
-   Backup_Path: /auto0-44
-   Backup_Name: auto0-44
-   Backup_Display_Name: auto0-44
-   Storage_Path: /auto0-44
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-45'
-I:Created '/auto0-45' folder.
-I:Can't probe device /dev/block//mmcblk0p77
-I:Unable to mount '/auto0-45'
-I:Actual block device: '/dev/block//mmcblk0p77', current file system: 'auto'
-/auto0-45 | /dev/block//mmcblk0p77 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p77
-   Display_Name: Storage 45
-   Storage_Name: Storage 45
-   Backup_Path: /auto0-45
-   Backup_Name: auto0-45
-   Backup_Display_Name: auto0-45
-   Storage_Path: /auto0-45
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-46'
-I:Created '/auto0-46' folder.
-I:Can't probe device /dev/block//mmcblk0p12
-I:Unable to mount '/auto0-46'
-I:Actual block device: '/dev/block//mmcblk0p12', current file system: 'auto'
-/auto0-46 | /dev/block//mmcblk0p12 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p12
-   Display_Name: Storage 46
-   Storage_Name: Storage 46
-   Backup_Path: /auto0-46
-   Backup_Name: auto0-46
-   Backup_Display_Name: auto0-46
-   Storage_Path: /auto0-46
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-47'
-I:Created '/auto0-47' folder.
-/auto0-47 | /dev/block//mmcblk0p65 | Size: 26MB Used: 0MB Free: 26MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p65
-   Display_Name: Storage 47
-   Storage_Name: Storage 47
-   Backup_Path: /auto0-47
-   Backup_Name: auto0-47
-   Backup_Display_Name: auto0-47
-   Storage_Path: /auto0-47
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-48'
-I:Created '/auto0-48' folder.
-I:Can't probe device /dev/block//mmcblk0p40
-I:Unable to mount '/auto0-48'
-I:Actual block device: '/dev/block//mmcblk0p40', current file system: 'auto'
-/auto0-48 | /dev/block//mmcblk0p40 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p40
-   Display_Name: Storage 48
-   Storage_Name: Storage 48
-   Backup_Path: /auto0-48
-   Backup_Name: auto0-48
-   Backup_Display_Name: auto0-48
-   Storage_Path: /auto0-48
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-49'
-I:Created '/auto0-49' folder.
-I:Can't probe device /dev/block//mmcblk0p52
-I:Unable to mount '/auto0-49'
-I:Actual block device: '/dev/block//mmcblk0p52', current file system: 'auto'
-/auto0-49 | /dev/block//mmcblk0p52 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p52
-   Display_Name: Storage 49
-   Storage_Name: Storage 49
-   Backup_Path: /auto0-49
-   Backup_Name: auto0-49
-   Backup_Display_Name: auto0-49
-   Storage_Path: /auto0-49
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-50'
-I:Created '/auto0-50' folder.
-I:Can't probe device /dev/block//mmcblk0p29
-I:Unable to mount '/auto0-50'
-I:Actual block device: '/dev/block//mmcblk0p29', current file system: 'auto'
-/auto0-50 | /dev/block//mmcblk0p29 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p29
-   Display_Name: Storage 50
-   Storage_Name: Storage 50
-   Backup_Path: /auto0-50
-   Backup_Name: auto0-50
-   Backup_Display_Name: auto0-50
-   Storage_Path: /auto0-50
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-51'
-I:Created '/auto0-51' folder.
-I:Can't probe device /dev/block//mmcblk0p59
-I:Unable to mount '/auto0-51'
-I:Actual block device: '/dev/block//mmcblk0p59', current file system: 'auto'
-/auto0-51 | /dev/block//mmcblk0p59 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p59
-   Display_Name: Storage 51
-   Storage_Name: Storage 51
-   Backup_Path: /auto0-51
-   Backup_Name: auto0-51
-   Backup_Display_Name: auto0-51
-   Storage_Path: /auto0-51
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-52'
-I:Created '/auto0-52' folder.
-I:Can't probe device /dev/block//mmcblk0p16
-I:Unable to mount '/auto0-52'
-I:Actual block device: '/dev/block//mmcblk0p16', current file system: 'auto'
-/auto0-52 | /dev/block//mmcblk0p16 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p16
-   Display_Name: Storage 52
-   Storage_Name: Storage 52
-   Backup_Path: /auto0-52
-   Backup_Name: auto0-52
-   Backup_Display_Name: auto0-52
-   Storage_Path: /auto0-52
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-53'
-I:Created '/auto0-53' folder.
-I:Can't probe device /dev/block//mmcblk0p82
-I:Unable to mount '/auto0-53'
-I:Actual block device: '/dev/block//mmcblk0p82', current file system: 'auto'
-/auto0-53 | /dev/block//mmcblk0p82 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p82
-   Display_Name: Storage 53
-   Storage_Name: Storage 53
-   Backup_Path: /auto0-53
-   Backup_Name: auto0-53
-   Backup_Display_Name: auto0-53
-   Storage_Path: /auto0-53
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-54'
-I:Created '/auto0-54' folder.
-I:Can't probe device /dev/block//mmcblk0p22
-I:Unable to mount '/auto0-54'
-I:Actual block device: '/dev/block//mmcblk0p22', current file system: 'auto'
-/auto0-54 | /dev/block//mmcblk0p22 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p22
-   Display_Name: Storage 54
-   Storage_Name: Storage 54
-   Backup_Path: /auto0-54
-   Backup_Name: auto0-54
-   Backup_Display_Name: auto0-54
-   Storage_Path: /auto0-54
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-55'
-I:Created '/auto0-55' folder.
-/auto0-55 | /dev/block//mmcblk0p46 | Size: 63MB Used: 0MB Free: 63MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p46
-   Display_Name: Storage 55
-   Storage_Name: Storage 55
-   Backup_Path: /auto0-55
-   Backup_Name: auto0-55
-   Backup_Display_Name: auto0-55
-   Storage_Path: /auto0-55
-   Current_File_System: vfat
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-56'
-I:Created '/auto0-56' folder.
-I:Can't probe device /dev/block//mmcblk0p24
-I:Unable to mount '/auto0-56'
-I:Actual block device: '/dev/block//mmcblk0p24', current file system: 'auto'
-/auto0-56 | /dev/block//mmcblk0p24 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p24
-   Display_Name: Storage 56
-   Storage_Name: Storage 56
-   Backup_Path: /auto0-56
-   Backup_Name: auto0-56
-   Backup_Display_Name: auto0-56
-   Storage_Path: /auto0-56
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-57'
-I:Created '/auto0-57' folder.
-I:Can't probe device /dev/block//mmcblk0p4
-I:Unable to mount '/auto0-57'
-I:Actual block device: '/dev/block//mmcblk0p4', current file system: 'auto'
-/auto0-57 | /dev/block//mmcblk0p4 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p4
-   Display_Name: Storage 57
-   Storage_Name: Storage 57
-   Backup_Path: /auto0-57
-   Backup_Name: auto0-57
-   Backup_Display_Name: auto0-57
-   Storage_Path: /auto0-57
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-58'
-I:Created '/auto0-58' folder.
-I:Can't probe device /dev/block//mmcblk0p18
-I:Unable to mount '/auto0-58'
-I:Actual block device: '/dev/block//mmcblk0p18', current file system: 'auto'
-/auto0-58 | /dev/block//mmcblk0p18 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p18
-   Display_Name: Storage 58
-   Storage_Name: Storage 58
-   Backup_Path: /auto0-58
-   Backup_Name: auto0-58
-   Backup_Display_Name: auto0-58
-   Storage_Path: /auto0-58
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-59'
-I:Created '/auto0-59' folder.
-I:Can't probe device /dev/block//mmcblk0p21
-I:Unable to mount '/auto0-59'
-I:Actual block device: '/dev/block//mmcblk0p21', current file system: 'auto'
-/auto0-59 | /dev/block//mmcblk0p21 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p21
-   Display_Name: Storage 59
-   Storage_Name: Storage 59
-   Backup_Path: /auto0-59
-   Backup_Name: auto0-59
-   Backup_Display_Name: auto0-59
-   Storage_Path: /auto0-59
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-60'
-I:Created '/auto0-60' folder.
-/auto0-60 | /dev/block//mmcblk0p48 | Size: 359MB Used: 97MB Free: 262MB Backup Size: 97MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p48
-   Display_Name: Storage 60
-   Storage_Name: Storage 60
-   Backup_Path: /auto0-60
-   Backup_Name: auto0-60
-   Backup_Display_Name: auto0-60
-   Storage_Path: /auto0-60
-   Current_File_System: vfat
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-61'
-I:Created '/auto0-61' folder.
-I:Can't probe device /dev/block//mmcblk0p56
-I:Unable to mount '/auto0-61'
-I:Actual block device: '/dev/block//mmcblk0p56', current file system: 'auto'
-/auto0-61 | /dev/block//mmcblk0p56 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p56
-   Display_Name: Storage 61
-   Storage_Name: Storage 61
-   Backup_Path: /auto0-61
-   Backup_Name: auto0-61
-   Backup_Display_Name: auto0-61
-   Storage_Path: /auto0-61
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-62'
-I:Created '/auto0-62' folder.
-I:Can't probe device /dev/block//mmcblk0p33
-I:Unable to mount '/auto0-62'
-I:Actual block device: '/dev/block//mmcblk0p33', current file system: 'auto'
-/auto0-62 | /dev/block//mmcblk0p33 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p33
-   Display_Name: Storage 62
-   Storage_Name: Storage 62
-   Backup_Path: /auto0-62
-   Backup_Name: auto0-62
-   Backup_Display_Name: auto0-62
-   Storage_Path: /auto0-62
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-63'
-I:Created '/auto0-63' folder.
-I:Can't probe device /dev/block//mmcblk0p31
-I:Unable to mount '/auto0-63'
-I:Actual block device: '/dev/block//mmcblk0p31', current file system: 'auto'
-/auto0-63 | /dev/block//mmcblk0p31 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p31
-   Display_Name: Storage 63
-   Storage_Name: Storage 63
-   Backup_Path: /auto0-63
-   Backup_Name: auto0-63
-   Backup_Display_Name: auto0-63
-   Storage_Path: /auto0-63
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-64'
-I:Created '/auto0-64' folder.
-I:Can't probe device /dev/block//mmcblk0p58
-I:Unable to mount '/auto0-64'
-I:Actual block device: '/dev/block//mmcblk0p58', current file system: 'auto'
-/auto0-64 | /dev/block//mmcblk0p58 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p58
-   Display_Name: Storage 64
-   Storage_Name: Storage 64
-   Backup_Path: /auto0-64
-   Backup_Name: auto0-64
-   Backup_Display_Name: auto0-64
-   Storage_Path: /auto0-64
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-65'
-I:Created '/auto0-65' folder.
-I:Can't probe device /dev/block//mmcblk0p63
-I:Unable to mount '/auto0-65'
-I:Actual block device: '/dev/block//mmcblk0p63', current file system: 'auto'
-/auto0-65 | /dev/block//mmcblk0p63 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p63
-   Display_Name: Storage 65
-   Storage_Name: Storage 65
-   Backup_Path: /auto0-65
-   Backup_Name: auto0-65
-   Backup_Display_Name: auto0-65
-   Storage_Path: /auto0-65
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-66'
-I:Created '/auto0-66' folder.
-I:Can't probe device /dev/block//mmcblk0p71
-I:Unable to mount '/auto0-66'
-I:Actual block device: '/dev/block//mmcblk0p71', current file system: 'auto'
-/auto0-66 | /dev/block//mmcblk0p71 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p71
-   Display_Name: Storage 66
-   Storage_Name: Storage 66
-   Backup_Path: /auto0-66
-   Backup_Name: auto0-66
-   Backup_Display_Name: auto0-66
-   Storage_Path: /auto0-66
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-67'
-I:Created '/auto0-67' folder.
-I:Can't probe device /dev/block//mmcblk0p13
-I:Unable to mount '/auto0-67'
-I:Actual block device: '/dev/block//mmcblk0p13', current file system: 'auto'
-/auto0-67 | /dev/block//mmcblk0p13 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p13
-   Display_Name: Storage 67
-   Storage_Name: Storage 67
-   Backup_Path: /auto0-67
-   Backup_Name: auto0-67
-   Backup_Display_Name: auto0-67
-   Storage_Path: /auto0-67
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-68'
-I:Created '/auto0-68' folder.
-I:Can't probe device /dev/block//mmcblk0p5
-I:Unable to mount '/auto0-68'
-I:Actual block device: '/dev/block//mmcblk0p5', current file system: 'auto'
-/auto0-68 | /dev/block//mmcblk0p5 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p5
-   Display_Name: Storage 68
-   Storage_Name: Storage 68
-   Backup_Path: /auto0-68
-   Backup_Name: auto0-68
-   Backup_Display_Name: auto0-68
-   Storage_Path: /auto0-68
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-69'
-I:Created '/auto0-69' folder.
-I:Can't probe device /dev/block//mmcblk0p35
-I:Unable to mount '/auto0-69'
-I:Actual block device: '/dev/block//mmcblk0p35', current file system: 'auto'
-/auto0-69 | /dev/block//mmcblk0p35 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p35
-   Display_Name: Storage 69
-   Storage_Name: Storage 69
-   Backup_Path: /auto0-69
-   Backup_Name: auto0-69
-   Backup_Display_Name: auto0-69
-   Storage_Path: /auto0-69
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-70'
-I:Created '/auto0-70' folder.
-I:Can't probe device /dev/block//mmcblk0p15
-I:Unable to mount '/auto0-70'
-I:Actual block device: '/dev/block//mmcblk0p15', current file system: 'auto'
-/auto0-70 | /dev/block//mmcblk0p15 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p15
-   Display_Name: Storage 70
-   Storage_Name: Storage 70
-   Backup_Path: /auto0-70
-   Backup_Name: auto0-70
-   Backup_Display_Name: auto0-70
-   Storage_Path: /auto0-70
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-71'
-I:Created '/auto0-71' folder.
-I:Can't probe device /dev/block//mmcblk0p27
-I:Unable to mount '/auto0-71'
-I:Actual block device: '/dev/block//mmcblk0p27', current file system: 'auto'
-/auto0-71 | /dev/block//mmcblk0p27 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p27
-   Display_Name: Storage 71
-   Storage_Name: Storage 71
-   Backup_Path: /auto0-71
-   Backup_Name: auto0-71
-   Backup_Display_Name: auto0-71
-   Storage_Path: /auto0-71
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-72'
-I:Created '/auto0-72' folder.
-I:Can't probe device /dev/block//mmcblk0p57
-I:Unable to mount '/auto0-72'
-I:Actual block device: '/dev/block//mmcblk0p57', current file system: 'auto'
-/auto0-72 | /dev/block//mmcblk0p57 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p57
-   Display_Name: Storage 72
-   Storage_Name: Storage 72
-   Backup_Path: /auto0-72
-   Backup_Name: auto0-72
-   Backup_Display_Name: auto0-72
-   Storage_Path: /auto0-72
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-73'
-I:Created '/auto0-73' folder.
-I:Can't probe device /dev/block//mmcblk0rpmb
-I:Unable to mount '/auto0-73'
-I:Actual block device: '/dev/block//mmcblk0rpmb', current file system: 'auto'
-/auto0-73 | /dev/block//mmcblk0rpmb | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0rpmb
-   Display_Name: Storage 73
-   Storage_Name: Storage 73
-   Backup_Path: /auto0-73
-   Backup_Name: auto0-73
-   Backup_Display_Name: auto0-73
-   Storage_Path: /auto0-73
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-74'
-I:Created '/auto0-74' folder.
-I:Can't probe device /dev/block//mmcblk0p7
-I:Unable to mount '/auto0-74'
-I:Actual block device: '/dev/block//mmcblk0p7', current file system: 'auto'
-/auto0-74 | /dev/block//mmcblk0p7 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p7
-   Display_Name: Storage 74
-   Storage_Name: Storage 74
-   Backup_Path: /auto0-74
-   Backup_Name: auto0-74
-   Backup_Display_Name: auto0-74
-   Storage_Path: /auto0-74
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-75'
-I:Created '/auto0-75' folder.
-I:Can't probe device /dev/block//mmcblk0p37
-I:Unable to mount '/auto0-75'
-I:Actual block device: '/dev/block//mmcblk0p37', current file system: 'auto'
-/auto0-75 | /dev/block//mmcblk0p37 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p37
-   Display_Name: Storage 75
-   Storage_Name: Storage 75
-   Backup_Path: /auto0-75
-   Backup_Name: auto0-75
-   Backup_Display_Name: auto0-75
-   Storage_Path: /auto0-75
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-76'
-I:Created '/auto0-76' folder.
-I:Can't probe device /dev/block//mmcblk0p20
-I:Unable to mount '/auto0-76'
-I:Actual block device: '/dev/block//mmcblk0p20', current file system: 'auto'
-/auto0-76 | /dev/block//mmcblk0p20 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p20
-   Display_Name: Storage 76
-   Storage_Name: Storage 76
-   Backup_Path: /auto0-76
-   Backup_Name: auto0-76
-   Backup_Display_Name: auto0-76
-   Storage_Path: /auto0-76
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-77'
-I:Created '/auto0-77' folder.
-I:Can't probe device /dev/block//mmcblk0p87
-I:Unable to mount '/auto0-77'
-I:Actual block device: '/dev/block//mmcblk0p87', current file system: 'auto'
-/auto0-77 | /dev/block//mmcblk0p87 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p87
-   Display_Name: Storage 77
-   Storage_Name: Storage 77
-   Backup_Path: /auto0-77
-   Backup_Name: auto0-77
-   Backup_Display_Name: auto0-77
-   Storage_Path: /auto0-77
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-78'
-I:Created '/auto0-78' folder.
-I:Can't probe device /dev/block//mmcblk0p67
-I:Unable to mount '/auto0-78'
-I:Actual block device: '/dev/block//mmcblk0p67', current file system: 'auto'
-/auto0-78 | /dev/block//mmcblk0p67 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p67
-   Display_Name: Storage 78
-   Storage_Name: Storage 78
-   Backup_Path: /auto0-78
-   Backup_Name: auto0-78
-   Backup_Display_Name: auto0-78
-   Storage_Path: /auto0-78
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-79'
-I:Created '/auto0-79' folder.
-I:Can't probe device /dev/block//mmcblk0p79
-I:Unable to mount '/auto0-79'
-I:Actual block device: '/dev/block//mmcblk0p79', current file system: 'auto'
-/auto0-79 | /dev/block//mmcblk0p79 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p79
-   Display_Name: Storage 79
-   Storage_Name: Storage 79
-   Backup_Path: /auto0-79
-   Backup_Name: auto0-79
-   Backup_Display_Name: auto0-79
-   Storage_Path: /auto0-79
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-80'
-I:Created '/auto0-80' folder.
-/auto0-80 | /dev/block//mmcblk0p50 | Size: 27MB Used: 13MB Free: 14MB Backup Size: 13MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p50
-   Display_Name: Storage 80
-   Storage_Name: Storage 80
-   Backup_Path: /auto0-80
-   Backup_Name: auto0-80
-   Backup_Display_Name: auto0-80
-   Storage_Path: /auto0-80
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-81'
-I:Created '/auto0-81' folder.
-I:Can't probe device /dev/block//mmcblk0p9
-I:Unable to mount '/auto0-81'
-I:Actual block device: '/dev/block//mmcblk0p9', current file system: 'auto'
-/auto0-81 | /dev/block//mmcblk0p9 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p9
-   Display_Name: Storage 81
-   Storage_Name: Storage 81
-   Backup_Path: /auto0-81
-   Backup_Name: auto0-81
-   Backup_Display_Name: auto0-81
-   Storage_Path: /auto0-81
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-82'
-I:Created '/auto0-82' folder.
-I:Can't probe device /dev/block//mmcblk0p60
-I:Unable to mount '/auto0-82'
-I:Actual block device: '/dev/block//mmcblk0p60', current file system: 'auto'
-/auto0-82 | /dev/block//mmcblk0p60 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p60
-   Display_Name: Storage 82
-   Storage_Name: Storage 82
-   Backup_Path: /auto0-82
-   Backup_Name: auto0-82
-   Backup_Display_Name: auto0-82
-   Storage_Path: /auto0-82
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-83'
-I:Created '/auto0-83' folder.
-I:Can't probe device /dev/block//mmcblk0p80
-I:Unable to mount '/auto0-83'
-I:Actual block device: '/dev/block//mmcblk0p80', current file system: 'auto'
-/auto0-83 | /dev/block//mmcblk0p80 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p80
-   Display_Name: Storage 83
-   Storage_Name: Storage 83
-   Backup_Path: /auto0-83
-   Backup_Name: auto0-83
-   Backup_Display_Name: auto0-83
-   Storage_Path: /auto0-83
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-84'
-I:Created '/auto0-84' folder.
-/auto0-84 | /dev/block//mmcblk0p66 | Size: 11MB Used: 0MB Free: 11MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p66
-   Display_Name: Storage 84
-   Storage_Name: Storage 84
-   Backup_Path: /auto0-84
-   Backup_Name: auto0-84
-   Backup_Display_Name: auto0-84
-   Storage_Path: /auto0-84
-   Current_File_System: ext4
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-85'
-I:Created '/auto0-85' folder.
-I:Can't probe device /dev/block//mmcblk0p76
-I:Unable to mount '/auto0-85'
-I:Actual block device: '/dev/block//mmcblk0p76', current file system: 'auto'
-/auto0-85 | /dev/block//mmcblk0p76 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p76
-   Display_Name: Storage 85
-   Storage_Name: Storage 85
-   Backup_Path: /auto0-85
-   Backup_Name: auto0-85
-   Backup_Display_Name: auto0-85
-   Storage_Path: /auto0-85
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-86'
-I:Created '/auto0-86' folder.
-I:Can't probe device /dev/block//mmcblk0p78
-I:Unable to mount '/auto0-86'
-I:Actual block device: '/dev/block//mmcblk0p78', current file system: 'auto'
-/auto0-86 | /dev/block//mmcblk0p78 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p78
-   Display_Name: Storage 86
-   Storage_Name: Storage 86
-   Backup_Path: /auto0-86
-   Backup_Name: auto0-86
-   Backup_Display_Name: auto0-86
-   Storage_Path: /auto0-86
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-87'
-I:Created '/auto0-87' folder.
-I:Can't probe device /dev/block//mmcblk0p43
-I:Unable to mount '/auto0-87'
-I:Actual block device: '/dev/block//mmcblk0p43', current file system: 'auto'
-/auto0-87 | /dev/block//mmcblk0p43 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p43
-   Display_Name: Storage 87
-   Storage_Name: Storage 87
-   Backup_Path: /auto0-87
-   Backup_Name: auto0-87
-   Backup_Display_Name: auto0-87
-   Storage_Path: /auto0-87
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:Processing '/auto0-88'
-I:Created '/auto0-88' folder.
-I:Can't probe device /dev/block//mmcblk0p85
-I:Unable to mount '/auto0-88'
-I:Actual block device: '/dev/block//mmcblk0p85', current file system: 'auto'
-/auto0-88 | /dev/block//mmcblk0p85 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk0p85
-   Display_Name: Storage 88
-   Storage_Name: Storage 88
-   Backup_Path: /auto0-88
-   Backup_Name: auto0-88
-   Backup_Display_Name: auto0-88
-   Storage_Path: /auto0-88
-   Current_File_System: auto
-   Fstab_File_System: auto
-   Backup_Method: files
-
-I:[MTP] created new mtpserver object
-E:[MTP] Failed to start usb driver!
-I:[MTP] mtppipe add storage 65541 '/sdcard1'
 I:Set page: 'mount'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2551,9 +725,6 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Found a match 'mmcblk0rpmb' '/devices/platform/soc/'
-I:Decrypt_Adopted: no crypto support
-I:No adopted storage so finding actual block device
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2578,6 +749,9 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Can't probe device /dev/block/by-name/boot_b
+Failed to mount '/boot' (Invalid argument)
+I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2598,6 +772,7 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Unable to find partition for path '/mnt'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2620,137 +795,9 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Found a match 'mmcblk0rpmb' '/devices/platform/soc/'
-I:Decrypt_Adopted: no crypto support
-I:No adopted storage so finding actual block device
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Found a match 'mmcblk1' '/devices/platform/soc/'
-I:Decrypt_Adopted: no crypto support
-I:No adopted storage so finding actual block device
-I:Found an additional entry for '/auto0-1'
-I:Processing '/auto0-1'
-I:Unable to mount '/auto0-1'
-I:Actual block device: '/dev/block//mmcblk1p1', current file system: 'vfat'
-/auto0-1 | /dev/block//mmcblk1p1 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Is_SubPartition Removable IsPresent Is_Storage 
-   SubPartition_Of: /auto0
-   Primary_Block_Device: /dev/block//mmcblk1p1
-   Display_Name: Storage 1
-   Storage_Name: Storage 1
-   Backup_Path: /auto0-1
-   Backup_Display_Name: auto0-1
-   Storage_Path: /auto0-1
-   Current_File_System: vfat
-   Fstab_File_System: auto
-   Backup_Method: none
-
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Can't probe device /dev/block/by-name/boot_b
+Failed to mount '/boot' (Invalid argument)
+I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2774,6 +821,477 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Can't probe device /dev/block/mmcblk0p86
 Failed to mount '/data' (Invalid argument)
 I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Can't probe device /dev/block/by-name/boot_b
+Failed to mount '/boot' (Invalid argument)
+I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Unable to mount '/usb_otg'
+I:Actual block device: '', current file system: 'vfat'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Failed to mount '/vendor' (Permission denied)
+I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Failed to mount '/vendor' (Permission denied)
+I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Failed to mount '/vendor' (Permission denied)
+I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Failed to mount '/vendor' (Permission denied)
+I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Failed to mount '/vendor' (Permission denied)
+I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Unable to find partition for path '/mnt'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Unable to find partition for path '/mnt'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Unable to find partition for path '/mnt'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Unable to find partition for path '/mnt'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2825,8 +1343,6 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Unable to mount '/auto1'
-I:Actual block device: '', current file system: 'auto'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2863,8 +1379,6 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Unable to mount '/auto2'
-I:Actual block device: '', current file system: 'auto'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2931,8 +1445,6 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Unable to mount '/usb_otg'
-I:Actual block device: '', current file system: 'vfat'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2959,11 +1471,11 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Can't probe device /dev/block//mmcblk0p32
-I:Unable to mount '/auto0-1'
-I:Actual block device: '/dev/block//mmcblk0p32', current file system: 'auto'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Can't probe device /dev/block/by-name/boot_b
+Failed to mount '/boot' (Invalid argument)
+I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -2990,6 +1502,7 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+Unable to find partition for path '/mnt'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -3086,6 +1599,9 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Can't probe device /dev/block/mmcblk0p86
+Failed to mount '/data' (Invalid argument)
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
@@ -3122,204 +1638,3 @@ I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
 I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Set page: 'system_readonly_check'
-I:operation_start: 'Check Partition Lifetime Writes'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/vendor'
-I:operation_start: 'Toggle System Mount'
-Unable to find partition for path '/system_root'
-I:operation_end - status=1
-I:Set page: 'mount'
-I:operation_end - status=1
-I:Is_Mounted: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/vendor'
-I:operation_start: 'Toggle System Mount'
-Unable to find partition for path '/system_root'
-I:operation_end - status=1
-I:Set page: 'mount'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Set page: 'system_readonly_check'
-I:operation_start: 'Check Partition Lifetime Writes'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/vendor'
-I:operation_start: 'Toggle System Mount'
-Unable to find partition for path '/system_root'
-I:operation_end - status=1
-I:Set page: 'mount'
-I:operation_end - status=1
-I:Is_Mounted: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/vendor'
-I:operation_start: 'Toggle System Mount'
-Unable to find partition for path '/system_root'
-I:operation_end - status=1
-I:Set page: 'mount'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Set page: 'system_readonly_check'
-I:operation_start: 'Check Partition Lifetime Writes'
-I:Is_Mounted: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/vendor'
-I:operation_start: 'Toggle System Mount'
-Unable to find partition for path '/system_root'
-I:operation_end - status=1
-I:Set page: 'mount'
-I:operation_end - status=1
-I:Is_Mounted: Unable to find partition for path '/system_root'
-I:Is_Mounted: Unable to find partition for path '/vendor'
-I:operation_start: 'Toggle System Mount'
-Unable to find partition for path '/system_root'
-I:operation_end - status=1
-I:Set page: 'mount'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'install'
-I:Set overlay: 'slideout'
-Screenshot was saved to /tmp/Screenshot_1970-09-05-14-39-37.png

@@ -6,8 +6,13 @@ adapted for Android 12 based on kernel info from from https://github.com/lineage
 
 -   boots
 -   adb connects
--   decryption is broken
--   mounting partitions is broken
+-   core partitions are mountable, magisk apk installs correctly
+
+## Testing
+
+-   get every partition working [ ]
+-   get backups working [ ]
+-   possibly get FBE working [ ]
 
 ## Compiling
 
