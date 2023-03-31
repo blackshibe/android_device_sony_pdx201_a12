@@ -1,5 +1,5 @@
-Starting TWRP 3.7.0_12-0-2fa94a72 on Sat Sep  5 21:18:25 1970
- (pid 465)
+Starting TWRP 3.7.0_12-0-2fa94a72 on Thu Jan  1 14:35:36 1970
+ (pid 463)
 RECOVERY_SDCARD_ON_DATA := true
 I:Lun file '/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file'
 TW_INCLUDE_CRYPTO := true
@@ -161,8 +161,8 @@ I:Loading page restore_keymaster
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
 I:Switching packages (TWRP)
-boot command: boot-recovery
 I:Startup Commands: 
+I:failed to read default fstab
 ro.boot.memcg=1
 ro.boot.vbmeta.avb_version=1.0
 ro.boot.dtb_idx=7
@@ -181,18 +181,18 @@ ro.bootmode=unknown
 ro.hardware=qcom
 ro.revision=0
 ro.bootloader=xboot
-ro.boottime.adbd=3991959822
-ro.boottime.init=1508735669
-ro.boottime.init.selinux=84695113
-ro.boottime.init.first_stage=2039253432
-ro.boottime.init.cold_boot_wait=236
-ro.boottime.logd=3914899606
-ro.boottime.ueventd=3670330207
-ro.boottime.recovery=3933984869
-ro.boottime.keystore2=3924894034
-ro.boottime.servicemanager=3919524815
-ro.boottime.hwservicemanager=3917212680
-ro.boottime.vndservicemanager=3922051743
+ro.boottime.adbd=1993088530
+ro.boottime.init=1522041972
+ro.boottime.init.selinux=85026675
+ro.boottime.init.first_stage=34471566
+ro.boottime.init.cold_boot_wait=239
+ro.boottime.logd=1926549617
+ro.boottime.ueventd=1679739332
+ro.boottime.recovery=1944768004
+ro.boottime.keystore2=1936613993
+ro.boottime.servicemanager=1931158315
+ro.boottime.hwservicemanager=1928850346
+ro.boottime.vndservicemanager=1933758472
 ro.odm.build.date=Thu Mar 30 23:55:10 CEST 2023
 ro.odm.build.date.utc=1680213310
 ro.odm.build.version.incremental=eng.blacks.20230330.235354
@@ -366,14 +366,14 @@ init.svc.servicemanager=running
 init.svc.hwservicemanager=running
 init.svc.vndservicemanager=running
 init.svc.adbd=restarting
-init.svc_debug_pid.adbd=492
-init.svc_debug_pid.logd=455
-init.svc_debug_pid.ueventd=445
-init.svc_debug_pid.recovery=465
-init.svc_debug_pid.keystore2=459
-init.svc_debug_pid.servicemanager=457
-init.svc_debug_pid.hwservicemanager=456
-init.svc_debug_pid.vndservicemanager=458
+init.svc_debug_pid.adbd=484
+init.svc_debug_pid.logd=453
+init.svc_debug_pid.ueventd=442
+init.svc_debug_pid.recovery=463
+init.svc_debug_pid.keystore2=457
+init.svc_debug_pid.servicemanager=455
+init.svc_debug_pid.hwservicemanager=454
+init.svc_debug_pid.vndservicemanager=456
 keystore.crash_count=0
 ro.logd.kernel=true
 persist.debug.dalvik.vm.core_platform_api_policy=just-warn
@@ -414,14 +414,14 @@ ro.crypto.allow_encrypt_override=true
 => Processing /etc/recovery.fstab
 I:Reading /etc/twrp.flags
 I:Reading /etc/recovery.fstab
+I:Processing '/boot'
 I:Processing '/mnt/vendor/persist'
 I:Created '/mnt/vendor/persist' folder.
-I:Processing '/boot'
-I:Created '/boot' folder.
 I:Processing '/misc'
 I:Processing remaining twrp.flags
 I:Processing '/data'
 I:Processing '/metadata'
+I:Processing '/mnt/vendor/persist'
 I:Processing '/odm'
 I:Processing '/product'
 I:Created '/product' folder.
@@ -433,36 +433,17 @@ I:Processing '/usb_otg'
 I:Created '/usb_otg' folder.
 I:Processing '/vendor'
 I:Done processing fstab files
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-Could not mount /data and unable to find crypto footer.
 I:Setting up '/data' as data/media emulated storage.
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-I:Can't probe device /dev/block/mmcblk0p86
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-Unable to recreate /data/media folder.
+I:Setting up '/data' as data/media emulated storage.
+I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-E:Cannot decrypt adopted storage because /data will not mount
+I:Decrypt adopted storage starting
+I:PageManager::LoadFileToBuffer loading filename: '/data/system/storage.xml' directly
+I:No /data/system/storage.xml for adopted storage
 Updating partition details...
-I:Can't probe device /dev/block/by-name/boot_b
-Failed to mount '/boot' (Invalid argument)
-I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
-I:Can't probe device /dev/block/mmcblk0p86
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Data backup size is 0MB, free: 102725MB.
 I:checking for twrp app
 ...done
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-Unable to mount storage
 /super | /dev/block/by-name/super | Size: 0MB
    Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
    Alternate_Block_Device: /dev/block/by-name/super
@@ -483,14 +464,28 @@ I:Overriding ro.product.name with value: "lineage_pdx201" from property ro.produ
 copying '/data/misc/keystore/persistent.sqlite' to '/tmp/misc/keystore/persistent.sqlite'
 SELinux contexts loaded from /file_contexts
 Full SELinux support is present.
+I:No recovery folder found. Using default folder.
 I:Switching packages (TWRP)
 
 
 Partition Logs:
+/boot | /dev/block/by-name/boot_b | Size: 64MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/by-name/boot
+   Display_Name: Boot
+   Storage_Name: boot
+   Backup_Path: /boot
+   Backup_Name: boot
+   Backup_Display_Name: Boot
+   Storage_Path: /boot
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
 /mnt/vendor/persist | /dev/block/mmcblk0p2 | Size: 26MB Used: 1MB Free: 25MB Backup Size: 1MB
    Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
    Primary_Block_Device: /dev/block/mmcblk0p2
-   Display_Name: mnt/vendor/persist
+   Display_Name: Persist
    Storage_Name: mnt/vendor/persist
    Backup_Path: /mnt/vendor/persist
    Backup_Name: mnt/vendor/persist
@@ -499,21 +494,6 @@ Partition Logs:
    Current_File_System: ext4
    Fstab_File_System: ext4
    Backup_Method: files
-   Mount_Flags: 1030, Mount_Options: barrier=1
-
-/boot | /dev/block/by-name/boot_b | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent SlotSelect Mount_Read_Only 
-   Primary_Block_Device: /dev/block/by-name/boot
-   Display_Name: Boot
-   Storage_Name: boot
-   Backup_Path: /boot
-   Backup_Name: boot
-   Backup_Display_Name: Boot
-   Storage_Path: /boot
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-   Mount_Flags: 0, Mount_Options: barrier=1,discard
 
 /misc | /dev/block/mmcblk0p62 | Size: 1MB
    Flags: IsPresent 
@@ -528,8 +508,8 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/data | /dev/block/mmcblk0p86 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+/data | /dev/block/mmcblk0p86 | Size: 104475MB Used: 0MB Free: 102725MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Is_Encrypted Is_Decrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
    Symlink_Path: /data/media
    Symlink_Mount_Point: /sdcard
    Primary_Block_Device: /dev/block/mmcblk0p86
@@ -553,6 +533,19 @@ Partition Logs:
    Backup_Name: metadata
    Backup_Display_Name: Metadata
    Storage_Path: /metadata
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/mnt/vendor/persist | /dev/block/mmcblk0p2 | Size: 26MB Used: 1MB Free: 25MB Backup Size: 1MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p2
+   Display_Name: Persist
+   Storage_Name: Persist
+   Backup_Path: /mnt/vendor/persist
+   Backup_Name: mnt/vendor/persist
+   Backup_Display_Name: Persist
+   Storage_Path: /mnt/vendor/persist
    Current_File_System: ext4
    Fstab_File_System: ext4
    Backup_Method: files
@@ -583,7 +576,7 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/sdcard1 | /dev/block/mmcblk1p1 | Size: 30428MB Used: 11654MB Free: 18773MB Backup Size: 11654MB
+/sdcard1 | /dev/block/mmcblk1p1 | Size: 30428MB Used: 11573MB Free: 18854MB Backup Size: 11573MB
    Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable IsPresent Is_Storage 
    Primary_Block_Device: /dev/block/mmcblk1p1
    Alternate_Block_Device: /dev/block/mmcblk1
@@ -649,24 +642,34 @@ Partition Logs:
    Current_File_System: emmc
    Backup_Method: dd
 
-I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-09-05--21-18-26
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-01-01--14-35-37
 I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
 I:TWFunc::Fixup_Time: will attempt to use the ats files now.
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:TWFunc::Fixup_Time: no ats files found, leaving untouched!
+I:No recovery folder found. Using default folder.
 I:Attempt to load settings from settings file...
 I:InfoManager file '/.twrps' not found.
+I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
-I:Unable to open: /data/recovery/.version. Data may be unmounted. Error: No such file or directory
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Version number saved to '/data/recovery/.version'
 I:Unable to mount '/usb_otg'
 I:Actual block device: '', current file system: 'vfat'
 I:TWFunc::Set_Brightness: Setting brightness control to 1200
+I:Starting MTP
+I:Cannot find file /sys/class/android_usb/android0/idVendor
+I:Cannot find file /sys/class/android_usb/android0/idProduct
+I:[MTP] Starting MTP
+I:sending message to add 65537 '/data/media' 'Userdata'
+I:Message sent, add storage ID: 65537 '/data/media'
+I:sending message to add 65538 '/sdcard1' 'MicroSD'
+I:Message sent, add storage ID: 65538 '/sdcard1'
+MTP Enabled
 I:Switching packages (TWRP)
 I:Set page: 'system_readonly'
+I:[MTP] created new mtpserver object
+E:[MTP] Failed to start usb driver!
+I:[MTP] mtppipe add storage 65537 '/data/media'
+I:[MTP] mtppipe add storage 65538 '/sdcard1'
 I:operation_start: 'Toggle System Mount'
 I:operation_end - status=0
 I:Set page: 'main'
@@ -675,966 +678,60 @@ I:Set page: 'main2'
 I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
-I:Recreating /data/recovery/ folder.
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-I:Path /data/recovery/log.gz does not exist. Unable to copy file to /data/recovery/last_log.gz
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 I:Starting Adb Backup FIFO
 I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
 parsing languageFile
 parsing languageFile done
 I:Translating partition display names
+I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
 I:checking for twrp app
-I:Can't probe device /dev/block/mmcblk0p86
-I:Unable to mount '/data'
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-I:Data partition cannot be mounted during app check
 I:App not installed
 I:Switching packages (TWRP)
 I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
-I:Set page: 'mount'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Can't probe device /dev/block/by-name/boot_b
-Failed to mount '/boot' (Invalid argument)
-I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Unable to find partition for path '/mnt'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Can't probe device /dev/block/by-name/boot_b
-Failed to mount '/boot' (Invalid argument)
-I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Can't probe device /dev/block/mmcblk0p86
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Can't probe device /dev/block/by-name/boot_b
-Failed to mount '/boot' (Invalid argument)
-I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Unable to mount '/usb_otg'
-I:Actual block device: '', current file system: 'vfat'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Failed to mount '/vendor' (Permission denied)
-I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Failed to mount '/vendor' (Permission denied)
-I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Failed to mount '/vendor' (Permission denied)
-I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Failed to mount '/vendor' (Permission denied)
-I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Failed to mount '/vendor' (Permission denied)
-I:Actual block device: '/dev/block/mapper/vendor_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Unable to find partition for path '/mnt'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Unable to find partition for path '/mnt'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Unable to find partition for path '/mnt'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Unable to find partition for path '/mnt'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Unable to find partition for path '/mnt'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Can't probe device /dev/block/by-name/boot_b
-Failed to mount '/boot' (Invalid argument)
-I:Actual block device: '/dev/block/by-name/boot_b', current file system: 'ext4'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-Unable to find partition for path '/mnt'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Can't probe device /dev/block/mmcblk0p86
-Failed to mount '/data' (Invalid argument)
-I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
-I:Is_Mounted: Unable to find partition for path '/mnt/vendor/persist'
+I:Set page: 'advanced'
+I:Set page: 'sideload'
+I:Set page: 'action_page'
+I:operation_start: 'Sideload'
+Starting ADB sideload feature...
+I:Cannot find file /sys/class/android_usb/android0/idVendor
+I:Cannot find file /sys/class/android_usb/android0/idProduct
+E:[MTP] request read returned -1, errno: 5I:Disabling MTP
+minadbd I 01-01 09:35:42   573   576 usb_ffs.cpp:275] opening control endpoint /dev/usb-ffs/adb/ep0
+minadbd I 01-01 09:35:42   573   576 usb.cpp:152] UsbFfsConnection constructed
+minadbd I 01-01 09:35:42   573   577 usb.cpp:259] UsbFfs-monitor thread spawned
+minadbd I 01-01 09:35:42   573   577 usb.cpp:298] USB event: FUNCTIONFS_BIND
+minadbd I 01-01 09:35:42   573   577 usb.cpp:298] USB event: FUNCTIONFS_ENABLE
+minadbd I 01-01 09:35:42   573   578 usb.cpp:405] UsbFfs-worker thread spawned
+minadbd I 01-01 09:35:43   573   573 adb.cpp:141] UsbFfs: already offline
+minadbd I 01-01 09:35:43   573   573 adb.cpp:358] authentication not required
+minadbd I 01-01 09:35:53   573   590 minadbd_services.cpp:111] sideload-host file size 782817352, block size 65536
+Installing zip file '/sideload/package.zip'
+unknown fuse request opcode 2016
+Unmounting System...
+I:AB zip
+Flashing A/B zip to inactive slot: A
+unknown fuse request opcode 2016
+Failed to parse build number in post-build-incremental=eng.blacks.20230329.002827.
+update_engine_sideload I 01-01 09:35:55   595   595 [INFO:sideload_main.cc(193)] Update Engine Sideloading starting
+cutils-trace E 01-01 09:35:55   595   595 Error opening trace file: No such file or directory (2)
+update_engine_sideload E 01-01 09:35:55   595   595 [ERROR:boot_control_android.cc(64)] Error getting bootctrl HIDL module.
+update_engine_sideload E 01-01 09:35:55   595   595 [ERROR:sideload_main.cc(147)] Error initializing the BootControlInterface.
+Updater process ended with ERROR: 1
+To flash additional zips, please reboot recovery to switch to the updated slot.
+I:Install took 0 second(s).
+minadbd W 01-01 09:35:56   573   573 sockets.cpp:279] timeout expired while flushing socket, closing
+minadbd I 01-01 09:35:56   573   590 minadbd_services.cpp:159] revents: 16
+I:[MTP] Starting MTP
+I:sending message to add 65537 '/data/media' 'Internal Storage'
+I:Message sent, add storage ID: 65537 '/data/media'
+I:sending message to add 65538 '/sdcard1' 'MicroSD'
+I:Message sent, add storage ID: 65538 '/sdcard1'
+I:Set page: 'action_complete'
+I:operation_end - status=1
+I:[MTP] created new mtpserver object
+E:[MTP] Failed to start usb driver!
+I:[MTP] mtppipe add storage 65537 '/data/media'
+I:[MTP] mtppipe add storage 65538 '/sdcard1'

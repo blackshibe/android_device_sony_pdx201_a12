@@ -132,7 +132,17 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
-    libxml2
+    libxml2 \
+    lubcurl \
+    lubstatslog \
+    update_engine_sideload
+
+# bootctrl HAL
+TARGET_RECOVERY_DEVICE_MODULES += \
+    bootctrl.default \
+    bootctrl.$(TARGET_BOARD_PLATFORM) \
+    bootctl
+
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
