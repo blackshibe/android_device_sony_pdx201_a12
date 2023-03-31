@@ -1,5 +1,5 @@
-Starting TWRP 3.7.0_12-0-2fa94a72 on Thu Jan  1 14:35:36 1970
- (pid 463)
+Starting TWRP 3.7.0_12-0-2fa94a72 on Thu Jan  1 17:50:47 1970
+ (pid 464)
 RECOVERY_SDCARD_ON_DATA := true
 I:Lun file '/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file'
 TW_INCLUDE_CRYPTO := true
@@ -181,18 +181,19 @@ ro.bootmode=unknown
 ro.hardware=qcom
 ro.revision=0
 ro.bootloader=xboot
-ro.boottime.adbd=1993088530
-ro.boottime.init=1522041972
-ro.boottime.init.selinux=85026675
-ro.boottime.init.first_stage=34471566
-ro.boottime.init.cold_boot_wait=239
-ro.boottime.logd=1926549617
-ro.boottime.ueventd=1679739332
-ro.boottime.recovery=1944768004
-ro.boottime.keystore2=1936613993
-ro.boottime.servicemanager=1931158315
-ro.boottime.hwservicemanager=1928850346
-ro.boottime.vndservicemanager=1933758472
+ro.boottime.adbd=2004594208
+ro.boottime.init=1538045776
+ro.boottime.init.selinux=84510946
+ro.boottime.init.first_stage=34481097
+ro.boottime.init.cold_boot_wait=242
+ro.boottime.logd=1945133994
+ro.boottime.vendor.keymaster-4-0-qti=2007550094
+ro.boottime.ueventd=1694967979
+ro.boottime.recovery=1963900350
+ro.boottime.keystore2=1954996807
+ro.boottime.servicemanager=1949734984
+ro.boottime.hwservicemanager=1947405817
+ro.boottime.vndservicemanager=1952193838
 ro.odm.build.date=Thu Mar 30 23:55:10 CEST 2023
 ro.odm.build.date.utc=1680213310
 ro.odm.build.version.incremental=eng.blacks.20230330.235354
@@ -335,6 +336,7 @@ ro.system.product.cpu.abilist64=arm64-v8a
 ro.postinstall.fstab.prefix=/system
 twrp.crash_counter=0
 twrp.action_complete=0
+crypto.ready=1
 prepdecrypt.loglevel=2
 ro.boot.slot_suffix=_b
 ro.boot.fstab_suffix=emmc
@@ -366,14 +368,15 @@ init.svc.servicemanager=running
 init.svc.hwservicemanager=running
 init.svc.vndservicemanager=running
 init.svc.adbd=restarting
-init.svc_debug_pid.adbd=484
-init.svc_debug_pid.logd=453
-init.svc_debug_pid.ueventd=442
-init.svc_debug_pid.recovery=463
-init.svc_debug_pid.keystore2=457
-init.svc_debug_pid.servicemanager=455
-init.svc_debug_pid.hwservicemanager=454
-init.svc_debug_pid.vndservicemanager=456
+init.svc_debug_pid.adbd=486
+init.svc_debug_pid.logd=454
+init.svc_debug_pid.vendor.keymaster-4-0-qti=487
+init.svc_debug_pid.ueventd=444
+init.svc_debug_pid.recovery=464
+init.svc_debug_pid.keystore2=458
+init.svc_debug_pid.servicemanager=456
+init.svc_debug_pid.hwservicemanager=455
+init.svc_debug_pid.vndservicemanager=457
 keystore.crash_count=0
 ro.logd.kernel=true
 persist.debug.dalvik.vm.core_platform_api_policy=just-warn
@@ -403,37 +406,49 @@ ro.odm.build.version.release_or_codename=16.1.0
 ro.odm.product.cpu.abilist=arm64-v8a
 ro.odm.product.cpu.abilist32=
 ro.odm.product.cpu.abilist64=arm64-v8a
+init.svc.vendor.keymaster-4-0-qti=running
 vendor.usb.controller=4e00000.dwc3
 vendor.gatekeeper.disable_spu=true
 ro.vendor.build.security_patch=2099-12-31
 ro.vndk.version=32
 ro.crypto.volume.filenames_mode=aes-256-cts
 ro.crypto.allow_encrypt_override=true
+ro.crypto.type=file
+ro.crypto.state=encrypted
 
 => Linking mtab
 => Processing /etc/recovery.fstab
 I:Reading /etc/twrp.flags
 I:Reading /etc/recovery.fstab
 I:Processing '/boot'
-I:Processing '/mnt/vendor/persist'
-I:Created '/mnt/vendor/persist' folder.
 I:Processing '/misc'
 I:Processing remaining twrp.flags
 I:Processing '/data'
 I:Processing '/metadata'
-I:Processing '/mnt/vendor/persist'
 I:Processing '/odm'
+I:Processing '/persist'
+I:Created '/persist' folder.
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-01-01--17-50-48
+I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
+I:TWFunc::Fixup_Time: will attempt to use the ats files now.
+I:TWFunc::Fixup_Time: Setting time offset from file /persist/time/ats_2, offset 1680221564802
+I:TWFunc::Fixup_Time: Date and time corrected: 2023-03-31--18-03-31
 I:Processing '/product'
 I:Created '/product' folder.
+E:Unhandled flag: 'wipeningui=1'
+I:Processing '/product_image'
 I:Processing '/sdcard1'
 I:Created '/sdcard1' folder.
 I:Processing '/system'
 I:Created '/system_root' folder.
+E:Unhandled flag: 'wipeningui=1'
+I:Processing '/system_image'
 I:Processing '/usb_otg'
 I:Created '/usb_otg' folder.
 I:Processing '/vendor'
+E:Unhandled flag: 'wipeningui=1'
+I:Processing '/vendor_image'
 I:Done processing fstab files
-I:Setting up '/data' as data/media emulated storage.
 I:Setting up '/data' as data/media emulated storage.
 I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
@@ -441,7 +456,7 @@ I:Decrypt adopted storage starting
 I:PageManager::LoadFileToBuffer loading filename: '/data/system/storage.xml' directly
 I:No /data/system/storage.xml for adopted storage
 Updating partition details...
-I:Data backup size is 0MB, free: 102725MB.
+I:Data backup size is 4MB, free: 102721MB.
 I:checking for twrp app
 ...done
 /super | /dev/block/by-name/super | Size: 0MB
@@ -482,19 +497,6 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/mnt/vendor/persist | /dev/block/mmcblk0p2 | Size: 26MB Used: 1MB Free: 25MB Backup Size: 1MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/mmcblk0p2
-   Display_Name: Persist
-   Storage_Name: mnt/vendor/persist
-   Backup_Path: /mnt/vendor/persist
-   Backup_Name: mnt/vendor/persist
-   Backup_Display_Name: mnt/vendor/persist
-   Storage_Path: /mnt/vendor/persist
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
 /misc | /dev/block/mmcblk0p62 | Size: 1MB
    Flags: IsPresent 
    Primary_Block_Device: /dev/block/mmcblk0p62
@@ -508,7 +510,7 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/data | /dev/block/mmcblk0p86 | Size: 104475MB Used: 0MB Free: 102725MB Backup Size: 0MB
+/data | /dev/block/mmcblk0p86 | Size: 104475MB Used: 4MB Free: 102721MB Backup Size: 4MB
    Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Is_Encrypted Is_Decrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
    Symlink_Path: /data/media
    Symlink_Mount_Point: /sdcard
@@ -537,19 +539,6 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/mnt/vendor/persist | /dev/block/mmcblk0p2 | Size: 26MB Used: 1MB Free: 25MB Backup Size: 1MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
-   Primary_Block_Device: /dev/block/mmcblk0p2
-   Display_Name: Persist
-   Storage_Name: Persist
-   Backup_Path: /mnt/vendor/persist
-   Backup_Name: mnt/vendor/persist
-   Backup_Display_Name: Persist
-   Storage_Path: /mnt/vendor/persist
-   Current_File_System: ext4
-   Fstab_File_System: ext4
-   Backup_Method: files
-
 /odm | /dev/block/by-name/oem_b | Size: 371MB Used: 0MB Free: 371MB Backup Size: 0MB
    Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent SlotSelect 
    Primary_Block_Device: /dev/block/by-name/oem
@@ -559,6 +548,19 @@ Partition Logs:
    Backup_Name: ODM
    Backup_Display_Name: OEM
    Storage_Path: /odm
+   Current_File_System: ext4
+   Fstab_File_System: ext4
+   Backup_Method: files
+
+/persist | /dev/block/mmcblk0p2 | Size: 26MB Used: 1MB Free: 25MB Backup Size: 1MB
+   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
+   Primary_Block_Device: /dev/block/mmcblk0p2
+   Display_Name: Persist
+   Storage_Name: Persist
+   Backup_Path: /persist
+   Backup_Name: persist
+   Backup_Display_Name: Persist
+   Storage_Path: /persist
    Current_File_System: ext4
    Fstab_File_System: ext4
    Backup_Method: files
@@ -576,7 +578,20 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/sdcard1 | /dev/block/mmcblk1p1 | Size: 30428MB Used: 11573MB Free: 18854MB Backup Size: 11573MB
+/product_image | /dev/block/mapper/product_b | Size: 970MB
+   Flags: IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/mapper/product
+   Display_Name: Product
+   Storage_Name: Product
+   Backup_Path: /product_image
+   Backup_Name: product_image
+   Backup_Display_Name: Product
+   Storage_Path: /product_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
+/sdcard1 | /dev/block/mmcblk1p1 | Size: 30428MB Used: 12320MB Free: 18107MB Backup Size: 12320MB
    Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable IsPresent Is_Storage 
    Primary_Block_Device: /dev/block/mmcblk1p1
    Alternate_Block_Device: /dev/block/mmcblk1
@@ -592,7 +607,7 @@ Partition Logs:
    MTP_Storage_ID: 65538
 
 /system_root | /dev/block/mapper/system_b | Size: 2087MB Used: 826MB Free: 1260MB Backup Size: 826MB
-   Flags: Can_Be_Mounted IsPresent SlotSelect 
+   Flags: Can_Be_Mounted Can_Be_Backed_Up IsPresent SlotSelect 
    Primary_Block_Device: /dev/block/mapper/system
    Display_Name: System
    Storage_Name: System
@@ -603,6 +618,19 @@ Partition Logs:
    Current_File_System: ext4
    Fstab_File_System: ext4
    Backup_Method: files
+
+/system_image | /dev/block/mapper/system_b | Size: 2155MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/mapper/system
+   Display_Name: System
+   Storage_Name: System
+   Backup_Path: /system_image
+   Backup_Name: system_image
+   Backup_Display_Name: System
+   Storage_Path: /system_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
 
 /usb_otg |  | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
    Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable Is_Storage 
@@ -619,8 +647,8 @@ Partition Logs:
    Backup_Method: files
    MTP_Storage_ID: 65539
 
-/vendor | /dev/block/mapper/vendor_b | Size: 463MB Used: 434MB Free: 29MB Backup Size: 434MB
-   Flags: Can_Be_Mounted Can_Be_Wiped IsPresent SlotSelect 
+/vendor | /dev/block/mapper/vendor_b | Size: 463MB Used: 438MB Free: 25MB Backup Size: 438MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent SlotSelect 
    Primary_Block_Device: /dev/block/mapper/vendor
    Display_Name: Vendor
    Storage_Name: Vendor
@@ -632,6 +660,19 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
+/vendor_image | /dev/block/mapper/vendor_b | Size: 471MB
+   Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
+   Primary_Block_Device: /dev/block/mapper/vendor
+   Display_Name: Vendor
+   Storage_Name: Vendor
+   Backup_Path: /vendor_image
+   Backup_Name: vendor_image
+   Backup_Display_Name: Vendor
+   Storage_Path: /vendor_image
+   Current_File_System: emmc
+   Fstab_File_System: emmc
+   Backup_Method: dd
+
 /super | /dev/block/by-name/super | Size: 0MB
    Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
    Alternate_Block_Device: /dev/block/by-name/super
@@ -642,10 +683,6 @@ Partition Logs:
    Current_File_System: emmc
    Backup_Method: dd
 
-I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-01-01--14-35-37
-I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
-I:TWFunc::Fixup_Time: will attempt to use the ats files now.
-I:TWFunc::Fixup_Time: no ats files found, leaving untouched!
 I:No recovery folder found. Using default folder.
 I:Attempt to load settings from settings file...
 I:InfoManager file '/.twrps' not found.
@@ -692,46 +729,31 @@ I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
 I:Set page: 'advanced'
-I:Set page: 'sideload'
-I:Set page: 'action_page'
-I:operation_start: 'Sideload'
-Starting ADB sideload feature...
-I:Cannot find file /sys/class/android_usb/android0/idVendor
-I:Cannot find file /sys/class/android_usb/android0/idProduct
-E:[MTP] request read returned -1, errno: 5I:Disabling MTP
-minadbd I 01-01 09:35:42   573   576 usb_ffs.cpp:275] opening control endpoint /dev/usb-ffs/adb/ep0
-minadbd I 01-01 09:35:42   573   576 usb.cpp:152] UsbFfsConnection constructed
-minadbd I 01-01 09:35:42   573   577 usb.cpp:259] UsbFfs-monitor thread spawned
-minadbd I 01-01 09:35:42   573   577 usb.cpp:298] USB event: FUNCTIONFS_BIND
-minadbd I 01-01 09:35:42   573   577 usb.cpp:298] USB event: FUNCTIONFS_ENABLE
-minadbd I 01-01 09:35:42   573   578 usb.cpp:405] UsbFfs-worker thread spawned
-minadbd I 01-01 09:35:43   573   573 adb.cpp:141] UsbFfs: already offline
-minadbd I 01-01 09:35:43   573   573 adb.cpp:358] authentication not required
-minadbd I 01-01 09:35:53   573   590 minadbd_services.cpp:111] sideload-host file size 782817352, block size 65536
-Installing zip file '/sideload/package.zip'
-unknown fuse request opcode 2016
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
+I:Set page: 'install'
+I:Set page: 'flash_confirm'
+I:Set page: 'flash_zip'
+I:operation_start: 'Flashing'
+Installing zip file '/sdcard1/lineage-19.1-20230331-UNOFFICIAL-pdx201.zip'
 Unmounting System...
 I:AB zip
 Flashing A/B zip to inactive slot: A
-unknown fuse request opcode 2016
 Failed to parse build number in post-build-incremental=eng.blacks.20230329.002827.
-update_engine_sideload I 01-01 09:35:55   595   595 [INFO:sideload_main.cc(193)] Update Engine Sideloading starting
-cutils-trace E 01-01 09:35:55   595   595 Error opening trace file: No such file or directory (2)
-update_engine_sideload E 01-01 09:35:55   595   595 [ERROR:boot_control_android.cc(64)] Error getting bootctrl HIDL module.
-update_engine_sideload E 01-01 09:35:55   595   595 [ERROR:sideload_main.cc(147)] Error initializing the BootControlInterface.
+update_engine_sideload I 03-31 13:04:17   621   621 [INFO:sideload_main.cc(193)] Update Engine Sideloading starting
+cutils-trace E 03-31 13:04:17   621   621 Error opening trace file: No such file or directory (2)
+update_engine_sideload E 03-31 13:04:17   621   621 [ERROR:boot_control_android.cc(64)] Error getting bootctrl HIDL module.
+update_engine_sideload E 03-31 13:04:17   621   621 [ERROR:sideload_main.cc(147)] Error initializing the BootControlInterface.
 Updater process ended with ERROR: 1
 To flash additional zips, please reboot recovery to switch to the updated slot.
 I:Install took 0 second(s).
-minadbd W 01-01 09:35:56   573   573 sockets.cpp:279] timeout expired while flushing socket, closing
-minadbd I 01-01 09:35:56   573   590 minadbd_services.cpp:159] revents: 16
-I:[MTP] Starting MTP
-I:sending message to add 65537 '/data/media' 'Internal Storage'
-I:Message sent, add storage ID: 65537 '/data/media'
-I:sending message to add 65538 '/sdcard1' 'MicroSD'
-I:Message sent, add storage ID: 65538 '/sdcard1'
-I:Set page: 'action_complete'
+Error installing zip file '/sdcard1/lineage-19.1-20230331-UNOFFICIAL-pdx201.zip'
+Updating partition details...
+I:Data backup size is 4MB, free: 102721MB.
+I:checking for twrp app
+...done
+I:Set page: 'flash_done'
 I:operation_end - status=1
-I:[MTP] created new mtpserver object
-E:[MTP] Failed to start usb driver!
-I:[MTP] mtppipe add storage 65537 '/data/media'
-I:[MTP] mtppipe add storage 65538 '/sdcard1'
+I:TWFunc::Set_Brightness: Setting brightness control to 5
+I:TWFunc::Set_Brightness: Setting brightness control to 0

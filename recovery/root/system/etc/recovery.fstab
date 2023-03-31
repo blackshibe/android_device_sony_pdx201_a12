@@ -38,7 +38,6 @@
 
 #<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
 /dev/block/bootdevice/by-name/boot                      /boot                   emmc
-/dev/block/bootdevice/by-name/persist                   /mnt/vendor/persist     ext4
 
 # /dev/block/mapper/system                                /system                ext4    ro,barrier=1,discard                                 wait,slotselect
 # /dev/block/mapper/product                               /product               ext4    ro,barrier=1,discard                                 wait,slotselect

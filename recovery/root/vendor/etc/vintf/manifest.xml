@@ -4,6 +4,39 @@
 -->
 <manifest version="2.0" type="device" target-level="3">
     <hal format="hidl">
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <version>4.0</version>
+        <interface>
+            <name>IKeymasterDevice</name>
+            <instance>default</instance>
+        </interface>
+        <implementation>
+            <name>qti</name>
+        </implementation>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.boot</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <impl>
+            <name>qti</name>
+            <version>1.2</version>
+            <interface>
+                <name>IBootControl</name>
+                <instance>default</instance>
+            </interface>
+        </impl>
+        <module>
+            <name>android.hardware.boot@1.0-impl-1.2-qti.so</name>
+            <version>1.0</version>
+            <interface>
+                <name>IBootControl</name>
+                <instance>default</instance>
+            </interface>
+        </module>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
         <version>6.0</version>
@@ -88,16 +121,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IConsumerIr/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.keymaster</name>
-        <transport>hwbinder</transport>
-        <version>4.0</version>
-        <interface>
-            <name>IKeymasterDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@4.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
