@@ -1,5 +1,5 @@
-Starting TWRP 3.7.0_12-0-2fa94a72 on Sun Jan  4 23:29:11 1970
- (pid 464)
+Starting TWRP 3.7.0_12-0-2fa94a72 on Sun Jan  4 23:41:05 1970
+ (pid 462)
 RECOVERY_SDCARD_ON_DATA := true
 I:Lun file '/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file'
 TW_INCLUDE_CRYPTO := true
@@ -182,19 +182,18 @@ ro.bootmode=unknown
 ro.hardware=qcom
 ro.revision=0
 ro.bootloader=xboot
-ro.boottime.adbd=2010784157
-ro.boottime.init=1542675256
-ro.boottime.init.selinux=84249436
-ro.boottime.init.first_stage=34419430
-ro.boottime.init.cold_boot_wait=240
-ro.boottime.logd=1947646234
-ro.boottime.ueventd=1699540897
-ro.boottime.recovery=1969854778
-ro.boottime.keystore2=1958096339
-ro.boottime.keystore_auth=1965405038
-ro.boottime.servicemanager=1952460193
-ro.boottime.hwservicemanager=1949957744
-ro.boottime.vndservicemanager=1955027276
+ro.boottime.adbd=2002872020
+ro.boottime.init=1505484523
+ro.boottime.init.selinux=84360425
+ro.boottime.init.first_stage=34451618
+ro.boottime.init.cold_boot_wait=261
+ro.boottime.logd=1931906493
+ro.boottime.ueventd=1663079487
+ro.boottime.recovery=1950575557
+ro.boottime.keystore2=1941968941
+ro.boottime.servicemanager=1936536441
+ro.boottime.hwservicemanager=1934258524
+ro.boottime.vndservicemanager=1939099566
 ro.odm.build.date=Thu Mar 30 23:55:10 CEST 2023
 ro.odm.build.date.utc=1680213310
 ro.odm.build.version.incremental=eng.blacks.20230330.235354
@@ -364,20 +363,18 @@ init.svc.logd=running
 init.svc.ueventd=running
 init.svc.recovery=running
 init.svc.keystore2=running
-init.svc.keystore_auth=stopped
 init.svc.servicemanager=running
 init.svc.hwservicemanager=running
 init.svc.vndservicemanager=running
 init.svc.adbd=restarting
-init.svc_debug_pid.adbd=485
-init.svc_debug_pid.logd=453
-init.svc_debug_pid.ueventd=443
-init.svc_debug_pid.recovery=464
-init.svc_debug_pid.keystore2=457
-init.svc_debug_pid.keystore_auth=
-init.svc_debug_pid.servicemanager=455
-init.svc_debug_pid.hwservicemanager=454
-init.svc_debug_pid.vndservicemanager=456
+init.svc_debug_pid.adbd=488
+init.svc_debug_pid.logd=452
+init.svc_debug_pid.ueventd=442
+init.svc_debug_pid.recovery=462
+init.svc_debug_pid.keystore2=456
+init.svc_debug_pid.servicemanager=454
+init.svc_debug_pid.hwservicemanager=453
+init.svc_debug_pid.vndservicemanager=455
 keystore.crash_count=0
 ro.logd.kernel=true
 ro.product.ab_ota_partitions=boot,system,product,vendor,vbmeta_system
@@ -421,17 +418,17 @@ I:Processing '/boot'
 I:Processing '/misc'
 I:Processing remaining twrp.flags
 I:Processing '/data'
-I:FBE contents 'aes-256-xts', filenames 'aes-256-cts:v2+emmc_optimized+wrappedkey_v0'
+I:FBE contents 'aes-256-xts', filenames 'aes-256-cts:v2+emmc_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0'
 I:setting Key_Directory to: /metadata/vold/metadata_encryption
 I:Processing '/metadata'
 I:Processing '/odm'
 I:Processing '/persist'
 I:Created '/persist' folder.
-I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-01-04--23-29-12
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-01-04--23-41-06
 I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
 I:TWFunc::Fixup_Time: will attempt to use the ats files now.
 I:TWFunc::Fixup_Time: Setting time offset from file /persist/time/ats_2, offset 1680221564767
-I:TWFunc::Fixup_Time: Date and time corrected: 2023-04-03--23-41-56
+I:TWFunc::Fixup_Time: Date and time corrected: 2023-04-03--23-53-50
 I:Processing '/product'
 I:Created '/product' folder.
 I:Processing '/product_image'
@@ -752,8 +749,21 @@ I:Switching packages (TWRP)
 I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
+I:Set page: 'advanced'
+I:Set page: 'repackselect'
+I:Set page: 'main'
+I:Set page: 'clear_vars'
+I:Set page: 'main2'
 I:Set page: 'mount'
+I:Set overlay: 'slideout'
+I:Set overlay: ''
 I:Set page: 'decrypt'
+I:Set page: 'trydecrypt'
+I:operation_start: 'Decrypt'
+fscrypt_is_native: 'file'
+Failed to decrypt data.
+I:Set page: 'decrypt'
+I:operation_end - status=1
 I:Set page: 'trydecrypt'
 I:operation_start: 'Decrypt'
 fscrypt_is_native: 'file'

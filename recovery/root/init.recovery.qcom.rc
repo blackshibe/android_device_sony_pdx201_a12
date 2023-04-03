@@ -40,6 +40,10 @@ service keystore_auth /system/bin/keystore_auth
     disabled
     seclabel u:r:recovery:s0
 
+on property:crypto.ready=1 && property:hwservicemanager.ready=true
+    start keymaster-4-0
+    start keystore_auth
+
 on init
     setprop prepdecrypt.loglevel 2
     start gatekeeper-1-0
@@ -47,13 +51,8 @@ on init
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
-    start keystore_auth
 
 on boot
     setprop sys.usb.config adb
     insmod /vendor/lib/modules/sec_touchscreen.ko
     write /sys/devices/virtual/sec/tsp/after_work 1
-
-on fs
-    echo "temp fixing /misc partition"
-    dd if=/dev/zero of=/dev/block/platform/soc/4744000.sdhci/by-name/misc

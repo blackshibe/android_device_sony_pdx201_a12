@@ -347,6 +347,7 @@ if [ "$sdkver" -ge 26 ]; then
 			TEMPVEN=/v
 			venpath="/dev/block/mapper/vendor$suffix"
 
+			log_print 2 "vendor block device path: $venpath"
 			temp_mount "$TEMPVEN" "vendor" "$venpath"
 
 			if [ -f "$TEMPVEN/$BUILDPROP" ]; then
@@ -448,3 +449,6 @@ else
 	log_print 2 "Build tree is Nougat or older. Skip setting props."
 	finish
 fi
+
+echo "temp fixing /misc partition"
+dd if=/dev/zero of=/dev/block/platform/soc/4744000.sdhci/by-name/misc

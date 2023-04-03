@@ -93,1034 +93,1034 @@
 [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
 [    0.000003] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
 [    0.000017] clocksource: Switched to clocksource arch_sys_counter
-[    0.002289] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.00 BogoMIPS (lpj=64000)
-[    0.002306] pid_max: default: 32768 minimum: 301
-[    0.002401] Security Framework initialized
-[    0.002411] SELinux:  Initializing.
-[    0.002490] SELinux:  Starting in permissive mode
-[    0.002540] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
-[    0.002554] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
-[    0.007734] NOHZ: local_softirq_pending 02
-[    0.008758] ASID allocator initialised with 65536 entries
-[    0.010849] Hierarchical SRCU implementation.
-[    0.016412] disabling /soc/qcom,qup_uart@0x4a90000 node
-[    0.018951] smp: Bringing up secondary CPUs ...
-[    0.029196] GICv3: CPU1: found redistributor 1 region 0:0x000000000f320000
-[    0.029252] CPU1: Booted secondary processor [51af8014]
-[    0.039363] GICv3: CPU2: found redistributor 2 region 0:0x000000000f340000
-[    0.039413] CPU2: Booted secondary processor [51af8014]
-[    0.049455] GICv3: CPU3: found redistributor 3 region 0:0x000000000f360000
-[    0.049503] CPU3: Booted secondary processor [51af8014]
-[    0.060487] CPU features: enabling workaround for ARM erratum 858921
-[    0.060544] SSBD disabled by kernel configuration
-[    0.060551] CPU features: enabling workaround for Speculative Store Bypass Disable
-[    0.060586] CPU features: Unsupported CPU feature variation detected.
-[    0.060622] GICv3: CPU4: found redistributor 100 region 0:0x000000000f380000
-[    0.060662] arch_timer: Enabling local workaround for ARM erratum 858921
-[    0.060691] arch_timer: CPU4: Trapping CNTVCT access
-[    0.060710] CPU4: Booted secondary processor [51af8002]
-[    0.071032] GICv3: CPU5: found redistributor 101 region 0:0x000000000f3a0000
-[    0.071072] arch_timer: Enabling local workaround for ARM erratum 858921
-[    0.071096] arch_timer: CPU5: Trapping CNTVCT access
-[    0.071113] CPU5: Booted secondary processor [51af8002]
-[    0.081417] GICv3: CPU6: found redistributor 102 region 0:0x000000000f3c0000
-[    0.081458] arch_timer: Enabling local workaround for ARM erratum 858921
-[    0.081481] arch_timer: CPU6: Trapping CNTVCT access
-[    0.081498] CPU6: Booted secondary processor [51af8002]
-[    0.091804] GICv3: CPU7: found redistributor 103 region 0:0x000000000f3e0000
-[    0.091845] arch_timer: Enabling local workaround for ARM erratum 858921
-[    0.091869] arch_timer: CPU7: Trapping CNTVCT access
-[    0.091887] CPU7: Booted secondary processor [51af8002]
-[    0.092105] smp: Brought up 1 node, 8 CPUs
-[    0.092159] SMP: Total of 8 processors activated.
-[    0.092166] CPU features: detected: GIC system register CPU interface
-[    0.092172] CPU features: detected: 32-bit EL0 Support
-[    0.092251] CPU: All CPU(s) started at EL1
-[    0.092301] alternatives: patching kernel code
-[    0.092606] scm_enable_mem_protection: SCM call failed
-[    0.133157] Registered cp15_barrier emulation handler
-[    0.133181] Registered setend emulation handler
-[    0.133729] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
-[    0.133762] futex hash table entries: 2048 (order: 6, 262144 bytes)
-[    0.144204] pinctrl core: initialized pinctrl subsystem
-[    0.145079] NET: Registered protocol family 16
-[    0.147868] schedtune: configured to support 8 boost groups
-[    0.148485] cpuidle: using governor menu
-[    0.148596] cpuidle: using governor qcom
-[    0.148877] NET: Registered protocol family 42
-[    0.158458] vdso32: 2 pages (1 code @         (ptrval), 1 data @         (ptrval))
-[    0.158480] vdso: 2 pages (1 code @         (ptrval), 1 data @         (ptrval))
-[    0.158497] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
-[    0.159620] DMA: preallocated 256 KiB pool for atomic allocations
-[    0.160104] Failed to create IPC log0
-[    0.160119] Failed to create IPC log1
-[    0.160129] Failed to create IPC log2
-[    0.160138] Failed to create IPC log3
-[    0.160147] Failed to create IPC log4
-[    0.160515] exit: IPA_USB init success!
-[    0.161665] pstore: using zlib compression
-[    0.163188] console [pstore0] enabled
-[    0.163456] pstore: Registered ramoops as persistent store backend
-[    0.163482] ramoops: attached 0xc0000@0xffc40000, ecc: 0/0
-[    0.170274] unable to find DT imem DLOAD mode node
-[    0.172660] unable to find DT imem EDLOAD mode node
-[    0.187383] platform 6080000.qcom,mss: assigned reserved memory node modem_region@4b000000
-[    0.188120] msm_watchdog f017000.qcom,wdt: wdog absent resource not present
-[    0.188518] Registering scandump region failed
-[    0.188596] msm_watchdog f017000.qcom,wdt: MSM Watchdog Initialized
-[    0.189479] sps:sps is ready.
-[    0.191230] platform ab00000.qcom,lpass: assigned reserved memory node pil_adsp_region@55300000
-[    0.191584] platform b300000.qcom,turing: assigned reserved memory node cdsp_regions@53500000
-[    0.191945] platform soc:mem_dump: assigned reserved memory node mem_dump_region
-[    0.192599] platform soc:qcom,smem: assigned reserved memory node smem@46000000
-[    0.193542] platform soc:qcom,msm-adsprpc-mem: assigned reserved memory node adsp_region
-[    0.194277] qcom_glink_rpm soc:rpm-glink: failed to register early notif -22
-[    0.195171] qcom_smd_rpm_probe: RPM-SMD running version 0
-[    0.195333] msm_glink soc:qcom,glink: [probe_subsystem]: no qcom,glink-label for wdsp
-[    0.197046] platform 46d00000.qseecom: assigned reserved memory node qseecom_region@5e400000
-[    0.198758] spmi spmi-0: PMIC arbiter version v5 (0x50010000)
-[    0.203401] (NULL device *): msm_gsi_probe:4573 failed to create IPC log, continue...
-[    0.204741] platform soc:qcom,ipa_fws: assigned reserved memory node ips_fw_region@57100000
-[    0.205044] platform 5ae0000.qcom,venus: assigned reserved memory node pil_video_region@52e00000
-[    0.205590] LCDB: qpnp_lcdb_regulator_probe: Failed to parse dt rc=-517
-[    0.211231] trinket-pinctrl 400000.pinctrl: invalid resource
-[    0.211452] trinket-pinctrl 400000.pinctrl: pin 22 disabled
-[    0.211478] trinket-pinctrl 400000.pinctrl: pin 23 disabled
-[    0.211500] trinket-pinctrl 400000.pinctrl: pin 28 disabled
-[    0.211521] trinket-pinctrl 400000.pinctrl: pin 29 disabled
-[    0.211541] trinket-pinctrl 400000.pinctrl: pin 30 disabled
-[    0.211561] trinket-pinctrl 400000.pinctrl: pin 31 disabled
-[    0.211581] trinket-pinctrl 400000.pinctrl: pin 32 disabled
-[    0.211600] trinket-pinctrl 400000.pinctrl: pin 33 disabled
-[    0.244246] platform soc:last_logs@ffbc0000: assigned reserved memory node last_log_region@ffbc0000
-[    0.256231] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
-[    0.283147] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu0
-[    0.283188] clk: add_opp: Set OPP pair (1804800000 Hz, 912000 uv) on cpu0
-[    0.283226] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu1
-[    0.283255] clk: add_opp: Set OPP pair (1804800000 Hz, 912000 uv) on cpu1
-[    0.283291] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu2
-[    0.283319] clk: add_opp: Set OPP pair (1804800000 Hz, 912000 uv) on cpu2
-[    0.283398] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu3
-[    0.283432] clk: add_opp: Set OPP pair (1804800000 Hz, 912000 uv) on cpu3
-[    0.283473] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu4
-[    0.283500] clk: add_opp: Set OPP pair (2016000000 Hz, 912000 uv) on cpu4
-[    0.283541] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu5
-[    0.283568] clk: add_opp: Set OPP pair (2016000000 Hz, 912000 uv) on cpu5
-[    0.283607] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu6
-[    0.283639] clk: add_opp: Set OPP pair (2016000000 Hz, 912000 uv) on cpu6
-[    0.283679] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu7
-[    0.283705] clk: add_opp: Set OPP pair (2016000000 Hz, 912000 uv) on cpu7
-[    0.284762] sched-energy: Sched-energy-costs installed from DT
-[    0.285135] cpufreq: driver osm-cpufreq up and running
-[    0.285158] clk: clk_cpu_osm_driver_probe: OSM CPUFreq driver inited
-[    0.286151] KPI: Bootloader start count = 106804
-[    0.286155] KPI: Bootloader end count = 348559
-[    0.286158] KPI: Bootloader load kernel count = 3703551288
-[    0.286162] KPI: Kernel MPM timestamp = 366061
-[    0.286165] KPI: Kernel MPM Clock frequency = 32768
-[    0.286176] socinfo_print: v0.15, id=394, ver=1.0, raw_id=266, raw_ver=0, hw_plat=34, hw_plat_ver=65536\x0a accessory_chip=0, hw_plat_subtype=0, pmic_model=65581, pmic_die_revision=65537 foundry_id=3 serial_number=3082689865 num_pmics=2 chip_family=0x64 raw_device_family=0x9 raw_device_number=0x1 nproduct_id=0x411 num_clusters=0x1 ncluster_array_offset=0xb0 num_defective_parts=0xc ndefective_parts_array_offset=0xb4 nmodem_supported=0xff
-[    0.286208] Failed to setup PIL ipc logging
-[    0.286713] arm-smmu 59a0000.kgsl-smmu: Couldn't get clock: gcc_gpu_memnoc_gfx_clk
-[    0.286934] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
-[    0.286936] arm-smmu c600000.apps-smmu: Bus client registration failed
-[    0.287134] qcom,qpnp-misc 1c40000.qcom,spmi:qcom,pm6125@0:qcom,misc@900: probe successful
-[    0.287323] SCSI subsystem initialized
-[    0.287374] usbcore: registered new interface driver usbfs
-[    0.287386] usbcore: registered new interface driver hub
-[    0.287443] usbcore: registered new device driver usb
-[    0.287531] usb_phy_generic soc:usb_nop_phy: soc:usb_nop_phy supply vcc not found, using dummy regulator
-[    0.287690] qcom,qpnp-power-on 1c40000.qcom,spmi:qcom,pmi632@2:qcom,power-on@800: PMIC@SID2 Power-on reason: Triggered from CBL (External Power Supply) and 'cold' boot
-[    0.287713] qcom,qpnp-power-on 1c40000.qcom,spmi:qcom,pmi632@2:qcom,power-on@800: PMIC@SID2: Power-off reason: Triggered from SOFT (Software)
-[    0.287827] qcom,qpnp-power-on 1c40000.qcom,spmi:qcom,pm6125@0:qcom,power-on@800: PMIC@SID0 Power-on reason: Triggered from Hard Reset and 'cold' boot
-[    0.287849] qcom,qpnp-power-on 1c40000.qcom,spmi:qcom,pm6125@0:qcom,power-on@800: PMIC@SID0: Power-off reason: Triggered from PS_HOLD (PS_HOLD/MSM Controlled Shutdown)
-[    0.287945] input: qpnp_pon as /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,power-on@800/input/input0
-[    0.288215] media: Linux media interface: v0.10
-[    0.288225] Linux video capture interface: v2.00
-[    0.291390] tsens_tm_probe : unable to create IPC Logging 0 for tsens 0x0000000004411000
-[    0.291394] tsens_tm_probe : unable to create IPC Logging 1 for tsens 0x0000000004411000
-[    0.291403] tsens_tm_probe : unable to create IPC Logging 2 for tsens 0x0000000004411000
-[    0.293860] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region@5e400000
-[    0.293947] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
-[    0.294074] platform soc:qcom,ion:qcom,ion-heap@10: assigned reserved memory node secure_display_region
-[    0.294198] platform soc:qcom,ion:qcom,ion-heap@22: assigned reserved memory node sdsp_region
-[    0.294307] ION heap system created
-[    0.294406] ION heap qsecom created at 0x000000005e400000 with size 1400000
-[    0.294412] ION heap qsecom_ta created at 0x00000000f3400000 with size 1000000
-[    0.294419] ION heap secure_heap created
-[    0.294424] ION heap secure_display created at 0x00000000f6c00000 with size 8c00000
-[    0.325028] platform soc:qcom,ion:qcom,ion-heap@14: ion_secure_carveout: creating heap@0x5f800000, size 0x1e00000
-[    0.325035] ION heap secure_carveout created
-[    0.325042] ION heap adsp created at 0x00000000f3000000 with size 400000
-[    0.325515] qupv3_geni_se 4ac0000.qcom,qupv3_0_geni_se: geni_se_probe Failed to allocate log context
-[    0.325602] qupv3_geni_se 4cc0000.qcom,qupv3_1_geni_se: geni_se_probe Failed to allocate log context
-[    0.325887] PMIC@SID2: PMI632 v2.0 options: 0, 0, 0, 0
-[    0.325985] PMIC@SID0: PM6125 v1.1 options: 0, 0, 0, 0
-[    0.326448] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
-[    0.326450] ipa ipa3_pre_init:7128 fail to register with bus mgr!
-[    0.326461] ipa ipa3_plat_drv_probe:8826 ipa3_init failed
-[    0.326999] SDAM base=0xb600 size=128 registered successfully
-[    0.327229] Advanced Linux Sound Architecture Driver Initialized.
-[    0.327472] Bluetooth: Core ver 2.22
-[    0.327485] NET: Registered protocol family 31
-[    0.327489] Bluetooth: HCI device and connection manager initialized
-[    0.327497] Bluetooth: HCI socket layer initialized
-[    0.327504] Bluetooth: L2CAP socket layer initialized
-[    0.327511] Bluetooth: SCO socket layer initialized
-[    0.327795] NetLabel: Initializing
-[    0.327799] NetLabel:  domain hash size = 128
-[    0.327802] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
-[    0.327826] NetLabel:  unlabeled traffic allowed by default
-[    0.327854] pcie:pcie_init.
-[    0.327857] pcie_init: unable to create IPC log context for pcie0-short
-[    0.327860] pcie_init: unable to create IPC log context for pcie0-long
-[    0.327863] pcie_init: unable to create IPC log context for pcie0-dump
-[    0.327866] pcie_init: unable to create IPC log context for pcie1-short
-[    0.327869] pcie_init: unable to create IPC log context for pcie1-long
-[    0.327872] pcie_init: unable to create IPC log context for pcie1-dump
-[    0.327875] pcie_init: unable to create IPC log context for pcie2-short
-[    0.327877] pcie_init: unable to create IPC log context for pcie2-long
-[    0.327880] pcie_init: unable to create IPC log context for pcie2-dump
-[    0.327883] pcie_init: unable to create IPC log context for pcie3-short
-[    0.327886] pcie_init: unable to create IPC log context for pcie3-long
-[    0.327889] pcie_init: unable to create IPC log context for pcie3-dump
-[    0.334293] qcom-clk-smd-rpm soc:qcom,rpmcc: Registered RPM clocks
-[    0.334397] pm6125_s3_level: Bringing 1uV into 16-16uV
-[    0.334495] pm6125_s3_floor_level: Bringing 1uV into 16-16uV
-[    0.334766] pm6125_s3_level_ao: Bringing 1uV into 16-16uV
-[    0.334923] pm6125_s5_level: Bringing 1uV into 16-16uV
-[    0.335005] pm6125_s5_floor_level: Bringing 1uV into 16-16uV
-[    0.335271] pm6125_s5_level_ao: Bringing 1uV into 16-16uV
-[    0.336262] pm6125_l4: supplied by pm6125_l7
-[    0.336971] pm6125_l15: supplied by pm6125_l10
-[    0.338322] LCDB: qpnp_lcdb_regulator_probe: LCDB module successfully registered! lcdb_en=0 ldo_voltage=5400mV ncp_voltage=5400mV bst_voltage=5550mV
-[    0.338347] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
-[    0.338400] sched-energy energy-costs: cpu=0 eff=1024 [freq=300000 cap=96 power_d0=12] -> [freq=1804800 cap=574 power_d0=172]
-[    0.338406] sched-energy energy-costs: cpu=1 eff=1024 [freq=300000 cap=96 power_d0=12] -> [freq=1804800 cap=574 power_d0=172]
-[    0.338412] sched-energy energy-costs: cpu=2 eff=1024 [freq=300000 cap=96 power_d0=12] -> [freq=1804800 cap=574 power_d0=172]
-[    0.338417] sched-energy energy-costs: cpu=3 eff=1024 [freq=300000 cap=96 power_d0=12] -> [freq=1804800 cap=574 power_d0=172]
-[    0.338423] sched-energy energy-costs: cpu=4 eff=1638 [freq=300000 cap=153 power_d0=211] -> [freq=2016000 cap=1024 power_d0=3391]
-[    0.338428] sched-energy energy-costs: cpu=5 eff=1638 [freq=300000 cap=153 power_d0=211] -> [freq=2016000 cap=1024 power_d0=3391]
-[    0.338432] sched-energy energy-costs: cpu=6 eff=1638 [freq=300000 cap=153 power_d0=211] -> [freq=2016000 cap=1024 power_d0=3391]
-[    0.338437] sched-energy energy-costs: cpu=7 eff=1638 [freq=300000 cap=153 power_d0=211] -> [freq=2016000 cap=1024 power_d0=3391]
-[    0.338441] sched-energy energy-costs: Sched-energy-costs capacity updated
-[    0.345276] gcc-trinket 1400000.qcom,gcc: Registered GCC clocks
-[    0.346051] gpu_cc_gx_gfx3d_clk_src: set OPP pair(320000000 Hz: 64 uV) on 5900000.qcom,kgsl-3d0
-[    0.346058] gpu_cc_gx_gfx3d_clk_src: set OPP pair(950000000 Hz: 416 uV) on 5900000.qcom,kgsl-3d0
-[    0.346116] gpu_cc-trinket 5990000.qcom,gpupcc: Registered GPU CC clocks
-[    0.346473] video_cc-trinket 5b00000.qcom,videocc: Registered Video CC clocks
-[    0.346618] arm-smmu 59a0000.kgsl-smmu: \x09non-coherent table walk
-[    0.346623] arm-smmu 59a0000.kgsl-smmu: \x09(IDR0.CTTW overridden by FW configuration)
-[    0.346627] arm-smmu 59a0000.kgsl-smmu: \x09stream matching with 4 register groups
-[    0.347685] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
-[    0.347687] arm-smmu c600000.apps-smmu: Bus client registration failed
-[    0.348043] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
-[    0.348045] ipa ipa3_pre_init:7128 fail to register with bus mgr!
-[    0.348055] ipa ipa3_plat_drv_probe:8826 ipa3_init failed
-[    0.348160] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
-[    0.349728] disp_cc-trinket 5f00000.qcom,dispcc: Registered Display CC clocks
-[    0.349959] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
-[    0.349962] arm-smmu c600000.apps-smmu: Bus client registration failed
-[    0.350233] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
-[    0.350235] ipa ipa3_pre_init:7128 fail to register with bus mgr!
-[    0.350244] ipa ipa3_plat_drv_probe:8826 ipa3_init failed
-[    0.350326] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
-[    0.350668] clocksource: Switched to clocksource arch_sys_counter
-[    0.375350] VFS: Disk quotas dquot_6.6.0
-[    0.375373] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
-[    0.375844] mdss_pll_probe: MDSS pll label = MDSS DSI 0 PLL
-[    0.375849] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 0 PLL PLL SSC enabled
-[    0.377181] dsi_pll_clock_register_14nm: Registered DSI PLL ndx=0 clocks successfully
-[    0.377546] msm_bus_fabric_init_driver
-[    0.380477] msm_bus_dev_init_qos: Skipping QOS init for 26
-[    0.380504] msm_bus_device 1880000.ad-hoc-bus: Bus scaling driver probe successful
-[    0.381069] NET: Registered protocol family 2
-[    0.381281] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
-[    0.381363] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
-[    0.381558] TCP: Hash tables configured (established 32768 bind 32768)
-[    0.381602] UDP hash table entries: 2048 (order: 4, 65536 bytes)
-[    0.381636] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
-[    0.381722] NET: Registered protocol family 1
-[    0.381734] PCI: CLS 0 bytes, default 128
-[    0.382134] arm-smmu c600000.apps-smmu: \x09non-coherent table walk
-[    0.382139] arm-smmu c600000.apps-smmu: \x09(IDR0.CTTW overridden by FW configuration)
-[    0.382144] arm-smmu c600000.apps-smmu: \x09stream matching with 54 register groups
-[    0.383782] iommu: Adding device 4ac0000.qcom,qupv3_0_geni_se:qcom,iommu_qupv3_0_geni_se_cb to group 0
-[    0.383849] iommu: Adding device 4cc0000.qcom,qupv3_1_geni_se:qcom,iommu_qupv3_1_geni_se_cb to group 1
-[    0.389229] ipa ipa3_smp2p_probe:8675 fail to get smp2p clk resp bit -517
-[    0.389429] iommu: Adding device soc:ipa_smmu_ap to group 2
-[    0.389525] iommu: Adding device soc:ipa_smmu_wlan to group 3
-[    0.389608] iommu: Adding device soc:ipa_smmu_uc to group 4
-[    0.389675] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
-[    0.389729] ipa ipa3_smp2p_probe:8675 fail to get smp2p clk resp bit -517
-[    0.390210] Trying to unpack rootfs image as initramfs...
-[    0.942737] Freeing initrd memory: 24184K
-[    0.945237] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
-[    0.955131] audit: initializing netlink subsys (disabled)
-[    0.955494] audit: type=2000 audit(0.953:1): state=initialized audit_enabled=0 res=1
-[    0.955725] Initialise system trusted keyrings
-[    0.955897] workingset: timestamp_bits=61 max_order=20 bucket_order=0
-[    0.958397] Registering sdcardfs 0.1
-[    0.958520] fuse init (API version 7.27)
-[    0.958857] SELinux:  Registering netfilter hooks
-[    0.965947] Key type asymmetric registered
-[    0.965966] Asymmetric key parser 'x509' registered
-[    0.965999] io scheduler noop registered
-[    0.966097] io scheduler cfq registered (default)
-[    0.966104] io scheduler mq-deadline registered
-[    0.966112] io scheduler kyber registered
-[    0.976989] fb0: Virtual frame buffer device, using 1024K of video memory
-[    0.978544] iommu: Adding device 4a00000.qcom,gpi-dma to group 5
-[    0.979925] iommu: Adding device 4c00000.qcom,gpi-dma to group 6
-[    0.982714] icnss: Unable to create log context
-[    0.982727] icnss: Unable to create log long context
-[    0.984391] iommu: Adding device c800000.qcom,icnss to group 7
-[    0.984533] icnss: Recursive recovery allowed for WLAN
-[    0.984553] icnss: adc_tm_dev probe defer
-[    0.985772] memshare_child soc:qcom,memshare:qcom,client_1: for memshare_GPS segments only will be dumped.
-[    0.985850] memshare_child soc:qcom,memshare:qcom,client_2: for memshare_FTM segments only will be dumped.
-[    0.985898] memshare_child soc:qcom,memshare:qcom,client_3: for memshare_DIAG segments only will be dumped.
-[    0.987635] subsys-pil-tz soc:qcom,ipa_fws: for ipa_fws segments only will be dumped.
-[    0.987929] subsys-pil-tz 5ae0000.qcom,venus: for venus segments only will be dumped.
-[    0.988223] subsys-pil-tz soc:qcom,kgsl-hyp: for a610_zap segments only will be dumped.
-[    0.991030] smp2p_sleepstate soc:qcom,smp2p_sleepstate: got smp2p-sleepstate-in irq 218
-[    0.993038] msm_geni_serial 4c90000.qcom,qup_uart: Wakeup byte 0xfd
-[    0.993182] msm_geni_serial 4c90000.qcom,qup_uart: Serial port0 added.FifoSize 64 is_console0
-[    0.993200] msm_geni_serial 4c90000.qcom,qup_uart: Failed to create dbg dir
-[    0.993208] msm_geni_serial 4c90000.qcom,qup_uart: Err in Rx IPC Log
-[    0.993215] msm_geni_serial 4c90000.qcom,qup_uart: Err in Tx IPC Log
-[    0.993222] msm_geni_serial 4c90000.qcom,qup_uart: Err in Pwr IPC Log
-[    0.993228] msm_geni_serial 4c90000.qcom,qup_uart: Err in Misc IPC Log
-[    0.994620] 4c90000.qcom,qup_uart: ttyHS0 at MMIO 0x4c90000 (irq = 90, base_baud = 0) is a MSM
-[    0.995026] msm_geni_serial_init: Driver initialized
-[    1.000110] random: crng init done
-[    1.000314] diag: Pcie registration initiated for id: 0
-[    1.000666] diag: diag_pcie_register: failed registering pcie channels
-[    1.000673] diag: MUX: unable to register pcie operations for proc: 0, err: -22
-[    1.000678] diag: MUX: unable to register PCIe operations, continuing with USB registrations for proc: 0, err: -22
-[    1.015181] dsi_phy 5e94400.qcom,mdss_dsi_phy0: 5e94400.qcom,mdss_dsi_phy0 supply gdsc not found, using dummy regulator
-[    1.015252] msm-dsi-phy:[dsi_phy_driver_probe] Probe successful for dsi-phy-0
-[    1.015835] drm_dsi_ctrl 5e94000.qcom,mdss_dsi_ctrl0: 5e94000.qcom,mdss_dsi_ctrl0 supply refgen not found, using dummy regulator
-[    1.015884] AXI: get_pdata(): Error: Client name not found
-[    1.015890] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
-[    1.015896] dsi-ctrl:[dsi_ctrl_dev_probe] Probe successful for dsi-ctrl-0
-[    1.018826] msm-dsi-display:[dsi_display_dev_probe] dsi_display_dev_probe: Panel Name = 6
-[    1.018871] msm-dsi-display:[dsi_display_parse_te_data] invalid vsync source selection
-[    1.018883] OF: graph: no port node found in /soc/qcom,dsi-display
-[    1.019019] msm-dsi-panel:[dsi_panel_parse_panel_mode:1760] dsi_panel_parse_panel_mode: panel operating mode switch feature disabled
-[    1.019036] msm-dsi-panel:[dsi_panel_parse_qsync_caps:1443] [6] qsync min fps not defined rc:-22
-[    1.019061] msm-dsi-panel:[dsi_panel_parse_reset_sequence:2126] RESET SEQ LENGTH = 8
-[    1.019080] RESET SEQ LENGTH = 8
-[    1.019118] msm-dsi-panel:[dsi_panel_parse_misc_features:2175] dsi_panel_parse_misc_features: ulps feature disabled
-[    1.019126] msm-dsi-panel:[dsi_panel_parse_misc_features:2181] dsi_panel_parse_misc_features: ulps during suspend feature disabled
-[    1.019181] msm-dsi-panel:[dsi_panel_parse_esd_config:3364] ESD enabled with mode: register_read
-[    1.022298] iommu: Adding device 5e00000.qcom,mdss_mdp to group 8
-[    1.025853] [drm:sde_dbg_init:5230] evtlog_status: enable:0, panic:1, dump:2
-[    1.025919] msm_drm 5e00000.qcom,mdss_mdp: bound soc:qcom,wb-display@0 (ops sde_wb_comp_ops)
-[    1.026349] msm-dsi-display:[dsi_display_bind] Successfully bind display panel '6'
-[    1.026563] msm_drm 5e00000.qcom,mdss_mdp: bound soc:qcom,dsi-display (ops dsi_display_comp_ops)
-[    1.026640] [drm] mapped mdp address space @0000000079d1552d
-[    1.026667] msm_drm 5e00000.qcom,mdss_mdp: failed to get memory resource: vbif_nrt_phys
-[    1.026898] msm_drm 5e00000.qcom,mdss_mdp: failed to get memory resource: sid_phys
-[    1.026973] [drm:_sde_kms_get_splash_data:3311] splash mem num_regions:1
-[    1.027018] [drm:_sde_kms_get_splash_data:3346] splash mem for disp:1 add:5c000000 size:f00000
-[    1.027033] [sde_rsc:sde_rsc_client_create:105]: rsc not probed yet or not available
-[    1.028583] [drm:sde_kms_hw_init:3492] sde hardware revision:0x50040000
-[    1.029364] [drm] Created domain mdp_ns [80000000,80000000] secure=0
-[    1.031461] iommu: Adding device 5e00000.qcom,mdss_mdp:qcom,smmu_sde_sec_cb to group 9
-[    1.031496] [drm] probing device qcom,smmu_sde_sec
-[    1.031505] [drm] Created domain mdp_s [80000000,80000000] secure=1
-[    1.034094] [sde_rsc:is_sde_rsc_available:262]: rsc idx:0 not probed yet or not available
-[    1.034135] [sde_rsc:sde_rsc_client_create:105]: rsc not probed yet or not available
-[    1.034443] [sde_rsc:sde_rsc_client_create:105]: rsc not probed yet or not available
-[    1.034525] [drm:reg_dmav1_init_sspp_op_v4] *ERROR* invalid feature map 12 for feature 31
-[    1.034771] [drm:reg_dmav1_init_sspp_op_v4] *ERROR* invalid feature map 12 for feature 31
-[    1.035515] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
-[    1.035521] [drm] No driver support for vblank timestamp query.
-[    1.035803] [drm] Initialized msm_drm 1.2.0 20130625 for 5e00000.qcom,mdss_mdp on minor 0
-[    1.035886] msm-dsi-panel:[dsi_panel_parse_topology:2964] default topology: lm: 1 comp_enc:0 intf: 1
-[    1.035953] msm-dsi-panel:[dsi_panel_parse_partial_update_caps:3054] partial update disabled as the property is not set
-[    1.036138] dsi-ctrl:[_dsi_ctrl_setup_isr] [DSI_0] IRQ 222 registered
-[    1.039496] iommu: Adding device 59a0000.qcom,kgsl-iommu:gfx3d_user to group 10
-[    1.039775] iommu: Adding device 59a0000.qcom,kgsl-iommu:gfx3d_secure to group 11
-[    1.039870] brd: module loaded
-[    1.042645] loop: module loaded
-[    1.042768] zram: Added device: zram0
-[    1.077840] QSEECOM: qseecom_probe: qseecom.qsee_version = 0x1401000
-[    1.077861] QSEECOM: qseecom_retrieve_ce_data: Device does not support PFE
-[    1.077865] QSEECOM: qseecom_probe: qseecom clocks handled by other subsystem
-[    1.077872] QSEECOM: qseecom_probe: qseecom.qsee_reentrancy_support = 2
-[    1.077963] QSEECOM: qseecom_probe: qseecom.whitelist_support = 1
-[    1.078144] QSEECOM: qseecom_probe: Unable to register bus client
-[    1.078835] iommu: Adding device 1b20000.qcedev to group 12
-[    1.080362] qce 1b20000.qcedev: QTI Crypto 5.5.0 device found @0x1b20000
-[    1.080378] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000001b04000
-[    1.080380] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000001b04000
-[    1.080384] sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000001b04000
-[    1.080388] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000001b04000
-[    1.080391] sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000001b04000
-[    1.080395] sps:BAM 0x0000000001b04000 is registered.
-[    1.080480] sps:BAM 0x0000000001b04000 (va:0x0000000039f2d69d) enabled: ver:0x27, number of pipes:16
-[    1.080604] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001b04000 irq 45
-[    1.082312] iommu: Adding device 1b20000.qcrypto to group 13
-[    1.083404] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
-[    1.083997] qcrypto 1b20000.qcrypto: QTI Crypto 5.5.0 device found @0x1b20000
-[    1.084181] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001b04000 irq 45
-[    1.085094] qcrypto 1b20000.qcrypto: qcrypto-ecb-aes
-[    1.085256] qcrypto 1b20000.qcrypto: qcrypto-cbc-aes
-[    1.085367] qcrypto 1b20000.qcrypto: qcrypto-ctr-aes
-[    1.085466] qcrypto 1b20000.qcrypto: qcrypto-ecb-des
-[    1.085560] qcrypto 1b20000.qcrypto: qcrypto-cbc-des
-[    1.085654] qcrypto 1b20000.qcrypto: qcrypto-ecb-3des
-[    1.085751] qcrypto 1b20000.qcrypto: qcrypto-cbc-3des
-[    1.085840] qcrypto 1b20000.qcrypto: qcrypto-xts-aes
-[    1.085928] qcrypto 1b20000.qcrypto: qcrypto-sha1
-[    1.086009] qcrypto 1b20000.qcrypto: qcrypto-sha256
-[    1.086100] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha1-cbc-aes
-[    1.086191] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha1-cbc-des
-[    1.086283] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha1-cbc-3des
-[    1.086371] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha256-cbc-aes
-[    1.086465] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha256-cbc-des
-[    1.086556] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha256-cbc-3des
-[    1.086646] qcrypto 1b20000.qcrypto: qcrypto-hmac-sha1
-[    1.086768] qcrypto 1b20000.qcrypto: qcrypto-hmac-sha256
-[    1.086859] qcrypto 1b20000.qcrypto: qcrypto-aes-ccm
-[    1.086951] qcrypto 1b20000.qcrypto: qcrypto-rfc4309-aes-ccm
-[    1.087831] qcom_ice_get_device_tree_data: No vdd-hba-supply regulator, assuming not needed
-[    1.088575] SCSI Media Changer driver v0.25 
-[    1.089383] Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
-[    1.090716] libphy: Fixed MDIO Bus: probed
-[    1.090725] tun: Universal TUN/TAP device driver, 1.6
-[    1.090774] PPP generic driver version 2.4.2
-[    1.090825] PPP BSD Compression module registered
-[    1.090831] PPP Deflate Compression module registered
-[    1.090852] PPP MPPE Compression module registered
-[    1.090858] NET: Registered protocol family 24
-[    1.090872] PPTP driver version 0.8.5
-[    1.091089] wcnss_pre_alloc_init: Failed to create debugfs dir
-[    1.091095] cnss_utils: Unable to create debugfs -19
-[    1.091099] CLD80211: Initializing
-[    1.091237] usbcore: registered new interface driver rtl8150
-[    1.091260] usbcore: registered new interface driver r8152
-[    1.091282] usbcore: registered new interface driver asix
-[    1.091306] usbcore: registered new interface driver ax88179_178a
-[    1.091326] usbcore: registered new interface driver cdc_ether
-[    1.091348] usbcore: registered new interface driver smsc75xx
-[    1.091367] usbcore: registered new interface driver net1080
-[    1.091385] usbcore: registered new interface driver cdc_subset
-[    1.091408] usbcore: registered new interface driver zaurus
-[    1.091414] usbnet_init: Error getting ipc_log_ctxt
-[    1.091418] usbnet_init: Error getting ipc_log_ctxt
-[    1.091422] usbnet_init: Error getting ipc_log_ctxt
-[    1.091444] usbcore: registered new interface driver cdc_ncm
-[    1.096785] msm_sharedmem: msm_sharedmem_probe: Device created for client 'rmtfs'
-[    1.098461] msm-qusb-phy 1613000.qusb: 1613000.qusb supply USB3_GDSC not found, using dummy regulator
-[    1.100245] iommu: Adding device 4e00000.ssusb to group 14
-[    1.101464] dwc3 4e00000.dwc3: changing max_speed on rev 00000000
-[    1.101662] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt
-[    1.101678] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt for ep_events
-[    1.102353] Invalid index Defaulting curr to 0
-[    1.103793] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
-[    1.103804] ehci-pci: EHCI PCI platform driver
-[    1.103819] ehci-platform: EHCI generic platform driver
-[    1.104090] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
-[    1.104093] ohci-pci: OHCI PCI platform driver
-[    1.104115] ohci-platform: OHCI generic platform driver
-[    1.104702] usbcore: registered new interface driver usb-storage
-[    1.104715] usbcore: registered new interface driver usb_ehset_test
-[    1.104729] usbcore: registered new interface driver lvs
-[    1.104852] wdet_probe: Could not get USB power_supply, deferring probe
-[    1.106164] fgsi_init: Err allocating ipc_log_ctxt
-[    1.106434] usbcore: registered new interface driver xpad
-[    1.106825] qcom,qpnp-rtc 1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc: rtc core: registered qpnp_rtc as rtc0
-[    1.107051] i2c /dev entries driver
-[    1.107120] IR NEC protocol handler initialized
-[    1.107124] IR RC5(x/sz) protocol handler initialized
-[    1.107127] IR RC6 protocol handler initialized
-[    1.107130] IR JVC protocol handler initialized
-[    1.107134] IR Sony protocol handler initialized
-[    1.107136] IR SANYO protocol handler initialized
-[    1.107140] IR Sharp protocol handler initialized
-[    1.107143] IR MCE Keyboard/mouse protocol handler initialized
-[    1.107146] IR XMP protocol handler initialized
-[    1.107709] i2c_geni 4a84000.i2c: Bus frequency is set to 400000Hz.
-[    1.108641] i2c_geni 4a88000.i2c: Bus frequency is set to 400000Hz.
-[    1.108992] sde_mdp_parse_dt_prop_len: <SDEROT_INFO> prop qcom,mdss-rot-vbif-memtype : doesn't exist in device tree
-[    1.109003] sde_mdp_parse_dt_prop_len: <SDEROT_INFO> prop qcom,mdss-inline-rot-qos-lut : doesn't exist in device tree
-[    1.109009] sde_mdp_parse_dt_prop_len: <SDEROT_INFO> prop qcom,mdss-inline-rot-danger-lut : doesn't exist in device tree
-[    1.109013] sde_mdp_parse_dt_prop_len: <SDEROT_INFO> prop qcom,mdss-inline-rot-safe-lut : doesn't exist in device tree
-[    1.109056] register_client_adhoc:Failed to find path.src 1 dest 590
-[    1.109058] sde_mdp_bus_scale_register: <SDEROT_WARN> reg_bus_client register failed
-[    1.109975] No change in context(0==0), skip
-[    1.111577] sde_rotator 5e00000.qcom,mdss_rotator: <SDEROT_INFO> SDE v4l2 rotator probe success
-[    1.111857] i2c_geni 4a8c000.i2c: Bus frequency is set to 1000000Hz.
-[    1.113292] iommu: Adding device 5e00000.qcom,mdss_rotator:qcom,smmu_rot_unsec_cb to group 15
-[    1.113337] sde_smmu_probe: <SDEROT_INFO> iommu v2 domain[0] mapping and clk register successful!
-[    1.113418] iommu: Adding device 5e00000.qcom,mdss_rotator:qcom,smmu_rot_sec_cb to group 16
-[    1.113440] sde_smmu_probe: <SDEROT_INFO> iommu v2 domain[1] mapping and clk register successful!
-[    1.113460] msm_vidc:  err: Failed to create debugfs for msm_vidc
-[    1.114288] msm_vidc:  err: Failed to create debugfs for msm_vidc
-[    1.114763] iommu: Adding device 5a00000.qcom,vidc:non_secure_cb to group 17
-[    1.115170] iommu: Adding device 5a00000.qcom,vidc:secure_bitstream_cb to group 18
-[    1.116328] iommu: Adding device 5a00000.qcom,vidc:secure_pixel_cb to group 19
-[    1.117474] iommu: Adding device 5a00000.qcom,vidc:secure_non_pixel_cb to group 20
-[    1.119346] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb1 to group 21
-[    1.119368] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 6, cb->name: :vfe sid [0] = 1056\x0a,
-[    1.119370] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 6, cb->name: :vfe sid [1] = 1057\x0a,
-[    1.119967] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb2 to group 22
-[    1.119998] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 3, cb->name: :cpp sid [0] = 2048\x0a,
-[    1.120585] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb4 to group 23
-[    1.120611] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 3, cb->name: :jpeg_enc0 sid [0] = 2080\x0a,
-[    1.121082] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb5 to group 24
-[    1.121108] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 3, cb->name: :jpeg_dma sid [0] = 2081\x0a,
-[    1.126457] msm_actuator_platform_probe:1993 msm_actuator_platform_probe: No/Error Actuator GPIOs
-[    1.126505] msm_actuator_platform_probe:1993 msm_actuator_platform_probe: No/Error Actuator GPIOs
-[    1.126876] msm_eeprom_platform_probe failed 1787
-[    1.127024] msm_eeprom_platform_probe failed 1787
-[    1.127145] msm_eeprom_platform_probe failed 1787
-[    1.127268] msm_eeprom_platform_probe failed 1787
-[    1.129775] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
-[    1.129810] thermal thermal_zone60: failed to read out thermal zone (-19)
-[    1.129837] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
-[    1.129855] thermal thermal_zone61: failed to read out thermal zone (-19)
-[    1.133627] MSM-CPP cpp_init_hardware:1140 CPP HW Version: 0x60010004
-[    1.133640] MSM-CPP cpp_init_hardware:1158 stream_cnt:0
-[    1.134251] MSM-CPP cpp_release_hardware:1221 cpp hw release done
-[    1.134881] CAM-SOC msm_camera_get_reg_base:894 err: mem resource vfe_fuse not found
-[    1.134886] CAM-SOC msm_camera_get_res_size:937 err: mem resource vfe_fuse not found
-[    1.135267] CAM-SOC msm_camera_get_reg_base:894 err: mem resource vfe_fuse not found
-[    1.135271] CAM-SOC msm_camera_get_res_size:937 err: mem resource vfe_fuse not found
-[    1.136950] __msm_jpeg_init:1595] Jpeg Device id 0
-[    1.138507] Couldn't parse device tree rc=-517
-[    1.144216] device-mapper: uevent: version 1.0.3
-[    1.144302] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
-[    1.144586] bt_dt_parse_vreg_info: qca,bt-vdd-vl: is not provided in device tree
-[    1.144591] bt_dt_parse_vreg_info: qca,bt-vdd-vm: is not provided in device tree
-[    1.144596] bt_dt_parse_vreg_info: qca,bt-vdd-5c: is not provided in device tree
-[    1.144599] bt_dt_parse_vreg_info: qca,bt-vdd-5a: is not provided in device tree
-[    1.144603] bt_dt_parse_vreg_info: qca,bt-vdd-vh: is not provided in device tree
-[    1.144614] bt_dt_parse_vreg_info: qca,bt-vdd-ldo: is not provided in device tree
-[    1.144618] bt_dt_parse_vreg_info: qca,bt-chip-pwd: is not provided in device tree
-[    1.144623] bt_power_populate_dt_pinfo: bt-reset-gpio not provided in device tree
-[    1.144626] bt_power_populate_dt_pinfo: bt-3P3-gpio not provided in devicetree
-[    1.144630] bt_power_populate_dt_pinfo: bt-1P3-gpio not provided in devicetree
-[    1.144633] bt_dt_parse_clk_info: clocks is not provided in device tree
-[    1.144636] bt_power_populate_dt_pinfo: clock not provided in device tree
-[    1.145295] sdhci: Secure Digital Host Controller Interface driver
-[    1.145300] sdhci: Copyright(c) Pierre Ossman
-[    1.145303] sdhci-pltfm: SDHCI platform and OF driver helper
-[    1.145919] qcom,tri-led 1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000: rgb_sync prepare 1
-[    1.145945] qcom,tri-led 1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000: color_variation_max_num[4] rgb_current_index[103]
-[    1.145957] qcom,tri-led 1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000: color_variation_max_num[4] rgb_current_index[103]
-[    1.145970] qcom,tri-led 1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000: color_variation_max_num[4] rgb_current_index[103]
-[    1.146052] ## mmc0: gpio_is_valid(pdata->uim2_gpio)=-2: failure
-[    1.146534] qpnp_vibrator_ldo_probe: Vibrator LDO successfully registered: uV = 3000000, overdrive = disabled
-[    1.146914] usbcore: registered new interface driver usbhid
-[    1.146918] usbhid: USB HID core driver
-[    1.146991] ashmem: initialized
-[    1.147024] wlan_hdd_state wlan major(501) initialized
-[    1.149055] ## mmc0: can't set uim2_gpio: -2
-[    1.149752] mmc0: SDHCI controller on 4744000.sdhci [4744000.sdhci] using 64-bit ADMA in CMDQ mode
-[    1.216105] mmc0: Out-of-interrupt timeout is 100[ms]
-[    1.216112] mmc0: eMMC FW version: 0x03
-[    1.216117] mmc0: CMDQ supported: depth: 16
-[    1.222512] cmdq_host_alloc_tdl: desc_size: 1024 data_sz: 63488 slot-sz: 32
-[    1.222774] mmc0: CMDQ enabled on card
-[    1.222791] mmc0: new HS400 Enhanced strobe MMC card at address 0001
-[    1.223287] sdhci_msm_pm_qos_cpu_init (): voted for group #0 (mask=0xf) latency=-1
-[    1.223295] sdhci_msm_pm_qos_cpu_init (): voted for group #1 (mask=0xf0) latency=-1
-[    1.223400] mmcblk0: mmc0:0001 DV6DMB 116 GiB 
-[    1.223569] mmcblk0rpmb: mmc0:0001 DV6DMB partition 3 16.0 MiB
-[    1.225507] mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 p34 p35 p36 p37 p38 p39 p40 p41 p42 p43 p44 p45 p46 p47 p48 p49 p50 p51 p52 p53 p54 p55 p56 p57 p58 p59 p60 p61 p62 p63 p64 p65 p66 p67 p68 p69 p70 p71 p72 p73 p74 p75 p76 p77 p78 p79 p80 p81 p82 p83 p84 p85 p86 p87
-[    1.229367] bimc-bwmon 1b8e200.qcom,cpu-cpu-ddr-bwmon: BW HWmon governor registered.
-[    1.243271] ## mmc1: mmc_gpio_init_uim2: gpio=101
-[    1.243285] ## mmc1: mmc_gpio_set_uim2_en: gpio=101 value=0
-[    1.243993] mmc1: SDHCI controller on 4784000.sdhci [4784000.sdhci] using 64-bit ADMA in legacy mode
-[    1.278742] arm-memlat-mon soc:qcom,cpu0-cpu-ddr-latmon: Memory Latency governor registered.
-[    1.280454] arm-memlat-mon soc:qcom,cpu4-cpu-ddr-latmon: Memory Latency governor registered.
-[    1.282139] arm-memlat-mon soc:qcom,cpu0-computemon: Compute governor registered.
-[    1.283830] arm-memlat-mon soc:qcom,cpu4-computemon: Compute governor registered.
-[    1.296312] input: bu520x1nvx as /devices/virtual/input/input1
-[    1.296710] [egis] egis_probe got egistec,gpio_irq 92
-[    1.310117] Loading pn544 driver
-[    1.310185] pn544_parse_dt: 85, 83, 84, 0, 24 error:0
-[    1.310335] pn544_probe : requesting IRQ 228
-[    1.310430] Loading pn544 pm ops driver
-[    1.310714] pn553-pm-ops soc:nfc,pm-ops: pn553_pm_ops_probe, probing pn553 PM OPS driver
-[    1.310719] pn553-pm-ops soc:nfc,pm-ops: pn553_pm_ops_probe, probe pn553 PM OPS driver successfully
-[    1.310773] [sec_input] sec_ts_init
-[    1.310830] sec_ts 1-0048: [sec_input] sec_ts_probe: start
-[    1.310849] usbcore: registered new interface driver snd-usb-audio
-[    1.310875] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: irq_type property:2008, 8200
-[    1.310884] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: reset_gpio [97]
-[    1.310891] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: device_id [ac] [37] [61]
-[    1.310911] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: Failed to get ack_wait_time
-[    1.310923] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: i2c buffer limit: 32, lcd_id:000000, bringup:0, FW:touch_module_id_0x82.img(1), id:0,0, mis_cal:1 dex:0, gesture:0
-[    1.310930] sec_ts 1-0048: [sec_input] watchdog_supported: true
-[    1.310937] sec_ts 1-0048: [sec_input] watchdog_delay_ms: 10000
-[    1.310944] sec_ts 1-0048: [sec_input] side_touch_supported: false
-[    1.310950] sec_ts 1-0048: [sec_input] glove_mode_supported: false
-[    1.310957] sec_ts 1-0048: [sec_input] cover_mode_supported: false
-[    1.310964] sec_ts 1-0048: [sec_input] aod_mode_supported: false
-[    1.310971] sec_ts 1-0048: [sec_input] sod_mode_supported: false
-[    1.310978] sec_ts 1-0048: [sec_input] stamina_mode_supported: true
-[    1.310989] sec_ts 1-0048: [sec_input] sec_ts_parse_dt_feature: game enhencer grip rejection not supported
-[    1.310996] sec_ts 1-0048: [sec_input] sec_ts_parse_dt_feature: game enhencer grip rejection not supported
-[    1.311003] sec_ts 1-0048: [sec_input] Unable to read wireless_charging_supported
-[    1.311012] iommu: Adding device soc:usb_audio_qmi_dev to group 25
-[    1.311019] sec_ts 1-0048: [sec_input] sec_ts_probe: init resource
-[    1.311025] sec_ts 1-0048: [sec_input] sec_ts_probe: power enable
-[    1.311109] input: sec_touchscreen as /devices/platform/soc/4a88000.i2c/i2c-1/1-0048/input/input2
-[    1.311121] sec_ts 1-0048: [sec_input] sec_ts_input_open
-[    1.311213] input: sec_touchscreen_side as /devices/platform/soc/4a88000.i2c/i2c-1/1-0048/input/input3
-[    1.311372] sec_ts 1-0048: [sec_input] sec_ts_probe: done
-[    1.311879] cs35l41 2-0040: 2-0040 supply VA not found, using dummy regulator
-[    1.311894] cs35l41 2-0040: 2-0040 supply VP not found, using dummy regulator
-[    1.352342] cs35l41 2-0040: Cirrus Logic CS35L41 (35a40), Revision: B2
-[    1.356408] apr_probe: Unable to create ipc log context
-[    1.360809] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.364707] msm-dai-q6-hdmi soc:qcom,msm-dai-q6-hdmi_ms: invalid device ID 24578
-[    1.365251] msm-auxpcm-dev soc:qcom,msm-sen-auxpcm: msm_auxpcm_dev_probe: invalid DT intf name senary
-[    1.376156] msm-dai-tdm soc:qcom,msm-dai-tdm-sen-rx: msm_dai_tdm_q6_probe: group id not supported 0x9150
-[    1.376168] msm-dai-tdm: probe of soc:qcom,msm-dai-tdm-sen-rx failed with error -22
-[    1.376182] msm-dai-tdm soc:qcom,msm-dai-tdm-sen-tx: msm_dai_tdm_q6_probe: group id not supported 0x9151
-[    1.376187] msm-dai-tdm: probe of soc:qcom,msm-dai-tdm-sen-tx failed with error -22
-[    1.382150] GACT probability NOT on
-[    1.382164] Mirror/redirect action on
-[    1.382171] u32 classifier
-[    1.382173] Actions configured
-[    1.382180] Netfilter messages via NETLINK v0.30.
-[    1.382262] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
-[    1.382313] ctnetlink v0.93: registering with nfnetlink.
-[    1.382437] xt_time: kernel timezone is -0000
-[    1.382479] gre: GRE over IPv4 demultiplexor driver
-[    1.382482] IPv4 over IPsec tunneling driver
-[    1.382659] ip_tables: (C) 2000-2006 Netfilter Core Team
-[    1.383118] arp_tables: arp_tables: (C) 2002 David S. Miller
-[    1.383195] Initializing XFRM netlink socket
-[    1.383203] IPsec XFRM device driver
-[    1.383304] NET: Registered protocol family 10
-[    1.383757] Segment Routing with IPv6
-[    1.383783] mip6: Mobile IPv6
-[    1.383791] ip6_tables: (C) 2000-2006 Netfilter Core Team
-[    1.384186] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
-[    1.384419] NET: Registered protocol family 17
-[    1.384428] NET: Registered protocol family 15
-[    1.384439] Ebtables v2.0 registered
-[    1.384463] l2tp_core: L2TP core driver, V2.0
-[    1.384468] l2tp_ppp: PPPoL2TP kernel driver, V2.0
-[    1.384471] l2tp_ip: L2TP IP encapsulation support (L2TPv3)
-[    1.384479] l2tp_netlink: L2TP netlink interface
-[    1.384489] l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
-[    1.384492] l2tp_ip6: L2TP IP encapsulation support for IPv6 (L2TPv3)
-[    1.384531] sctp: Hash tables configured (bind 256/256)
-[    1.387253] icnss: Recursive recovery allowed for WLAN
-[    1.387263] icnss: adc_tm_dev probe defer
-[    1.388061] dwc3 4e00000.dwc3: changing max_speed on rev 00000000
-[    1.388202] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt
-[    1.388207] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt for ep_events
-[    1.388675] usb_bam_init: setting SPS_BAM_SMMU_EN flag with (4f04000.qcom,usbbam)
-[    1.388691] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000004f04000
-[    1.388693] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000004f04000
-[    1.388699] sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000004f04000
-[    1.388704] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000004f04000
-[    1.388709] sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000004f04000
-[    1.388714] sps:BAM 0x0000000004f04000 is registered.
-[    1.388902] Invalid index Defaulting curr to 0
-[    1.389400] ipa_rm ipa_rm_delete_resource:146 IPA RM was not initialized
-[    1.389407] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
-[    1.389411] ipa_rm ipa_rm_delete_resource:146 IPA RM was not initialized
-[    1.389414] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
-[    1.389832] wdet_probe: Could not get USB power_supply, deferring probe
-[    1.403806] QG-K: get_batt_id_ohm: batt_id_mv=246, batt_id_ohm=15103
-[    1.404035] of_batterydata_get_best_aged_profile: 1320-0974 age level 2 found
-[    1.404188] QG-K: qg_batterydata_init: QG Battery-profile loaded
-[    1.404196] QG-K: qg_load_battery_profile: No |  Range of Temp  | Range of VBATT  | Target FCC/FV Condition
-[    1.404200] QG-K: qg_load_battery_profile:  1 |  -2550 -     50 |      0 -   4500 |      0 4340 1
-[    1.404204] QG-K: qg_load_battery_profile:  2 |     50 -    120 |      0 -   4500 |    650 4340 2
-[    1.404209] QG-K: qg_load_battery_profile:  3 |    120 -    200 |      0 -   4100 |   2050 4340 3
-[    1.404212] QG-K: qg_load_battery_profile:  4 |    120 -    200 |   4100 -   4200 |   1550 4340 3
-[    1.404215] QG-K: qg_load_battery_profile:  5 |    120 -    200 |   4200 -   4300 |   1350 4340 3
-[    1.404219] QG-K: qg_load_battery_profile:  6 |    120 -    200 |   4300 -   4500 |   1000 4340 3
-[    1.404222] QG-K: qg_load_battery_profile:  7 |    200 -    450 |      0 -   4150 |   3000 4340 3
-[    1.404226] QG-K: qg_load_battery_profile:  8 |    200 -    450 |   4150 -   4200 |   2400 4340 3
-[    1.404229] QG-K: qg_load_battery_profile:  9 |    200 -    450 |   4200 -   4300 |   1700 4340 3
-[    1.404232] QG-K: qg_load_battery_profile: 10 |    200 -    450 |   4300 -   4500 |   1000 4340 3
-[    1.404236] QG-K: qg_load_battery_profile: 11 |    450 -    550 |      0 -   4500 |   1000 4200 4
-[    1.404239] QG-K: qg_load_battery_profile: 12 |    550 -   2550 |      0 -   4500 |      0 4200 5
-[    1.404242] QG-K: qg_load_battery_profile: profile=1320-0974 FV=4340000uV FCC=3000ma
-[    1.404246] QG-K: qg_setup_battery: battery_missing=0 batt_id_ohm=15103 Ohm profile_loaded=1 profile=1320-0974
-[    1.404290] ALG: cap_learning_somc_lift_learned_cap: [SOMC CL]Learned cap lifting is not needed.
-[    1.404304] QG-K: qg_store_learned_capacity: Stored learned capacity 3277000uah
-[    1.406605] QG-K: qg_determine_pon_soc: using S7_PON_SOC @ PON ocv_uv=4033073uV soc=75
-[    1.406740] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
-[    1.407422] QG-K: qpnp_qg_probe: QG initialized! battery_profile=1320-0974 SOC=75 QG_subtype=3
-[    1.407617] input: SOMC Charger Removal as /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pmi632@2:qcom,qpnp-smb5/input/input4
-[    1.409438] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
-[    1.409575] pmi632_charger: smblib_usb_plugin_locked: IRQ: usbin-plugin attached
-[    1.409580] pmi632_charger: typec_attach_detach_irq_handler: IRQ: determine-initial-status
-[    1.409702] pmi632_charger: typec_state_change_irq_handler: IRQ: cc-state-change; Type-C SOURCE_DEFAULT detected
-[    1.409714] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x00
-[    1.409718] pmi632_charger: smblib_handle_hvdcp_detect_done: IRQ: hvdcp-detect-done falling
-[    1.409721] pmi632_charger: smblib_handle_hvdcp_check_timeout: IRQ: smblib_handle_hvdcp_check_timeout falling
-[    1.409724] pmi632_charger: smblib_handle_sdp_enumeration_done: IRQ: sdp-enumeration-done falling
-[    1.409727] pmi632_charger: smblib_handle_slow_plugin_timeout: IRQ: slow-plugin-timeout falling
-[    1.409739] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x00
-[    1.409742] pmi632_charger: chg_state_change_irq_handler: IRQ: determine-initial-status
-[    1.409784] pmi632_charger: batt_temp_changed_irq_handler: IRQ: determine-initial-status
-[    1.409787] pmi632_charger: wdog_bark_irq_handler: IRQ: determine-initial-status
-[    1.409799] pmi632_charger: typec_or_rid_detection_change_irq_handler: IRQ: determine-initial-status
-[    1.409802] pmi632_charger: wdog_snarl_irq_handler: IRQ: determine-initial-status
-[    1.411174] pmi632_charger: smblib_somc_handle_profile_fv: cancel termination wa if working
-[    1.411178] pmi632_charger: smblib_somc_handle_profile_fv: set fv:4340000
-[    1.413405] pmi632_charger: somc_aicl_irq_handler: IRQ: input-current-limiting
-[    1.413908] pmi632_charger: chg_state_change_irq_handler: IRQ: chg-state-change
-[    1.414529] SMB5 status - usb:present=1 type=0 batt:present = 1 health = 1 charge = 1
-[    1.414565] QPNP SMB5 probed successfully
-[    1.416702] psy_register_cooler: Don't register psy cooling device
-[    1.416709] psy_register_cooler: Don't register psy cooling device
-[    1.416713] psy_register_cooler: Don't register psy cooling device
-[    1.416717] psy_register_cooler: Don't register psy cooling device
-[    1.416720] psy_register_cooler: Don't register psy cooling device
-[    1.416726] psy_register_cooler: Don't register psy cooling device
-[    1.416736] batt ext power supply prop 4 not supported
-[    1.439320] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7500
-[    1.470171] QG-K: qg_somc_jeita_step_charge_work: [NotCharging] BSOC:7500 MSOC:75 RTEMP:292 IBATT:6mA VBATT:4012mV VCELL:4012mV Target FCC:3000mA FV:4340mV
-[    1.470185] pmi632_charger: smblib_somc_set_prop_jeita_condition: set auto_rechg to 1
-[    1.479499] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.479981] icnss: Recursive recovery allowed for WLAN
-[    1.480789] dwc3 4e00000.dwc3: changing max_speed on rev 00000000
-[    1.480948] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt
-[    1.480953] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt for ep_events
-[    1.481495] usb_bam_init: setting SPS_BAM_SMMU_EN flag with (4f04000.qcom,usbbam)
-[    1.481523] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000004f04000
-[    1.481526] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000004f04000
-[    1.481532] sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000004f04000
-[    1.481537] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000004f04000
-[    1.481541] sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000004f04000
-[    1.481546] sps:BAM 0x0000000004f04000 is registered.
-[    1.482018] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.482651] registered taskstats version 1
-[    1.482656] Loading compiled-in X.509 certificates
-[    1.482862] icnss c800000.qcom,icnss: for wcss_msa0 segments only will be dumped.
-[    1.482921] icnss: Unable to create debugfs -19
-[    1.482984] icnss: wlan_pdr devs got major 494
-[    1.483020] icnss: Platform driver probed successfully
-[    1.484241] Loaded X.509 cert 'Build time autogenerated kernel key: 3af2d0ea543148bf7963f12301695a0aeaccf16f'
-[    1.484303] Key type ._fscrypt registered
-[    1.484306] Key type .fscrypt registered
-[    1.484309] Key type fscrypt-provisioning registered
-[    1.484476] Error: swapper/0: fastrpc_device_init: failed to create debugfs root dir
-[    1.485616] ADSPRPC: Secure VMID = 22
-[    1.485619] ADSPRPC: Secure VMID = 37
-[    1.486076] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb1 to group 26
-[    1.486755] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb2 to group 27
-[    1.487352] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb3 to group 28
-[    1.487911] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb4 to group 29
-[    1.488444] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb5 to group 30
-[    1.488947] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb6 to group 31
-[    1.489462] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb9 to group 32
-[    1.491156] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb10 to group 33
-[    1.492272] mmc1: new ultra high speed DDR50 SDHC card at address aaaa
-[    1.492594] mmcblk1: mmc1:aaaa SL32G 29.7 GiB 
-[    1.493725] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.494325] ngd_msm_ctrl a340000.slim: error creating ipc_logging context
-[    1.494333] ngd_msm_ctrl a340000.slim: error creating ipc_error_logging context
-[    1.494586] iommu: Adding device a340000.slim:qcom,iommu_slim_ctrl_cb to group 34
-[    1.494749] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.495670] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.497474] input: gpio-keys as /devices/platform/soc/soc:gpio_keys/input/input5
-[    1.497862] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.498566] qcom,qpnp-rtc 1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc: setting system clock to 1970-01-04 23:29:10 UTC (343750)
-[    1.500090] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.501405] lpm_levels: Cluster (system) stats not registered
-[    1.501413] lpm_levels: Cluster (perf) stats not registered
-[    1.501418] lpm_levels: register_cluster_lpm_stats()
-[    1.501423] lpm_levels: Cluster (pwr) stats not registered
-[    1.501428] lpm_levels: register_cluster_lpm_stats()
-[    1.503263] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.504563] mmcblk1: p1
-[    1.505976] rmnet_ipa3 started initialization
-[    1.506544] RNDIS_IPA module is loaded.
-[    1.507428] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
-[    1.510439] ufs_phy_gdsc: disabling
-[    1.510451] usb30_prim_gdsc: disabling
-[    1.510472] dbu1: disabling
-[    1.510489] regulator_proxy_consumer_remove_all: removing regulator proxy consumer requests
-[    1.510498] ALSA device list:
-[    1.510502] No soundcards found.
-[    1.510531] Warning: unable to open an initial console.
-[    1.511451] Freeing unused kernel memory: 4288K
-[    1.544828] init: init first stage started!
-[    1.544893] init: Unable to open /lib/modules, skipping module loading.
-[    1.544917] init: First stage mount skipped (recovery mode)
-[    1.545155] init: [libfs_mgr]dt_fstab: Skip disabled entry for partition vendor
-[    1.545169] init: [libfs_mgr]ReadFstabFromDt(): failed to read fstab from dt
-[    1.545252] init: [libfs_mgr]dt_fstab: Skip disabled entry for partition vendor
-[    1.545320] init: [libfs_mgr]Error parsing mount_flags
-[    1.545332] init: [libfs_mgr]ReadFstabFromFile(): failed to load fstab from : '/etc/recovery.fstab'
-[    1.545344] init: [libfs_mgr]ReadDefaultFstab(): failed to find device default fstab
-[    1.545354] init: failed to read default fstab for first stage mount
-[    1.577375] init: [libfs_mgr]dt_fstab: Skip disabled entry for partition vendor
-[    1.577451] init: [libfs_mgr]Error parsing mount_flags
-[    1.577463] init: [libfs_mgr]ReadFstabFromFile(): failed to load fstab from : '/etc/recovery.fstab'
-[    1.577475] init: [libfs_mgr]ReadDefaultFstab(): failed to find device default fstab
-[    1.577483] init: Could not read default fstab
-[    1.577629] init: Could not find mount entry for /system
-[    1.577651] init: Opening SELinux policy
-[    1.578571] init: Loading SELinux policy
-[    1.580690] SELinux: 8192 avtab hash slots, 28371 rules.
-[    1.586713] SELinux: 8192 avtab hash slots, 28371 rules.
-[    1.586741] SELinux:  1 users, 2 roles, 1896 types, 0 bools, 1 sens, 1024 cats
-[    1.586744] SELinux:  102 classes, 28371 rules
-[    1.588792] SELinux:  policy capability network_peer_controls=1
-[    1.588798] SELinux:  policy capability open_perms=1
-[    1.588801] SELinux:  policy capability extended_socket_class=1
-[    1.588804] SELinux:  policy capability always_check_network=0
-[    1.588806] SELinux:  policy capability cgroup_seclabel=0
-[    1.588809] SELinux:  policy capability nnp_nosuid_transition=1
-[    1.588812] SELinux:  Completing initialization.
-[    1.588813] SELinux:  Setting up existing superblocks.
-[    1.626247] audit: type=1403 audit(343750.623:2): policy loaded auid=4294967295 ses=4294967295
-[    1.628058] selinux: SELinux: Loaded file_contexts
-[    1.628066] selinux: 
-[    1.661575] init: init second stage started!
-[    1.678210] init: Using Android DT directory /proc/device-tree/firmware/android/
-[    1.680127] init: Overriding previous property 'persist.sys.usb.config':'adb' with new value 'none'
-[    1.680407] init: Couldn't load property file '/system/build.prop': open() failed: No such file or directory: No such file or directory
-[    1.680432] init: Couldn't load property file '/system_ext/etc/build.prop': open() failed: No such file or directory: No such file or directory
-[    1.680449] init: Couldn't load property file '/system_ext/default.prop': open() failed: No such file or directory: No such file or directory
-[    1.680464] init: Couldn't load property file '/system_ext/build.prop': open() failed: No such file or directory: No such file or directory
-[    1.680480] init: Couldn't load property file '/system_ext/default.prop': open() failed: No such file or directory: No such file or directory
-[    1.680494] init: Couldn't load property file '/system_ext/build.prop': open() failed: No such file or directory: No such file or directory
-[    1.680510] init: Couldn't load property file '/vendor/default.prop': open() failed: No such file or directory: No such file or directory
-[    1.732828] audit: type=1400 audit(343750.730:3): avc:  denied  { sys_nice } for  pid=443 comm="ueventd" capability=23  scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.732970] ueventd: ueventd started!
-[    1.734354] selinux: SELinux: Loaded file_contexts
-[    1.734361] selinux: 
-[    1.734480] ueventd: Parsing file /system/etc/ueventd.rc...
-[    1.734523] ueventd: Added '/vendor/etc/ueventd.rc' to import list
-[    1.734533] ueventd: Added '/odm/etc/ueventd.rc' to import list
-[    1.734723] ueventd: Parsing file /vendor/etc/ueventd.rc...
-[    1.734743] ueventd: Unable to read config file '/vendor/etc/ueventd.rc': open() failed: No such file or directory
-[    1.734758] ueventd: Parsing file /odm/etc/ueventd.rc...
-[    1.734773] ueventd: Unable to read config file '/odm/etc/ueventd.rc': open() failed: No such file or directory
-[    1.948118] audit: type=1400 audit(343750.946:4): avc:  denied  { entrypoint } for  pid=453 comm="init" path="/system/bin/logd" dev="rootfs" ino=10952 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.949443] audit: type=1400 audit(343750.946:5): avc:  denied  { map } for  pid=453 comm="logd" path="/system/bin/logd" dev="rootfs" ino=10952 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.949467] audit: type=1400 audit(343750.946:6): avc:  denied  { read } for  pid=453 comm="logd" path="/system/bin/logd" dev="rootfs" ino=10952 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.949475] audit: type=1400 audit(343750.946:7): avc:  denied  { execute } for  pid=453 comm="logd" path="/system/bin/logd" dev="rootfs" ino=10952 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.950313] audit: type=1400 audit(343750.950:8): avc:  denied  { getattr } for  pid=453 comm="logd" path="/system/bin/logd" dev="rootfs" ino=10952 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.950542] audit: type=1400 audit(343750.950:9): avc:  denied  { read } for  pid=453 comm="logd" name="bin" dev="rootfs" ino=10846 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.950723] audit: type=1400 audit(343750.950:10): avc:  denied  { open } for  pid=453 comm="logd" path="/system/lib64/libbase.so" dev="rootfs" ino=11176 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.956555] logd: libprocessgroup: Failed to read task profiles from /etc/task_profiles.json
-[    1.956597] logd: libprocessgroup: Loading /etc/task_profiles.json for [453] failed
-[    1.956715] logd: libprocessgroup: Failed to find SCHED_SP_BACKGROUNDtask profile: No such file or directory
-[    1.959185] logd.auditd: start
-[    1.959204] logd.klogd: 1959188006
-[    1.975028] Mass Storage Function, version: 2009/09/11
-[    1.975040] LUN: removable read only CD-ROM file: (no medium)
-[    1.975423] type=1400 audit(343750.956:11): avc: denied { write } for comm="logd" name="socket" dev="tmpfs" ino=11190 scontext=u:r:logd:s0 tcontext=u:object_r:socket_device:s0 tclass=dir permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.975476] type=1400 audit(343750.956:12): avc: denied { add_name } for comm="logd" name="logd" scontext=u:r:logd:s0 tcontext=u:object_r:socket_device:s0 tclass=dir permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.975511] type=1400 audit(343750.956:13): avc: denied { create } for comm="logd" name="logd" scontext=u:r:logd:s0 tcontext=u:object_r:socket_device:s0 tclass=sock_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.975559] type=1400 audit(343750.960:14): avc: denied { module_request } for comm="init" kmod="fs-functionfs" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1 ppid=0 pcomm="swapper/0"
-[    1.975620] type=1400 audit(343750.963:15): avc: denied { create } for comm="servicemanager" scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_selinux_socket permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    1.977092] file system registered
-[    1.977892] f_cdev_alloc: port_name:at_usb0 (0000000000000000) portno:(0)
-[    1.980138] f_cdev_alloc: port_name:at_usb1 (0000000000000000) portno:(1)
-[    1.980578] f_cdev_alloc: port_name:at_usb2 (0000000000000000) portno:(2)
-[    2.002554] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x00
-[    2.002565] pmi632_charger: smblib_handle_hvdcp_detect_done: IRQ: hvdcp-detect-done falling
-[    2.002569] pmi632_charger: smblib_handle_hvdcp_check_timeout: IRQ: smblib_handle_hvdcp_check_timeout falling
-[    2.002573] pmi632_charger: smblib_handle_sdp_enumeration_done: IRQ: sdp-enumeration-done falling
-[    2.002576] pmi632_charger: smblib_handle_slow_plugin_timeout: IRQ: slow-plugin-timeout falling
-[    2.002604] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x00
-[    2.002895] water_detection soc:somc_water_detection: Connection status is changed to 1
-[    2.002900] water_detection soc:somc_water_detection: wdet_polling_set: state 0 -> 1
-[    2.002913] water_detection soc:somc_water_detection: wdet_polling_set: Polling stop
-[    2.007480] PKCS#7 signature not signed with a trusted key
-[    2.007505] sec_touchscreen: disagrees about version of symbol module_layout
-[    2.008097] sec_ts 1-0048: [sec_input] after_init_work_start_store: - start
-[    2.008105] sec_ts 1-0048: [sec_input] start after_init_work
-[    2.008124] sec_ts 1-0048: [sec_input] sec_ts_after_init_work: session_work start
-[    2.008131] sec_ts 1-0048: [sec_input] sec_ts_after_init: start
-[    2.008135] sec_ts 1-0048: [sec_input] sec_ts_after_init: request_irq = 229
-[    2.008774] sec_ts 1-0048: [sec_input] sec_ts_after_init: ret 0
-[    2.008782] sec_ts 1-0048: [sec_input] Change irq was disable
-[    2.008788] sec_ts 1-0048: [sec_input] sec_ts_after_init: ts =  SEC_TS_READ_DEVICE_ID = 34 deviceID = 139836648
-[    2.010338] sec_ts 1-0048: [sec_input] sec_ts_after_init: TOUCH DEVICE ID : 53, 45, 37, 61, 00
-[    2.024509] sec_ts 1-0048: [sec_input] sec_ts_after_init: TOUCH STATUS : 20 || 00, 02, 00, 00
-[    2.024522] sec_ts 1-0048: [sec_input] no irq change [disable]
-[    2.024808] sec_ts 1-0048: [sec_input] sec_ts_read_calibration_report: count:4, pass count:4, fail count:0, status:0xA2
-[    2.024814] sec_ts 1-0048: [sec_input] sec_ts_firmware_update_on_probe: initial firmware update touch_module_id_0x82.img, cal:A2
-[    2.027411] firmware touch_module_id_0x82.img: _request_firmware_load: firmware state wait timeout: rc = -2
-[    2.027473] sec_ts 1-0048: [sec_input] sec_ts_firmware_update_on_probe: firmware is not available
-[    2.027479] sec_ts 1-0048: [sec_input] sec_ts_after_init: fail firmware update on probe
-[    2.027748] sec_ts 1-0048: [sec_input] sec_ts_read_information: AC, 37, 61
-[    2.028240] sec_ts 1-0048: [sec_input] sec_ts_read_information: nTX:E, nRX:1F, rY:2520, rX:1080
-[    2.028441] sec_ts 1-0048: [sec_input] sec_ts_read_information: STATUS : 20
-[    2.028725] sec_ts 1-0048: [sec_input] sec_ts_read_information: TOUCH STATUS : 00, 02, 00, 00
-[    2.028953] sec_ts 1-0048: [sec_input] sec_ts_read_information: Functions : 61
-[    2.029152] sec_ts 1-0048: [sec_input] sec_ts_read_information: Stamina mode : 0
-[    2.029350] sec_ts 1-0048: [sec_input] sec_ts_read_information: Side touch : 255
-[    2.029633] sec_ts 1-0048: [sec_input] sec_ts_read_information: Doze timeout : 249
-[    2.029906] sec_ts 1-0048: [sec_input] Change irq enabled
-[    2.029911] sec_ts 1-0048: [sec_input] sec_ts_after_init: success
-[    2.029917] sec_ts 1-0048: [sec_input] after_init_work done
-[    2.060805] sec_ts 1-0048: [sec_input] After: Unblank
-[    2.060817] sec_ts 1-0048: [sec_input] start@2.60804058
-[    2.060822] sec_ts 1-0048: [sec_input] sec_ts_resume: start
-[    2.060826] sec_ts 1-0048: [sec_input] sec_ts_resume: already power on
-[    2.060830] sec_ts 1-0048: [sec_input] sec_ts_resume: end
-[    2.060834] sec_ts 1-0048: [sec_input] end@2.60821610
-[    2.426732] pmi632_charger: smblib_icl_change_work: icl_settled=0
-[    2.451072] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x01
-[    2.451221] pmi632_charger: smblib_handle_apsd_done: IRQ: apsd-done rising; SDP detected
-[    2.451225] pmi632_charger: smblib_handle_hvdcp_detect_done: IRQ: hvdcp-detect-done falling
-[    2.451228] pmi632_charger: smblib_handle_hvdcp_check_timeout: IRQ: smblib_handle_hvdcp_check_timeout falling
-[    2.451232] pmi632_charger: smblib_handle_sdp_enumeration_done: IRQ: sdp-enumeration-done falling
-[    2.451234] pmi632_charger: smblib_handle_slow_plugin_timeout: IRQ: slow-plugin-timeout falling
-[    2.451255] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x01
-[    2.454984] msm-dwc3 4e00000.ssusb: DWC3 exited from low power mode
-[    3.340006] EXT4-fs (mmcblk0p2): warning: maximal mount count reached, running e2fsck is recommended
-[    3.341832] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: 
-[    3.343340] SELinux:  Context u:object_r:vendor_persist_time_file:s0 is not valid (left unmapped).
-[    3.376065] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    3.376075] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    3.376219] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    3.376223] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    3.376423] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    3.376428] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    3.376565] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    3.376569] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    3.384185] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    3.384198] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    3.384358] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    3.384364] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    3.384565] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    3.384569] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    3.384709] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    3.384712] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    3.399845] EXT4-fs (mmcblk0p66): recovery complete
-[    3.400247] EXT4-fs (mmcblk0p66): mounted filesystem with ordered data mode. Opts: 
-[    5.412654] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    5.412668] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    5.412797] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    5.412802] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    5.412993] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    5.412999] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    5.413123] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    5.413129] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    5.422457] EXT4-fs (mmcblk0p84): mounted filesystem with ordered data mode. Opts: 
-[    5.433673] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: 
-[    5.446161] EXT4-fs (dm-1): mounted filesystem without journal. Opts: 
-[    5.656835] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[    5.668687] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[    5.669568] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[    5.684881] EXT4-fs (dm-3): mounted filesystem without journal. Opts: 
-[    5.693958] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    5.693971] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    5.694098] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    5.694104] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    5.694291] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    5.694297] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    5.694422] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    5.694427] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    5.707750] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[    5.708734] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[    5.726166] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[    5.727082] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[    5.743009] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[    5.743641] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[    5.759250] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[    5.759917] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[    5.775639] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[    5.776261] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[    5.791870] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[    5.792492] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[    5.811406] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    5.811419] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    5.811549] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    5.811555] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    5.811748] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[    5.811754] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[    5.811879] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[    5.811885] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[    5.826177] FAT-fs (mmcblk1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
-[    7.012498] init: starting service 'adbd'...
-[    7.013026] init: Created socket '/dev/socket/adbd', mode 660, user 1000, group 1000
-[    7.040521] init: Control message: Could not find 'android.hardware.keymaster@4.0::IKeymasterDevice/default' for ctl.interface_start from pid: 454 (/system/bin/hwservicemanager)
-[    7.049149] read descriptors
-[    7.049166] read strings
-[    7.049864] init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/system/etc/init/hw/init.rc:201)
-[    7.055477] android_work: did not send uevent (0 0 0000000000000000)
-[    7.055918] init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/init.recovery.usb.rc:116)
-[    7.057069] init: Command 'symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/init.recovery.usb.rc:120) took 0ms and failed: symlink() failed: File exists
-[    7.057318] init: Command 'write /config/usb_gadget/g1/UDC ${sys.usb.controller}' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/init.recovery.usb.rc:121) took 0ms and failed: Unable to write to file '/config/usb_gadget/g1/UDC': Unable to write file contents: Device or resource busy
-[    7.191398] msm-dwc3 4e00000.ssusb: Avail curr from USB = 100
-[    7.191591] pmi632_charger: smblib_set_icl_current: set ICL to 50000uA
-[    7.192512] pmi632_charger: somc_aicl_irq_handler: IRQ: aicl-done
-[    7.315914] android_work: sent uevent USB_STATE=CONNECTED
-[    7.322456] android_work: sent uevent USB_STATE=DISCONNECTED
-[    7.507152] pmi632_charger: chg_state_change_irq_handler: IRQ: chg-state-change
-[    7.519118] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7500
-[    7.531943] android_work: sent uevent USB_STATE=CONNECTED
-[    7.543248] type=1400 audit(1680565320.961:531): avc: denied { read } for comm="recovery" scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_kobject_uevent_socket permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[    7.569901] configfs-gadget gadget: high-speed config #1: b
-[    7.570043] msm-dwc3 4e00000.ssusb: Avail curr from USB = 500
-[    7.570204] pmi632_charger: smblib_set_icl_current: set ICL to 500000uA
-[    7.570281] android_work: sent uevent USB_STATE=CONFIGURED
-[    7.838408] pmi632_charger: smblib_icl_change_work: icl_settled=500000
-[    7.838411] pmi632_charger: somc_aicl_irq_handler: IRQ: aicl-done
-[    8.041242] init: Control message: Could not find 'android.hardware.keymaster@4.0::IKeymasterDevice/default' for ctl.interface_start from pid: 454 (/system/bin/hwservicemanager)
-[    9.041806] init: Control message: Could not find 'android.hardware.keymaster@4.0::IKeymasterDevice/default' for ctl.interface_start from pid: 454 (/system/bin/hwservicemanager)
-[   10.304415] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7500
-[   10.774765] type=1400 audit(1680565324.195:532): avc: denied { setattr } for comm="recovery" name="recovery" dev="rootfs" ino=13866 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[   10.822198] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[   10.822207] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[   10.822456] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[   10.822464] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[   10.822725] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[   10.822731] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[   10.822857] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[   10.822863] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[   10.830799] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[   10.830808] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[   10.830953] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[   10.830960] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[   10.831161] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[   10.831167] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[   10.831310] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[   10.831317] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[   10.838791] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[   10.838799] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[   10.838955] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[   10.838962] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[   10.839169] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[   10.839175] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[   10.839294] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[   10.839300] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[   10.845481] type=1400 audit(1680565324.265:533): avc: denied { setattr } for comm="recovery" name="log.gz" dev="rootfs" ino=14528 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[   10.845685] type=1400 audit(1680565324.265:534): avc: denied { fsetid } for comm="recovery" capability=4 scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=capability permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[   10.850861] type=1400 audit(1680565324.271:535): avc: denied { create } for comm="recovery" name="twadbfifo" scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1 ppid=1 pcomm="init" pgid=464 pgcomm="recovery"
-[   10.851023] type=1400 audit(1680565324.271:536): avc: denied { read } for comm="recovery" name="twadbfifo" dev="tmpfs" ino=12362 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1 ppid=1 pcomm="init" pgid=464 pgcomm="recovery"
-[   10.851135] type=1400 audit(1680565324.271:537): avc: denied { open } for comm="recovery" path="/tmp/twadbfifo" dev="tmpfs" ino=12362 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1 ppid=1 pcomm="init" pgid=464 pgcomm="recovery"
-[   10.851244] type=1400 audit(1680565324.271:538): avc: denied { ioctl } for comm="recovery" path="/dev/block/dm-0" dev="tmpfs" ino=2363 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[   10.863613] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[   10.864521] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[   10.870322] type=1400 audit(1680565324.291:539): avc: denied { ioctl } for comm="recovery" path="/dev/block/dm-0" dev="tmpfs" ino=2363 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[   10.880702] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[   10.881610] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[   10.887282] type=1400 audit(1680565324.308:540): avc: denied { ioctl } for comm="recovery" path="/dev/block/dm-0" dev="tmpfs" ino=2363 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
-[   10.897139] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
-[   10.897767] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
-[   10.910639] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[   10.910652] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[   10.910798] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[   10.910804] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[   10.911022] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
-[   10.911028] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
-[   10.911172] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
-[   10.911177] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
-[   20.184092] pmi632_charger: somc_aicl_irq_handler: IRQ: aicl-done
-[   20.188393] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7500
-[   21.701023] logd: logdr: UID=0 GID=0 PID=600 b tail=0 logMask=99 pid=0 start=0ns deadline=0ns
-[   22.241237] i2c_geni 4a88000.i2c: i2c error :-107
+[    0.002350] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.00 BogoMIPS (lpj=64000)
+[    0.002367] pid_max: default: 32768 minimum: 301
+[    0.002466] Security Framework initialized
+[    0.002477] SELinux:  Initializing.
+[    0.002559] SELinux:  Starting in permissive mode
+[    0.002611] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.002626] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.008852] ASID allocator initialised with 65536 entries
+[    0.010942] Hierarchical SRCU implementation.
+[    0.016499] disabling /soc/qcom,qup_uart@0x4a90000 node
+[    0.019038] smp: Bringing up secondary CPUs ...
+[    0.029280] GICv3: CPU1: found redistributor 1 region 0:0x000000000f320000
+[    0.029335] CPU1: Booted secondary processor [51af8014]
+[    0.039430] GICv3: CPU2: found redistributor 2 region 0:0x000000000f340000
+[    0.039477] CPU2: Booted secondary processor [51af8014]
+[    0.049523] GICv3: CPU3: found redistributor 3 region 0:0x000000000f360000
+[    0.049570] CPU3: Booted secondary processor [51af8014]
+[    0.060556] CPU features: enabling workaround for ARM erratum 858921
+[    0.060612] SSBD disabled by kernel configuration
+[    0.060619] CPU features: enabling workaround for Speculative Store Bypass Disable
+[    0.060653] CPU features: Unsupported CPU feature variation detected.
+[    0.060691] GICv3: CPU4: found redistributor 100 region 0:0x000000000f380000
+[    0.060730] arch_timer: Enabling local workaround for ARM erratum 858921
+[    0.060759] arch_timer: CPU4: Trapping CNTVCT access
+[    0.060778] CPU4: Booted secondary processor [51af8002]
+[    0.071097] GICv3: CPU5: found redistributor 101 region 0:0x000000000f3a0000
+[    0.071138] arch_timer: Enabling local workaround for ARM erratum 858921
+[    0.071162] arch_timer: CPU5: Trapping CNTVCT access
+[    0.071179] CPU5: Booted secondary processor [51af8002]
+[    0.081481] GICv3: CPU6: found redistributor 102 region 0:0x000000000f3c0000
+[    0.081521] arch_timer: Enabling local workaround for ARM erratum 858921
+[    0.081545] arch_timer: CPU6: Trapping CNTVCT access
+[    0.081562] CPU6: Booted secondary processor [51af8002]
+[    0.091872] GICv3: CPU7: found redistributor 103 region 0:0x000000000f3e0000
+[    0.091912] arch_timer: Enabling local workaround for ARM erratum 858921
+[    0.091936] arch_timer: CPU7: Trapping CNTVCT access
+[    0.091953] CPU7: Booted secondary processor [51af8002]
+[    0.092166] smp: Brought up 1 node, 8 CPUs
+[    0.092220] SMP: Total of 8 processors activated.
+[    0.092227] CPU features: detected: GIC system register CPU interface
+[    0.092233] CPU features: detected: 32-bit EL0 Support
+[    0.092313] CPU: All CPU(s) started at EL1
+[    0.092363] alternatives: patching kernel code
+[    0.092659] scm_enable_mem_protection: SCM call failed
+[    0.133263] Registered cp15_barrier emulation handler
+[    0.133286] Registered setend emulation handler
+[    0.133839] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6370867519511994 ns
+[    0.133871] futex hash table entries: 2048 (order: 6, 262144 bytes)
+[    0.144341] pinctrl core: initialized pinctrl subsystem
+[    0.145211] NET: Registered protocol family 16
+[    0.148010] schedtune: configured to support 8 boost groups
+[    0.148627] cpuidle: using governor menu
+[    0.148738] cpuidle: using governor qcom
+[    0.149020] NET: Registered protocol family 42
+[    0.158630] vdso32: 2 pages (1 code @         (ptrval), 1 data @         (ptrval))
+[    0.158652] vdso: 2 pages (1 code @         (ptrval), 1 data @         (ptrval))
+[    0.158668] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+[    0.159786] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.160229] Failed to create IPC log0
+[    0.160233] Failed to create IPC log1
+[    0.160237] Failed to create IPC log2
+[    0.160240] Failed to create IPC log3
+[    0.160243] Failed to create IPC log4
+[    0.160385] exit: IPA_USB init success!
+[    0.160952] pstore: using zlib compression
+[    0.161428] console [pstore0] enabled
+[    0.161512] pstore: Registered ramoops as persistent store backend
+[    0.161521] ramoops: attached 0xc0000@0xffc40000, ecc: 0/0
+[    0.165225] unable to find DT imem DLOAD mode node
+[    0.167637] unable to find DT imem EDLOAD mode node
+[    0.182315] platform 6080000.qcom,mss: assigned reserved memory node modem_region@4b000000
+[    0.183068] msm_watchdog f017000.qcom,wdt: wdog absent resource not present
+[    0.183685] Registering scandump region failed
+[    0.183781] msm_watchdog f017000.qcom,wdt: MSM Watchdog Initialized
+[    0.184690] sps:sps is ready.
+[    0.186381] platform ab00000.qcom,lpass: assigned reserved memory node pil_adsp_region@55300000
+[    0.186779] platform b300000.qcom,turing: assigned reserved memory node cdsp_regions@53500000
+[    0.187160] platform soc:mem_dump: assigned reserved memory node mem_dump_region
+[    0.187828] platform soc:qcom,smem: assigned reserved memory node smem@46000000
+[    0.188715] platform soc:qcom,msm-adsprpc-mem: assigned reserved memory node adsp_region
+[    0.189517] qcom_glink_rpm soc:rpm-glink: failed to register early notif -22
+[    0.190086] msm_glink soc:qcom,glink: [probe_subsystem]: no qcom,glink-label for wdsp
+[    0.190572] qcom_smd_rpm_probe: RPM-SMD running version 0
+[    0.191075] platform 46d00000.qseecom: assigned reserved memory node qseecom_region@5e400000
+[    0.191697] spmi spmi-0: PMIC arbiter version v5 (0x50010000)
+[    0.192634] (NULL device *): msm_gsi_probe:4573 failed to create IPC log, continue...
+[    0.193136] platform soc:qcom,ipa_fws: assigned reserved memory node ips_fw_region@57100000
+[    0.193237] platform 5ae0000.qcom,venus: assigned reserved memory node pil_video_region@52e00000
+[    0.195292] LCDB: qpnp_lcdb_regulator_probe: Failed to parse dt rc=-517
+[    0.199880] trinket-pinctrl 400000.pinctrl: invalid resource
+[    0.200122] trinket-pinctrl 400000.pinctrl: pin 22 disabled
+[    0.200149] trinket-pinctrl 400000.pinctrl: pin 23 disabled
+[    0.200171] trinket-pinctrl 400000.pinctrl: pin 28 disabled
+[    0.200192] trinket-pinctrl 400000.pinctrl: pin 29 disabled
+[    0.200212] trinket-pinctrl 400000.pinctrl: pin 30 disabled
+[    0.200234] trinket-pinctrl 400000.pinctrl: pin 31 disabled
+[    0.200254] trinket-pinctrl 400000.pinctrl: pin 32 disabled
+[    0.200274] trinket-pinctrl 400000.pinctrl: pin 33 disabled
+[    0.232903] platform soc:last_logs@ffbc0000: assigned reserved memory node last_log_region@ffbc0000
+[    0.244924] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
+[    0.272090] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu0
+[    0.272131] clk: add_opp: Set OPP pair (1804800000 Hz, 912000 uv) on cpu0
+[    0.272172] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu1
+[    0.272208] clk: add_opp: Set OPP pair (1804800000 Hz, 912000 uv) on cpu1
+[    0.272245] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu2
+[    0.272272] clk: add_opp: Set OPP pair (1804800000 Hz, 912000 uv) on cpu2
+[    0.272308] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu3
+[    0.272336] clk: add_opp: Set OPP pair (1804800000 Hz, 912000 uv) on cpu3
+[    0.272371] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu4
+[    0.272402] clk: add_opp: Set OPP pair (2016000000 Hz, 912000 uv) on cpu4
+[    0.272439] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu5
+[    0.272466] clk: add_opp: Set OPP pair (2016000000 Hz, 912000 uv) on cpu5
+[    0.272505] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu6
+[    0.272532] clk: add_opp: Set OPP pair (2016000000 Hz, 912000 uv) on cpu6
+[    0.272572] clk: add_opp: Set OPP pair (300000000 Hz, 588000 uv) on cpu7
+[    0.272599] clk: add_opp: Set OPP pair (2016000000 Hz, 912000 uv) on cpu7
+[    0.273783] sched-energy: Sched-energy-costs installed from DT
+[    0.274077] cpufreq: driver osm-cpufreq up and running
+[    0.274082] clk: clk_cpu_osm_driver_probe: OSM CPUFreq driver inited
+[    0.275071] KPI: Bootloader start count = 108820
+[    0.275075] KPI: Bootloader end count = 350817
+[    0.275078] KPI: Bootloader load kernel count = 3703551288
+[    0.275082] KPI: Kernel MPM timestamp = 367939
+[    0.275085] KPI: Kernel MPM Clock frequency = 32768
+[    0.275095] socinfo_print: v0.15, id=394, ver=1.0, raw_id=266, raw_ver=0, hw_plat=34, hw_plat_ver=65536\x0a accessory_chip=0, hw_plat_subtype=0, pmic_model=65581, pmic_die_revision=65537 foundry_id=3 serial_number=3082689865 num_pmics=2 chip_family=0x64 raw_device_family=0x9 raw_device_number=0x1 nproduct_id=0x411 num_clusters=0x1 ncluster_array_offset=0xb0 num_defective_parts=0xc ndefective_parts_array_offset=0xb4 nmodem_supported=0xff
+[    0.275133] Failed to setup PIL ipc logging
+[    0.275627] arm-smmu 59a0000.kgsl-smmu: Couldn't get clock: gcc_gpu_memnoc_gfx_clk
+[    0.275844] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.275846] arm-smmu c600000.apps-smmu: Bus client registration failed
+[    0.276034] qcom,qpnp-misc 1c40000.qcom,spmi:qcom,pm6125@0:qcom,misc@900: probe successful
+[    0.276233] SCSI subsystem initialized
+[    0.276283] usbcore: registered new interface driver usbfs
+[    0.276297] usbcore: registered new interface driver hub
+[    0.276355] usbcore: registered new device driver usb
+[    0.276440] usb_phy_generic soc:usb_nop_phy: soc:usb_nop_phy supply vcc not found, using dummy regulator
+[    0.276598] qcom,qpnp-power-on 1c40000.qcom,spmi:qcom,pmi632@2:qcom,power-on@800: PMIC@SID2 Power-on reason: Triggered from CBL (External Power Supply) and 'cold' boot
+[    0.276620] qcom,qpnp-power-on 1c40000.qcom,spmi:qcom,pmi632@2:qcom,power-on@800: PMIC@SID2: Power-off reason: Triggered from SOFT (Software)
+[    0.276751] qcom,qpnp-power-on 1c40000.qcom,spmi:qcom,pm6125@0:qcom,power-on@800: PMIC@SID0 Power-on reason: Triggered from Hard Reset and 'cold' boot
+[    0.276773] qcom,qpnp-power-on 1c40000.qcom,spmi:qcom,pm6125@0:qcom,power-on@800: PMIC@SID0: Power-off reason: Triggered from PS_HOLD (PS_HOLD/MSM Controlled Shutdown)
+[    0.276882] input: qpnp_pon as /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-00/1c40000.qcom,spmi:qcom,pm6125@0:qcom,power-on@800/input/input0
+[    0.277157] media: Linux media interface: v0.10
+[    0.277166] Linux video capture interface: v2.00
+[    0.280380] tsens_tm_probe : unable to create IPC Logging 0 for tsens 0x0000000004411000
+[    0.280383] tsens_tm_probe : unable to create IPC Logging 1 for tsens 0x0000000004411000
+[    0.280388] tsens_tm_probe : unable to create IPC Logging 2 for tsens 0x0000000004411000
+[    0.281583] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region@5e400000
+[    0.281632] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
+[    0.281703] platform soc:qcom,ion:qcom,ion-heap@10: assigned reserved memory node secure_display_region
+[    0.281771] platform soc:qcom,ion:qcom,ion-heap@22: assigned reserved memory node sdsp_region
+[    0.281833] ION heap system created
+[    0.281914] ION heap qsecom created at 0x000000005e400000 with size 1400000
+[    0.281923] ION heap qsecom_ta created at 0x00000000f3400000 with size 1000000
+[    0.281928] ION heap secure_heap created
+[    0.281934] ION heap secure_display created at 0x00000000f6c00000 with size 8c00000
+[    0.312494] platform soc:qcom,ion:qcom,ion-heap@14: ion_secure_carveout: creating heap@0x5f800000, size 0x1e00000
+[    0.312501] ION heap secure_carveout created
+[    0.312507] ION heap adsp created at 0x00000000f3000000 with size 400000
+[    0.312920] qupv3_geni_se 4ac0000.qcom,qupv3_0_geni_se: geni_se_probe Failed to allocate log context
+[    0.313007] qupv3_geni_se 4cc0000.qcom,qupv3_1_geni_se: geni_se_probe Failed to allocate log context
+[    0.313281] PMIC@SID2: PMI632 v2.0 options: 0, 0, 0, 0
+[    0.313390] PMIC@SID0: PM6125 v1.1 options: 0, 0, 0, 0
+[    0.313837] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.313839] ipa ipa3_pre_init:7128 fail to register with bus mgr!
+[    0.313851] ipa ipa3_plat_drv_probe:8826 ipa3_init failed
+[    0.314284] SDAM base=0xb600 size=128 registered successfully
+[    0.314387] Advanced Linux Sound Architecture Driver Initialized.
+[    0.314544] Bluetooth: Core ver 2.22
+[    0.314552] NET: Registered protocol family 31
+[    0.314555] Bluetooth: HCI device and connection manager initialized
+[    0.314560] Bluetooth: HCI socket layer initialized
+[    0.314563] Bluetooth: L2CAP socket layer initialized
+[    0.314567] Bluetooth: SCO socket layer initialized
+[    0.314753] NetLabel: Initializing
+[    0.314757] NetLabel:  domain hash size = 128
+[    0.314759] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.314785] NetLabel:  unlabeled traffic allowed by default
+[    0.314812] pcie:pcie_init.
+[    0.314816] pcie_init: unable to create IPC log context for pcie0-short
+[    0.314819] pcie_init: unable to create IPC log context for pcie0-long
+[    0.314822] pcie_init: unable to create IPC log context for pcie0-dump
+[    0.314825] pcie_init: unable to create IPC log context for pcie1-short
+[    0.314828] pcie_init: unable to create IPC log context for pcie1-long
+[    0.314831] pcie_init: unable to create IPC log context for pcie1-dump
+[    0.314834] pcie_init: unable to create IPC log context for pcie2-short
+[    0.314837] pcie_init: unable to create IPC log context for pcie2-long
+[    0.314839] pcie_init: unable to create IPC log context for pcie2-dump
+[    0.314843] pcie_init: unable to create IPC log context for pcie3-short
+[    0.314845] pcie_init: unable to create IPC log context for pcie3-long
+[    0.314848] pcie_init: unable to create IPC log context for pcie3-dump
+[    0.321225] qcom-clk-smd-rpm soc:qcom,rpmcc: Registered RPM clocks
+[    0.321334] pm6125_s3_level: Bringing 1uV into 16-16uV
+[    0.321432] pm6125_s3_floor_level: Bringing 1uV into 16-16uV
+[    0.321699] pm6125_s3_level_ao: Bringing 1uV into 16-16uV
+[    0.321853] pm6125_s5_level: Bringing 1uV into 16-16uV
+[    0.321936] pm6125_s5_floor_level: Bringing 1uV into 16-16uV
+[    0.322202] pm6125_s5_level_ao: Bringing 1uV into 16-16uV
+[    0.323444] LCDB: qpnp_lcdb_regulator_probe: LCDB module successfully registered! lcdb_en=0 ldo_voltage=5400mV ncp_voltage=5400mV bst_voltage=5550mV
+[    0.323663] pm6125_l4: supplied by pm6125_l7
+[    0.324352] pm6125_l15: supplied by pm6125_l10
+[    0.325313] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
+[    0.325364] sched-energy energy-costs: cpu=0 eff=1024 [freq=300000 cap=96 power_d0=12] -> [freq=1804800 cap=574 power_d0=172]
+[    0.325370] sched-energy energy-costs: cpu=1 eff=1024 [freq=300000 cap=96 power_d0=12] -> [freq=1804800 cap=574 power_d0=172]
+[    0.325375] sched-energy energy-costs: cpu=2 eff=1024 [freq=300000 cap=96 power_d0=12] -> [freq=1804800 cap=574 power_d0=172]
+[    0.325380] sched-energy energy-costs: cpu=3 eff=1024 [freq=300000 cap=96 power_d0=12] -> [freq=1804800 cap=574 power_d0=172]
+[    0.325386] sched-energy energy-costs: cpu=4 eff=1638 [freq=300000 cap=153 power_d0=211] -> [freq=2016000 cap=1024 power_d0=3391]
+[    0.325392] sched-energy energy-costs: cpu=5 eff=1638 [freq=300000 cap=153 power_d0=211] -> [freq=2016000 cap=1024 power_d0=3391]
+[    0.325396] sched-energy energy-costs: cpu=6 eff=1638 [freq=300000 cap=153 power_d0=211] -> [freq=2016000 cap=1024 power_d0=3391]
+[    0.325401] sched-energy energy-costs: cpu=7 eff=1638 [freq=300000 cap=153 power_d0=211] -> [freq=2016000 cap=1024 power_d0=3391]
+[    0.325404] sched-energy energy-costs: Sched-energy-costs capacity updated
+[    0.332264] gcc-trinket 1400000.qcom,gcc: Registered GCC clocks
+[    0.333035] gpu_cc_gx_gfx3d_clk_src: set OPP pair(320000000 Hz: 64 uV) on 5900000.qcom,kgsl-3d0
+[    0.333042] gpu_cc_gx_gfx3d_clk_src: set OPP pair(950000000 Hz: 416 uV) on 5900000.qcom,kgsl-3d0
+[    0.333102] gpu_cc-trinket 5990000.qcom,gpupcc: Registered GPU CC clocks
+[    0.333483] video_cc-trinket 5b00000.qcom,videocc: Registered Video CC clocks
+[    0.333632] arm-smmu 59a0000.kgsl-smmu: \x09non-coherent table walk
+[    0.333637] arm-smmu 59a0000.kgsl-smmu: \x09(IDR0.CTTW overridden by FW configuration)
+[    0.333641] arm-smmu 59a0000.kgsl-smmu: \x09stream matching with 4 register groups
+[    0.334692] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.334695] arm-smmu c600000.apps-smmu: Bus client registration failed
+[    0.335034] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.335037] ipa ipa3_pre_init:7128 fail to register with bus mgr!
+[    0.335046] ipa ipa3_plat_drv_probe:8826 ipa3_init failed
+[    0.335144] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
+[    0.336777] disp_cc-trinket 5f00000.qcom,dispcc: Registered Display CC clocks
+[    0.337014] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.337016] arm-smmu c600000.apps-smmu: Bus client registration failed
+[    0.337271] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.337273] ipa ipa3_pre_init:7128 fail to register with bus mgr!
+[    0.337282] ipa ipa3_plat_drv_probe:8826 ipa3_init failed
+[    0.337365] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
+[    0.337705] clocksource: Switched to clocksource arch_sys_counter
+[    0.362357] VFS: Disk quotas dquot_6.6.0
+[    0.362380] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.362858] mdss_pll_probe: MDSS pll label = MDSS DSI 0 PLL
+[    0.362862] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 0 PLL PLL SSC enabled
+[    0.364185] dsi_pll_clock_register_14nm: Registered DSI PLL ndx=0 clocks successfully
+[    0.364541] msm_bus_fabric_init_driver
+[    0.367486] msm_bus_dev_init_qos: Skipping QOS init for 26
+[    0.367514] msm_bus_device 1880000.ad-hoc-bus: Bus scaling driver probe successful
+[    0.368076] NET: Registered protocol family 2
+[    0.368303] TCP established hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.368384] TCP bind hash table entries: 32768 (order: 7, 524288 bytes)
+[    0.368578] TCP: Hash tables configured (established 32768 bind 32768)
+[    0.368623] UDP hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.368656] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes)
+[    0.368740] NET: Registered protocol family 1
+[    0.368751] PCI: CLS 0 bytes, default 128
+[    0.369154] arm-smmu c600000.apps-smmu: \x09non-coherent table walk
+[    0.369159] arm-smmu c600000.apps-smmu: \x09(IDR0.CTTW overridden by FW configuration)
+[    0.369164] arm-smmu c600000.apps-smmu: \x09stream matching with 54 register groups
+[    0.370871] iommu: Adding device 4ac0000.qcom,qupv3_0_geni_se:qcom,iommu_qupv3_0_geni_se_cb to group 0
+[    0.370940] iommu: Adding device 4cc0000.qcom,qupv3_1_geni_se:qcom,iommu_qupv3_1_geni_se_cb to group 1
+[    0.375616] ipa ipa3_smp2p_probe:8675 fail to get smp2p clk resp bit -517
+[    0.375826] iommu: Adding device soc:ipa_smmu_ap to group 2
+[    0.375916] iommu: Adding device soc:ipa_smmu_wlan to group 3
+[    0.376005] iommu: Adding device soc:ipa_smmu_uc to group 4
+[    0.376073] somc-pinctrl-pmic soc:somc_pinctrl_pmic: could not find pctldev for node /soc/qcom,spmi@1c40000/qcom,pm6125@0/pinctrl@c000/pm6125_gpio_1, deferring probe
+[    0.376129] ipa ipa3_smp2p_probe:8675 fail to get smp2p clk resp bit -517
+[    0.376553] Trying to unpack rootfs image as initramfs...
+[    0.928804] Freeing initrd memory: 24184K
+[    0.931509] hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+[    0.941400] audit: initializing netlink subsys (disabled)
+[    0.941722] audit: type=2000 audit(0.940:1): state=initialized audit_enabled=0 res=1
+[    0.941938] Initialise system trusted keyrings
+[    0.942132] workingset: timestamp_bits=61 max_order=20 bucket_order=0
+[    0.945357] Registering sdcardfs 0.1
+[    0.945501] fuse init (API version 7.27)
+[    0.945926] SELinux:  Registering netfilter hooks
+[    0.952838] Key type asymmetric registered
+[    0.952846] Asymmetric key parser 'x509' registered
+[    0.952862] io scheduler noop registered
+[    0.952913] io scheduler cfq registered (default)
+[    0.952917] io scheduler mq-deadline registered
+[    0.952922] io scheduler kyber registered
+[    0.961288] fb0: Virtual frame buffer device, using 1024K of video memory
+[    0.963205] iommu: Adding device 4a00000.qcom,gpi-dma to group 5
+[    0.964635] iommu: Adding device 4c00000.qcom,gpi-dma to group 6
+[    0.967744] icnss: Unable to create log context
+[    0.967756] icnss: Unable to create log long context
+[    0.968941] iommu: Adding device c800000.qcom,icnss to group 7
+[    0.969030] icnss: Recursive recovery allowed for WLAN
+[    0.969045] icnss: adc_tm_dev probe defer
+[    0.969645] memshare_child soc:qcom,memshare:qcom,client_1: for memshare_GPS segments only will be dumped.
+[    0.969720] memshare_child soc:qcom,memshare:qcom,client_2: for memshare_FTM segments only will be dumped.
+[    0.969769] memshare_child soc:qcom,memshare:qcom,client_3: for memshare_DIAG segments only will be dumped.
+[    0.971278] subsys-pil-tz soc:qcom,ipa_fws: for ipa_fws segments only will be dumped.
+[    0.971497] subsys-pil-tz 5ae0000.qcom,venus: for venus segments only will be dumped.
+[    0.971776] subsys-pil-tz soc:qcom,kgsl-hyp: for a610_zap segments only will be dumped.
+[    0.974986] smp2p_sleepstate soc:qcom,smp2p_sleepstate: got smp2p-sleepstate-in irq 218
+[    0.977428] msm_geni_serial 4c90000.qcom,qup_uart: Wakeup byte 0xfd
+[    0.977602] msm_geni_serial 4c90000.qcom,qup_uart: Serial port0 added.FifoSize 64 is_console0
+[    0.977616] msm_geni_serial 4c90000.qcom,qup_uart: Failed to create dbg dir
+[    0.977624] msm_geni_serial 4c90000.qcom,qup_uart: Err in Rx IPC Log
+[    0.977631] msm_geni_serial 4c90000.qcom,qup_uart: Err in Tx IPC Log
+[    0.977638] msm_geni_serial 4c90000.qcom,qup_uart: Err in Pwr IPC Log
+[    0.977644] msm_geni_serial 4c90000.qcom,qup_uart: Err in Misc IPC Log
+[    0.979048] 4c90000.qcom,qup_uart: ttyHS0 at MMIO 0x4c90000 (irq = 90, base_baud = 0) is a MSM
+[    0.979449] msm_geni_serial_init: Driver initialized
+[    0.984698] random: crng init done
+[    0.984886] diag: Pcie registration initiated for id: 0
+[    0.985345] diag: diag_pcie_register: failed registering pcie channels
+[    0.985354] diag: MUX: unable to register pcie operations for proc: 0, err: -22
+[    0.985360] diag: MUX: unable to register PCIe operations, continuing with USB registrations for proc: 0, err: -22
+[    0.998340] dsi_phy 5e94400.qcom,mdss_dsi_phy0: 5e94400.qcom,mdss_dsi_phy0 supply gdsc not found, using dummy regulator
+[    0.998409] msm-dsi-phy:[dsi_phy_driver_probe] Probe successful for dsi-phy-0
+[    0.999175] drm_dsi_ctrl 5e94000.qcom,mdss_dsi_ctrl0: 5e94000.qcom,mdss_dsi_ctrl0 supply refgen not found, using dummy regulator
+[    0.999231] AXI: get_pdata(): Error: Client name not found
+[    0.999237] AXI: msm_bus_cl_get_pdata(): client has to provide missing entry for successful registration
+[    0.999244] dsi-ctrl:[dsi_ctrl_dev_probe] Probe successful for dsi-ctrl-0
+[    1.001975] msm-dsi-display:[dsi_display_dev_probe] dsi_display_dev_probe: Panel Name = 6
+[    1.002021] msm-dsi-display:[dsi_display_parse_te_data] invalid vsync source selection
+[    1.002034] OF: graph: no port node found in /soc/qcom,dsi-display
+[    1.002180] msm-dsi-panel:[dsi_panel_parse_panel_mode:1760] dsi_panel_parse_panel_mode: panel operating mode switch feature disabled
+[    1.002197] msm-dsi-panel:[dsi_panel_parse_qsync_caps:1443] [6] qsync min fps not defined rc:-22
+[    1.002223] msm-dsi-panel:[dsi_panel_parse_reset_sequence:2126] RESET SEQ LENGTH = 8
+[    1.002240] RESET SEQ LENGTH = 8
+[    1.002280] msm-dsi-panel:[dsi_panel_parse_misc_features:2175] dsi_panel_parse_misc_features: ulps feature disabled
+[    1.002287] msm-dsi-panel:[dsi_panel_parse_misc_features:2181] dsi_panel_parse_misc_features: ulps during suspend feature disabled
+[    1.002337] msm-dsi-panel:[dsi_panel_parse_esd_config:3364] ESD enabled with mode: register_read
+[    1.004648] iommu: Adding device 5e00000.qcom,mdss_mdp to group 8
+[    1.009599] [drm:sde_dbg_init:5230] evtlog_status: enable:0, panic:1, dump:2
+[    1.009672] msm_drm 5e00000.qcom,mdss_mdp: bound soc:qcom,wb-display@0 (ops sde_wb_comp_ops)
+[    1.010243] msm-dsi-display:[dsi_display_bind] Successfully bind display panel '6'
+[    1.010454] msm_drm 5e00000.qcom,mdss_mdp: bound soc:qcom,dsi-display (ops dsi_display_comp_ops)
+[    1.010562] [drm] mapped mdp address space @00000000281a1ad2
+[    1.010589] msm_drm 5e00000.qcom,mdss_mdp: failed to get memory resource: vbif_nrt_phys
+[    1.010611] msm_drm 5e00000.qcom,mdss_mdp: failed to get memory resource: sid_phys
+[    1.010678] [drm:_sde_kms_get_splash_data:3311] splash mem num_regions:1
+[    1.010721] [drm:_sde_kms_get_splash_data:3346] splash mem for disp:1 add:5c000000 size:f00000
+[    1.010735] [sde_rsc:sde_rsc_client_create:105]: rsc not probed yet or not available
+[    1.012270] [drm:sde_kms_hw_init:3492] sde hardware revision:0x50040000
+[    1.013051] [drm] Created domain mdp_ns [80000000,80000000] secure=0
+[    1.015057] iommu: Adding device 5e00000.qcom,mdss_mdp:qcom,smmu_sde_sec_cb to group 9
+[    1.015094] [drm] probing device qcom,smmu_sde_sec
+[    1.015104] [drm] Created domain mdp_s [80000000,80000000] secure=1
+[    1.017669] [sde_rsc:is_sde_rsc_available:262]: rsc idx:0 not probed yet or not available
+[    1.017710] [sde_rsc:sde_rsc_client_create:105]: rsc not probed yet or not available
+[    1.018016] [sde_rsc:sde_rsc_client_create:105]: rsc not probed yet or not available
+[    1.018101] [drm:reg_dmav1_init_sspp_op_v4] *ERROR* invalid feature map 12 for feature 31
+[    1.018345] [drm:reg_dmav1_init_sspp_op_v4] *ERROR* invalid feature map 12 for feature 31
+[    1.019096] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[    1.019101] [drm] No driver support for vblank timestamp query.
+[    1.019380] [drm] Initialized msm_drm 1.2.0 20130625 for 5e00000.qcom,mdss_mdp on minor 0
+[    1.019461] msm-dsi-panel:[dsi_panel_parse_topology:2964] default topology: lm: 1 comp_enc:0 intf: 1
+[    1.019524] msm-dsi-panel:[dsi_panel_parse_partial_update_caps:3054] partial update disabled as the property is not set
+[    1.019727] dsi-ctrl:[_dsi_ctrl_setup_isr] [DSI_0] IRQ 222 registered
+[    1.023030] iommu: Adding device 59a0000.qcom,kgsl-iommu:gfx3d_user to group 10
+[    1.023295] iommu: Adding device 59a0000.qcom,kgsl-iommu:gfx3d_secure to group 11
+[    1.024461] brd: module loaded
+[    1.027952] loop: module loaded
+[    1.028158] zram: Added device: zram0
+[    1.063757] QSEECOM: qseecom_probe: qseecom.qsee_version = 0x1401000
+[    1.063780] QSEECOM: qseecom_retrieve_ce_data: Device does not support PFE
+[    1.063783] QSEECOM: qseecom_probe: qseecom clocks handled by other subsystem
+[    1.063791] QSEECOM: qseecom_probe: qseecom.qsee_reentrancy_support = 2
+[    1.063884] QSEECOM: qseecom_probe: qseecom.whitelist_support = 1
+[    1.064049] QSEECOM: qseecom_probe: Unable to register bus client
+[    1.065132] iommu: Adding device 1b20000.qcedev to group 12
+[    1.067130] qce 1b20000.qcedev: QTI Crypto 5.5.0 device found @0x1b20000
+[    1.067146] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000001b04000
+[    1.067148] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000001b04000
+[    1.067152] sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000001b04000
+[    1.067156] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000001b04000
+[    1.067160] sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000001b04000
+[    1.067163] sps:BAM 0x0000000001b04000 is registered.
+[    1.067255] sps:BAM 0x0000000001b04000 (va:0x00000000dba535dc) enabled: ver:0x27, number of pipes:16
+[    1.067382] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001b04000 irq 45
+[    1.068953] iommu: Adding device 1b20000.qcrypto to group 13
+[    1.069990] QCE50: __qce_get_device_tree_data: CE operating frequency is not defined, setting to default 100MHZ
+[    1.070594] qcrypto 1b20000.qcrypto: QTI Crypto 5.5.0 device found @0x1b20000
+[    1.070764] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000001b04000 irq 45
+[    1.071927] qcrypto 1b20000.qcrypto: qcrypto-ecb-aes
+[    1.072073] qcrypto 1b20000.qcrypto: qcrypto-cbc-aes
+[    1.072180] qcrypto 1b20000.qcrypto: qcrypto-ctr-aes
+[    1.072260] qcrypto 1b20000.qcrypto: qcrypto-ecb-des
+[    1.072356] qcrypto 1b20000.qcrypto: qcrypto-cbc-des
+[    1.072417] qcrypto 1b20000.qcrypto: qcrypto-ecb-3des
+[    1.072484] qcrypto 1b20000.qcrypto: qcrypto-cbc-3des
+[    1.072557] qcrypto 1b20000.qcrypto: qcrypto-xts-aes
+[    1.072625] qcrypto 1b20000.qcrypto: qcrypto-sha1
+[    1.072694] qcrypto 1b20000.qcrypto: qcrypto-sha256
+[    1.072759] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha1-cbc-aes
+[    1.072822] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha1-cbc-des
+[    1.072884] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha1-cbc-3des
+[    1.072949] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha256-cbc-aes
+[    1.073019] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha256-cbc-des
+[    1.073082] qcrypto 1b20000.qcrypto: qcrypto-aead-hmac-sha256-cbc-3des
+[    1.073148] qcrypto 1b20000.qcrypto: qcrypto-hmac-sha1
+[    1.073211] qcrypto 1b20000.qcrypto: qcrypto-hmac-sha256
+[    1.073307] qcrypto 1b20000.qcrypto: qcrypto-aes-ccm
+[    1.073442] qcrypto 1b20000.qcrypto: qcrypto-rfc4309-aes-ccm
+[    1.073990] qcom_ice_get_device_tree_data: No vdd-hba-supply regulator, assuming not needed
+[    1.074460] SCSI Media Changer driver v0.25 
+[    1.074772] Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[    1.075483] libphy: Fixed MDIO Bus: probed
+[    1.075488] tun: Universal TUN/TAP device driver, 1.6
+[    1.075519] PPP generic driver version 2.4.2
+[    1.075547] PPP BSD Compression module registered
+[    1.075551] PPP Deflate Compression module registered
+[    1.075565] PPP MPPE Compression module registered
+[    1.075570] NET: Registered protocol family 24
+[    1.075578] PPTP driver version 0.8.5
+[    1.075759] wcnss_pre_alloc_init: Failed to create debugfs dir
+[    1.075763] cnss_utils: Unable to create debugfs -19
+[    1.075766] CLD80211: Initializing
+[    1.075859] usbcore: registered new interface driver rtl8150
+[    1.075873] usbcore: registered new interface driver r8152
+[    1.075887] usbcore: registered new interface driver asix
+[    1.075900] usbcore: registered new interface driver ax88179_178a
+[    1.075912] usbcore: registered new interface driver cdc_ether
+[    1.075925] usbcore: registered new interface driver smsc75xx
+[    1.075935] usbcore: registered new interface driver net1080
+[    1.075947] usbcore: registered new interface driver cdc_subset
+[    1.075957] usbcore: registered new interface driver zaurus
+[    1.075961] usbnet_init: Error getting ipc_log_ctxt
+[    1.075964] usbnet_init: Error getting ipc_log_ctxt
+[    1.075967] usbnet_init: Error getting ipc_log_ctxt
+[    1.075980] usbcore: registered new interface driver cdc_ncm
+[    1.081667] msm_sharedmem: msm_sharedmem_probe: Device created for client 'rmtfs'
+[    1.082894] msm-qusb-phy 1613000.qusb: 1613000.qusb supply USB3_GDSC not found, using dummy regulator
+[    1.083911] iommu: Adding device 4e00000.ssusb to group 14
+[    1.085455] dwc3 4e00000.dwc3: changing max_speed on rev 00000000
+[    1.085750] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt
+[    1.085774] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt for ep_events
+[    1.086856] Invalid index Defaulting curr to 0
+[    1.088463] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.088474] ehci-pci: EHCI PCI platform driver
+[    1.088487] ehci-platform: EHCI generic platform driver
+[    1.088759] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    1.088763] ohci-pci: OHCI PCI platform driver
+[    1.088781] ohci-platform: OHCI generic platform driver
+[    1.089395] usbcore: registered new interface driver usb-storage
+[    1.089410] usbcore: registered new interface driver usb_ehset_test
+[    1.089421] usbcore: registered new interface driver lvs
+[    1.089553] wdet_probe: Could not get USB power_supply, deferring probe
+[    1.089899] fgsi_init: Err allocating ipc_log_ctxt
+[    1.090305] usbcore: registered new interface driver xpad
+[    1.090654] qcom,qpnp-rtc 1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc: rtc core: registered qpnp_rtc as rtc0
+[    1.090887] i2c /dev entries driver
+[    1.090960] IR NEC protocol handler initialized
+[    1.090964] IR RC5(x/sz) protocol handler initialized
+[    1.090967] IR RC6 protocol handler initialized
+[    1.090970] IR JVC protocol handler initialized
+[    1.090974] IR Sony protocol handler initialized
+[    1.090977] IR SANYO protocol handler initialized
+[    1.090980] IR Sharp protocol handler initialized
+[    1.090983] IR MCE Keyboard/mouse protocol handler initialized
+[    1.090986] IR XMP protocol handler initialized
+[    1.091500] i2c_geni 4a84000.i2c: Bus frequency is set to 400000Hz.
+[    1.092405] i2c_geni 4a88000.i2c: Bus frequency is set to 400000Hz.
+[    1.092774] sde_mdp_parse_dt_prop_len: <SDEROT_INFO> prop qcom,mdss-rot-vbif-memtype : doesn't exist in device tree
+[    1.092785] sde_mdp_parse_dt_prop_len: <SDEROT_INFO> prop qcom,mdss-inline-rot-qos-lut : doesn't exist in device tree
+[    1.092790] sde_mdp_parse_dt_prop_len: <SDEROT_INFO> prop qcom,mdss-inline-rot-danger-lut : doesn't exist in device tree
+[    1.092795] sde_mdp_parse_dt_prop_len: <SDEROT_INFO> prop qcom,mdss-inline-rot-safe-lut : doesn't exist in device tree
+[    1.092838] register_client_adhoc:Failed to find path.src 1 dest 590
+[    1.092840] sde_mdp_bus_scale_register: <SDEROT_WARN> reg_bus_client register failed
+[    1.093760] No change in context(0==0), skip
+[    1.095555] sde_rotator 5e00000.qcom,mdss_rotator: <SDEROT_INFO> SDE v4l2 rotator probe success
+[    1.095830] i2c_geni 4a8c000.i2c: Bus frequency is set to 1000000Hz.
+[    1.097009] iommu: Adding device 5e00000.qcom,mdss_rotator:qcom,smmu_rot_unsec_cb to group 15
+[    1.097056] sde_smmu_probe: <SDEROT_INFO> iommu v2 domain[0] mapping and clk register successful!
+[    1.097095] iommu: Adding device 5e00000.qcom,mdss_rotator:qcom,smmu_rot_sec_cb to group 16
+[    1.097114] sde_smmu_probe: <SDEROT_INFO> iommu v2 domain[1] mapping and clk register successful!
+[    1.097134] msm_vidc:  err: Failed to create debugfs for msm_vidc
+[    1.097902] msm_vidc:  err: Failed to create debugfs for msm_vidc
+[    1.098379] iommu: Adding device 5a00000.qcom,vidc:non_secure_cb to group 17
+[    1.098766] iommu: Adding device 5a00000.qcom,vidc:secure_bitstream_cb to group 18
+[    1.099923] iommu: Adding device 5a00000.qcom,vidc:secure_pixel_cb to group 19
+[    1.100837] iommu: Adding device 5a00000.qcom,vidc:secure_non_pixel_cb to group 20
+[    1.102853] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb1 to group 21
+[    1.102884] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 6, cb->name: :vfe sid [0] = 1056\x0a,
+[    1.102887] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 6, cb->name: :vfe sid [1] = 1057\x0a,
+[    1.103430] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb2 to group 22
+[    1.103454] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 3, cb->name: :cpp sid [0] = 2048\x0a,
+[    1.103962] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb4 to group 23
+[    1.103991] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 3, cb->name: :jpeg_enc0 sid [0] = 2080\x0a,
+[    1.104438] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb5 to group 24
+[    1.104465] CAM-SMMU cam_smmu_populate_sids:2115 __debug cnt = 3, cb->name: :jpeg_dma sid [0] = 2081\x0a,
+[    1.110158] msm_actuator_platform_probe:1993 msm_actuator_platform_probe: No/Error Actuator GPIOs
+[    1.110210] msm_actuator_platform_probe:1993 msm_actuator_platform_probe: No/Error Actuator GPIOs
+[    1.110582] msm_eeprom_platform_probe failed 1787
+[    1.110723] msm_eeprom_platform_probe failed 1787
+[    1.110844] msm_eeprom_platform_probe failed 1787
+[    1.110966] msm_eeprom_platform_probe failed 1787
+[    1.113573] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[    1.113608] thermal thermal_zone60: failed to read out thermal zone (-19)
+[    1.113636] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[    1.113655] thermal thermal_zone61: failed to read out thermal zone (-19)
+[    1.117388] MSM-CPP cpp_init_hardware:1140 CPP HW Version: 0x60010004
+[    1.117401] MSM-CPP cpp_init_hardware:1158 stream_cnt:0
+[    1.118035] MSM-CPP cpp_release_hardware:1221 cpp hw release done
+[    1.118650] CAM-SOC msm_camera_get_reg_base:894 err: mem resource vfe_fuse not found
+[    1.118655] CAM-SOC msm_camera_get_res_size:937 err: mem resource vfe_fuse not found
+[    1.119040] CAM-SOC msm_camera_get_reg_base:894 err: mem resource vfe_fuse not found
+[    1.119045] CAM-SOC msm_camera_get_res_size:937 err: mem resource vfe_fuse not found
+[    1.120743] __msm_jpeg_init:1595] Jpeg Device id 0
+[    1.122265] Couldn't parse device tree rc=-517
+[    1.128190] device-mapper: uevent: version 1.0.3
+[    1.128342] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+[    1.128709] bt_dt_parse_vreg_info: qca,bt-vdd-vl: is not provided in device tree
+[    1.128717] bt_dt_parse_vreg_info: qca,bt-vdd-vm: is not provided in device tree
+[    1.128723] bt_dt_parse_vreg_info: qca,bt-vdd-5c: is not provided in device tree
+[    1.128729] bt_dt_parse_vreg_info: qca,bt-vdd-5a: is not provided in device tree
+[    1.128735] bt_dt_parse_vreg_info: qca,bt-vdd-vh: is not provided in device tree
+[    1.128751] bt_dt_parse_vreg_info: qca,bt-vdd-ldo: is not provided in device tree
+[    1.128757] bt_dt_parse_vreg_info: qca,bt-chip-pwd: is not provided in device tree
+[    1.128764] bt_power_populate_dt_pinfo: bt-reset-gpio not provided in device tree
+[    1.128769] bt_power_populate_dt_pinfo: bt-3P3-gpio not provided in devicetree
+[    1.128774] bt_power_populate_dt_pinfo: bt-1P3-gpio not provided in devicetree
+[    1.128780] bt_dt_parse_clk_info: clocks is not provided in device tree
+[    1.128784] bt_power_populate_dt_pinfo: clock not provided in device tree
+[    1.130159] sdhci: Secure Digital Host Controller Interface driver
+[    1.130164] sdhci: Copyright(c) Pierre Ossman
+[    1.130167] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.130970] ## mmc0: gpio_is_valid(pdata->uim2_gpio)=-2: failure
+[    1.131049] qcom,tri-led 1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000: rgb_sync prepare 1
+[    1.131070] qcom,tri-led 1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000: color_variation_max_num[4] rgb_current_index[103]
+[    1.131085] qcom,tri-led 1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000: color_variation_max_num[4] rgb_current_index[103]
+[    1.131099] qcom,tri-led 1c40000.qcom,spmi:qcom,pmi632@3:qcom,leds@d000: color_variation_max_num[4] rgb_current_index[103]
+[    1.131544] qpnp_vibrator_ldo_probe: Vibrator LDO successfully registered: uV = 3000000, overdrive = disabled
+[    1.131859] usbcore: registered new interface driver usbhid
+[    1.131864] usbhid: USB HID core driver
+[    1.131945] ashmem: initialized
+[    1.131979] wlan_hdd_state wlan major(501) initialized
+[    1.133676] ## mmc0: can't set uim2_gpio: -2
+[    1.134379] mmc0: SDHCI controller on 4744000.sdhci [4744000.sdhci] using 64-bit ADMA in CMDQ mode
+[    1.202765] mmc0: Out-of-interrupt timeout is 100[ms]
+[    1.202772] mmc0: eMMC FW version: 0x03
+[    1.202777] mmc0: CMDQ supported: depth: 16
+[    1.209074] cmdq_host_alloc_tdl: desc_size: 1024 data_sz: 63488 slot-sz: 32
+[    1.209336] mmc0: CMDQ enabled on card
+[    1.209352] mmc0: new HS400 Enhanced strobe MMC card at address 0001
+[    1.209879] sdhci_msm_pm_qos_cpu_init (): voted for group #0 (mask=0xf) latency=-1
+[    1.209886] sdhci_msm_pm_qos_cpu_init (): voted for group #1 (mask=0xf0) latency=-1
+[    1.209959] mmcblk0: mmc0:0001 DV6DMB 116 GiB 
+[    1.210169] mmcblk0rpmb: mmc0:0001 DV6DMB partition 3 16.0 MiB
+[    1.212082] mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 p34 p35 p36 p37 p38 p39 p40 p41 p42 p43 p44 p45 p46 p47 p48 p49 p50 p51 p52 p53 p54 p55 p56 p57 p58 p59 p60 p61 p62 p63 p64 p65 p66 p67 p68 p69 p70 p71 p72 p73 p74 p75 p76 p77 p78 p79 p80 p81 p82 p83 p84 p85 p86 p87
+[    1.215935] bimc-bwmon 1b8e200.qcom,cpu-cpu-ddr-bwmon: BW HWmon governor registered.
+[    1.229739] ## mmc1: mmc_gpio_init_uim2: gpio=101
+[    1.229752] ## mmc1: mmc_gpio_set_uim2_en: gpio=101 value=0
+[    1.230439] mmc1: SDHCI controller on 4784000.sdhci [4784000.sdhci] using 64-bit ADMA in legacy mode
+[    1.265388] arm-memlat-mon soc:qcom,cpu0-cpu-ddr-latmon: Memory Latency governor registered.
+[    1.267099] arm-memlat-mon soc:qcom,cpu4-cpu-ddr-latmon: Memory Latency governor registered.
+[    1.268789] arm-memlat-mon soc:qcom,cpu0-computemon: Compute governor registered.
+[    1.270487] arm-memlat-mon soc:qcom,cpu4-computemon: Compute governor registered.
+[    1.282953] input: bu520x1nvx as /devices/virtual/input/input1
+[    1.283338] [egis] egis_probe got egistec,gpio_irq 92
+[    1.296778] Loading pn544 driver
+[    1.296847] pn544_parse_dt: 85, 83, 84, 0, 24 error:0
+[    1.297002] pn544_probe : requesting IRQ 228
+[    1.297100] Loading pn544 pm ops driver
+[    1.297372] pn553-pm-ops soc:nfc,pm-ops: pn553_pm_ops_probe, probing pn553 PM OPS driver
+[    1.297378] pn553-pm-ops soc:nfc,pm-ops: pn553_pm_ops_probe, probe pn553 PM OPS driver successfully
+[    1.297429] [sec_input] sec_ts_init
+[    1.297490] sec_ts 1-0048: [sec_input] sec_ts_probe: start
+[    1.297508] usbcore: registered new interface driver snd-usb-audio
+[    1.297537] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: irq_type property:2008, 8200
+[    1.297545] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: reset_gpio [97]
+[    1.297553] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: device_id [ac] [37] [61]
+[    1.297571] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: Failed to get ack_wait_time
+[    1.297583] sec_ts 1-0048: [sec_input] sec_ts_parse_dt: i2c buffer limit: 32, lcd_id:000000, bringup:0, FW:touch_module_id_0x82.img(1), id:0,0, mis_cal:1 dex:0, gesture:0
+[    1.297591] sec_ts 1-0048: [sec_input] watchdog_supported: true
+[    1.297598] sec_ts 1-0048: [sec_input] watchdog_delay_ms: 10000
+[    1.297605] sec_ts 1-0048: [sec_input] side_touch_supported: false
+[    1.297612] sec_ts 1-0048: [sec_input] glove_mode_supported: false
+[    1.297619] sec_ts 1-0048: [sec_input] cover_mode_supported: false
+[    1.297625] sec_ts 1-0048: [sec_input] aod_mode_supported: false
+[    1.297632] sec_ts 1-0048: [sec_input] sod_mode_supported: false
+[    1.297639] sec_ts 1-0048: [sec_input] stamina_mode_supported: true
+[    1.297649] sec_ts 1-0048: [sec_input] sec_ts_parse_dt_feature: game enhencer grip rejection not supported
+[    1.297656] sec_ts 1-0048: [sec_input] sec_ts_parse_dt_feature: game enhencer grip rejection not supported
+[    1.297663] sec_ts 1-0048: [sec_input] Unable to read wireless_charging_supported
+[    1.297668] iommu: Adding device soc:usb_audio_qmi_dev to group 25
+[    1.297680] sec_ts 1-0048: [sec_input] sec_ts_probe: init resource
+[    1.297686] sec_ts 1-0048: [sec_input] sec_ts_probe: power enable
+[    1.297770] input: sec_touchscreen as /devices/platform/soc/4a88000.i2c/i2c-1/1-0048/input/input2
+[    1.297780] sec_ts 1-0048: [sec_input] sec_ts_input_open
+[    1.297870] input: sec_touchscreen_side as /devices/platform/soc/4a88000.i2c/i2c-1/1-0048/input/input3
+[    1.298029] sec_ts 1-0048: [sec_input] sec_ts_probe: done
+[    1.298528] cs35l41 2-0040: 2-0040 supply VA not found, using dummy regulator
+[    1.298543] cs35l41 2-0040: 2-0040 supply VP not found, using dummy regulator
+[    1.339023] cs35l41 2-0040: Cirrus Logic CS35L41 (35a40), Revision: B2
+[    1.343074] apr_probe: Unable to create ipc log context
+[    1.347273] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.350822] msm-dai-q6-hdmi soc:qcom,msm-dai-q6-hdmi_ms: invalid device ID 24578
+[    1.351331] msm-auxpcm-dev soc:qcom,msm-sen-auxpcm: msm_auxpcm_dev_probe: invalid DT intf name senary
+[    1.362595] msm-dai-tdm soc:qcom,msm-dai-tdm-sen-rx: msm_dai_tdm_q6_probe: group id not supported 0x9150
+[    1.362607] msm-dai-tdm: probe of soc:qcom,msm-dai-tdm-sen-rx failed with error -22
+[    1.362621] msm-dai-tdm soc:qcom,msm-dai-tdm-sen-tx: msm_dai_tdm_q6_probe: group id not supported 0x9151
+[    1.362626] msm-dai-tdm: probe of soc:qcom,msm-dai-tdm-sen-tx failed with error -22
+[    1.368864] GACT probability NOT on
+[    1.368877] Mirror/redirect action on
+[    1.368883] u32 classifier
+[    1.368886] Actions configured
+[    1.368893] Netfilter messages via NETLINK v0.30.
+[    1.368972] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    1.369019] ctnetlink v0.93: registering with nfnetlink.
+[    1.369139] xt_time: kernel timezone is -0000
+[    1.369190] gre: GRE over IPv4 demultiplexor driver
+[    1.369193] IPv4 over IPsec tunneling driver
+[    1.369365] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.369838] arp_tables: arp_tables: (C) 2002 David S. Miller
+[    1.369914] Initializing XFRM netlink socket
+[    1.369923] IPsec XFRM device driver
+[    1.370042] NET: Registered protocol family 10
+[    1.370429] Segment Routing with IPv6
+[    1.370456] mip6: Mobile IPv6
+[    1.370465] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    1.370874] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    1.371110] NET: Registered protocol family 17
+[    1.371118] NET: Registered protocol family 15
+[    1.371129] Ebtables v2.0 registered
+[    1.371152] l2tp_core: L2TP core driver, V2.0
+[    1.371158] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.371161] l2tp_ip: L2TP IP encapsulation support (L2TPv3)
+[    1.371168] l2tp_netlink: L2TP netlink interface
+[    1.371179] l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
+[    1.371182] l2tp_ip6: L2TP IP encapsulation support for IPv6 (L2TPv3)
+[    1.371225] sctp: Hash tables configured (bind 256/256)
+[    1.373972] icnss: Recursive recovery allowed for WLAN
+[    1.373982] icnss: adc_tm_dev probe defer
+[    1.374820] dwc3 4e00000.dwc3: changing max_speed on rev 00000000
+[    1.374973] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt
+[    1.374978] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt for ep_events
+[    1.375316] usb_bam_init: setting SPS_BAM_SMMU_EN flag with (4f04000.qcom,usbbam)
+[    1.375330] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000004f04000
+[    1.375333] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000004f04000
+[    1.375338] sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000004f04000
+[    1.375343] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000004f04000
+[    1.375347] sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000004f04000
+[    1.375352] sps:BAM 0x0000000004f04000 is registered.
+[    1.375680] Invalid index Defaulting curr to 0
+[    1.376186] ipa_rm ipa_rm_delete_resource:146 IPA RM was not initialized
+[    1.376193] usb_bam_ipa_delete_resources: Failed to delete USB_PROD resource
+[    1.376197] ipa_rm ipa_rm_delete_resource:146 IPA RM was not initialized
+[    1.376200] usb_bam_ipa_delete_resources: Failed to delete USB_CONS resource
+[    1.376611] wdet_probe: Could not get USB power_supply, deferring probe
+[    1.390587] QG-K: get_batt_id_ohm: batt_id_mv=246, batt_id_ohm=15103
+[    1.390818] of_batterydata_get_best_aged_profile: 1320-0974 age level 2 found
+[    1.390972] QG-K: qg_batterydata_init: QG Battery-profile loaded
+[    1.390980] QG-K: qg_load_battery_profile: No |  Range of Temp  | Range of VBATT  | Target FCC/FV Condition
+[    1.390985] QG-K: qg_load_battery_profile:  1 |  -2550 -     50 |      0 -   4500 |      0 4340 1
+[    1.390989] QG-K: qg_load_battery_profile:  2 |     50 -    120 |      0 -   4500 |    650 4340 2
+[    1.390994] QG-K: qg_load_battery_profile:  3 |    120 -    200 |      0 -   4100 |   2050 4340 3
+[    1.390997] QG-K: qg_load_battery_profile:  4 |    120 -    200 |   4100 -   4200 |   1550 4340 3
+[    1.391000] QG-K: qg_load_battery_profile:  5 |    120 -    200 |   4200 -   4300 |   1350 4340 3
+[    1.391004] QG-K: qg_load_battery_profile:  6 |    120 -    200 |   4300 -   4500 |   1000 4340 3
+[    1.391007] QG-K: qg_load_battery_profile:  7 |    200 -    450 |      0 -   4150 |   3000 4340 3
+[    1.391010] QG-K: qg_load_battery_profile:  8 |    200 -    450 |   4150 -   4200 |   2400 4340 3
+[    1.391013] QG-K: qg_load_battery_profile:  9 |    200 -    450 |   4200 -   4300 |   1700 4340 3
+[    1.391017] QG-K: qg_load_battery_profile: 10 |    200 -    450 |   4300 -   4500 |   1000 4340 3
+[    1.391020] QG-K: qg_load_battery_profile: 11 |    450 -    550 |      0 -   4500 |   1000 4200 4
+[    1.391023] QG-K: qg_load_battery_profile: 12 |    550 -   2550 |      0 -   4500 |      0 4200 5
+[    1.391027] QG-K: qg_load_battery_profile: profile=1320-0974 FV=4340000uV FCC=3000ma
+[    1.391031] QG-K: qg_setup_battery: battery_missing=0 batt_id_ohm=15103 Ohm profile_loaded=1 profile=1320-0974
+[    1.391074] ALG: cap_learning_somc_lift_learned_cap: [SOMC CL]Learned cap lifting is not needed.
+[    1.391088] QG-K: qg_store_learned_capacity: Stored learned capacity 3277000uah
+[    1.393427] QG-K: qg_determine_pon_soc: using SHUTDOWN_SOC @ PON ocv_uv=4045919uV soc=76
+[    1.393550] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[    1.394244] QG-K: qpnp_qg_probe: QG initialized! battery_profile=1320-0974 SOC=76 QG_subtype=3
+[    1.394442] input: SOMC Charger Removal as /devices/platform/soc/1c40000.qcom,spmi/spmi-0/spmi0-02/1c40000.qcom,spmi:qcom,pmi632@2:qcom,qpnp-smb5/input/input4
+[    1.396246] (NULL device *): hwmon_device_register() is deprecated. Please convert the driver to use hwmon_device_register_with_info().
+[    1.396383] pmi632_charger: smblib_usb_plugin_locked: IRQ: usbin-plugin attached
+[    1.396386] pmi632_charger: typec_attach_detach_irq_handler: IRQ: determine-initial-status
+[    1.396503] pmi632_charger: typec_state_change_irq_handler: IRQ: cc-state-change; Type-C SOURCE_DEFAULT detected
+[    1.396515] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x00
+[    1.396519] pmi632_charger: smblib_handle_hvdcp_detect_done: IRQ: hvdcp-detect-done falling
+[    1.396522] pmi632_charger: smblib_handle_hvdcp_check_timeout: IRQ: smblib_handle_hvdcp_check_timeout falling
+[    1.396525] pmi632_charger: smblib_handle_sdp_enumeration_done: IRQ: sdp-enumeration-done falling
+[    1.396528] pmi632_charger: smblib_handle_slow_plugin_timeout: IRQ: slow-plugin-timeout falling
+[    1.396540] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x00
+[    1.396543] pmi632_charger: chg_state_change_irq_handler: IRQ: determine-initial-status
+[    1.396582] pmi632_charger: batt_temp_changed_irq_handler: IRQ: determine-initial-status
+[    1.396586] pmi632_charger: wdog_bark_irq_handler: IRQ: determine-initial-status
+[    1.396598] pmi632_charger: typec_or_rid_detection_change_irq_handler: IRQ: determine-initial-status
+[    1.396602] pmi632_charger: wdog_snarl_irq_handler: IRQ: determine-initial-status
+[    1.397974] pmi632_charger: smblib_somc_handle_profile_fv: cancel termination wa if working
+[    1.397978] pmi632_charger: smblib_somc_handle_profile_fv: set fv:4340000
+[    1.400478] pmi632_charger: somc_aicl_irq_handler: IRQ: input-current-limiting
+[    1.400839] pmi632_charger: chg_state_change_irq_handler: IRQ: chg-state-change
+[    1.401385] SMB5 status - usb:present=1 type=0 batt:present = 1 health = 1 charge = 1
+[    1.401417] QPNP SMB5 probed successfully
+[    1.403366] psy_register_cooler: Don't register psy cooling device
+[    1.403374] psy_register_cooler: Don't register psy cooling device
+[    1.403378] psy_register_cooler: Don't register psy cooling device
+[    1.403381] psy_register_cooler: Don't register psy cooling device
+[    1.403385] psy_register_cooler: Don't register psy cooling device
+[    1.403390] psy_register_cooler: Don't register psy cooling device
+[    1.403400] batt ext power supply prop 4 not supported
+[    1.424954] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7600
+[    1.432399] QG-K: qg_somc_jeita_step_charge_work: [NotCharging] BSOC:7600 MSOC:76 RTEMP:296 IBATT:-6mA VBATT:4030mV VCELL:4030mV Target FCC:3000mA FV:4340mV
+[    1.432414] pmi632_charger: smblib_somc_set_prop_jeita_condition: set auto_rechg to 1
+[    1.441265] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.441743] icnss: Recursive recovery allowed for WLAN
+[    1.444494] icnss c800000.qcom,icnss: for wcss_msa0 segments only will be dumped.
+[    1.444561] icnss: Unable to create debugfs -19
+[    1.444628] icnss: wlan_pdr devs got major 494
+[    1.444680] icnss: Platform driver probed successfully
+[    1.444861] dwc3 4e00000.dwc3: changing max_speed on rev 00000000
+[    1.445004] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt
+[    1.445009] dwc3 4e00000.dwc3: Error getting ipc_log_ctxt for ep_events
+[    1.445503] usb_bam_init: setting SPS_BAM_SMMU_EN flag with (4f04000.qcom,usbbam)
+[    1.445517] sps_register_bam_device : unable to create IPC Logging 0 for bam 0x0000000004f04000
+[    1.445519] sps_register_bam_device : unable to create IPC Logging 1 for bam 0x0000000004f04000
+[    1.445524] sps_register_bam_device : unable to create IPC Logging 2 for bam 0x0000000004f04000
+[    1.445529] sps_register_bam_device : unable to create IPC Logging 3 for bam 0x0000000004f04000
+[    1.445534] sps_register_bam_device : unable to create IPC Logging 4 for bam 0x0000000004f04000
+[    1.445538] sps:BAM 0x0000000004f04000 is registered.
+[    1.445962] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.446579] registered taskstats version 1
+[    1.446584] Loading compiled-in X.509 certificates
+[    1.448162] Loaded X.509 cert 'Build time autogenerated kernel key: 3af2d0ea543148bf7963f12301695a0aeaccf16f'
+[    1.448224] Key type ._fscrypt registered
+[    1.448227] Key type .fscrypt registered
+[    1.448230] Key type fscrypt-provisioning registered
+[    1.448388] Error: swapper/0: fastrpc_device_init: failed to create debugfs root dir
+[    1.449496] ADSPRPC: Secure VMID = 22
+[    1.449499] ADSPRPC: Secure VMID = 37
+[    1.449852] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb1 to group 26
+[    1.450500] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb2 to group 27
+[    1.451055] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb3 to group 28
+[    1.451594] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb4 to group 29
+[    1.452103] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb5 to group 30
+[    1.452606] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb6 to group 31
+[    1.453101] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb9 to group 32
+[    1.454624] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb10 to group 33
+[    1.456921] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.457489] ngd_msm_ctrl a340000.slim: error creating ipc_logging context
+[    1.457497] ngd_msm_ctrl a340000.slim: error creating ipc_error_logging context
+[    1.457778] iommu: Adding device a340000.slim:qcom,iommu_slim_ctrl_cb to group 34
+[    1.457937] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.458926] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.460302] input: gpio-keys as /devices/platform/soc/soc:gpio_keys/input/input5
+[    1.460577] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.461265] qcom,qpnp-rtc 1c40000.qcom,spmi:qcom,pm6125@0:qcom,pm6125_rtc: setting system clock to 1970-01-04 23:41:04 UTC (344464)
+[    1.462759] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.464251] lpm_levels: Cluster (system) stats not registered
+[    1.464258] lpm_levels: Cluster (perf) stats not registered
+[    1.464262] lpm_levels: register_cluster_lpm_stats()
+[    1.464267] lpm_levels: Cluster (pwr) stats not registered
+[    1.464271] lpm_levels: register_cluster_lpm_stats()
+[    1.465078] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.466956] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.469066] rmnet_ipa3 started initialization
+[    1.469361] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.469922] RNDIS_IPA module is loaded.
+[    1.473179] ufs_phy_gdsc: disabling
+[    1.473192] usb30_prim_gdsc: disabling
+[    1.473210] dbu1: disabling
+[    1.473227] regulator_proxy_consumer_remove_all: removing regulator proxy consumer requests
+[    1.473236] ALSA device list:
+[    1.473240] No soundcards found.
+[    1.473265] Warning: unable to open an initial console.
+[    1.474192] Freeing unused kernel memory: 4288K
+[    1.478669] mmc1: new ultra high speed DDR50 SDHC card at address aaaa
+[    1.479046] mmcblk1: mmc1:aaaa SL32G 29.7 GiB 
+[    1.491212] mmcblk1: p1
+[    1.491751] msm-cdc-pinctrl soc:msm_cdc_pinctrl_pri: could not find pctldev for node /soc/pri_i2s_sck_ws/pri_i2s_sck_active, deferring probe
+[    1.507615] init: init first stage started!
+[    1.507682] init: Unable to open /lib/modules, skipping module loading.
+[    1.507707] init: First stage mount skipped (recovery mode)
+[    1.507941] init: [libfs_mgr]dt_fstab: Skip disabled entry for partition vendor
+[    1.507955] init: [libfs_mgr]ReadFstabFromDt(): failed to read fstab from dt
+[    1.508032] init: [libfs_mgr]dt_fstab: Skip disabled entry for partition vendor
+[    1.508092] init: [libfs_mgr]Error parsing mount_flags
+[    1.508104] init: [libfs_mgr]ReadFstabFromFile(): failed to load fstab from : '/etc/recovery.fstab'
+[    1.508116] init: [libfs_mgr]ReadDefaultFstab(): failed to find device default fstab
+[    1.508126] init: failed to read default fstab for first stage mount
+[    1.540219] init: [libfs_mgr]dt_fstab: Skip disabled entry for partition vendor
+[    1.540298] init: [libfs_mgr]Error parsing mount_flags
+[    1.540311] init: [libfs_mgr]ReadFstabFromFile(): failed to load fstab from : '/etc/recovery.fstab'
+[    1.540323] init: [libfs_mgr]ReadDefaultFstab(): failed to find device default fstab
+[    1.540330] init: Could not read default fstab
+[    1.540472] init: Could not find mount entry for /system
+[    1.540493] init: Opening SELinux policy
+[    1.541416] init: Loading SELinux policy
+[    1.543545] SELinux: 8192 avtab hash slots, 28371 rules.
+[    1.549546] SELinux: 8192 avtab hash slots, 28371 rules.
+[    1.549570] SELinux:  1 users, 2 roles, 1896 types, 0 bools, 1 sens, 1024 cats
+[    1.549573] SELinux:  102 classes, 28371 rules
+[    1.551721] SELinux:  policy capability network_peer_controls=1
+[    1.551726] SELinux:  policy capability open_perms=1
+[    1.551729] SELinux:  policy capability extended_socket_class=1
+[    1.551732] SELinux:  policy capability always_check_network=0
+[    1.551735] SELinux:  policy capability cgroup_seclabel=0
+[    1.551737] SELinux:  policy capability nnp_nosuid_transition=1
+[    1.551740] SELinux:  Completing initialization.
+[    1.551741] SELinux:  Setting up existing superblocks.
+[    1.589220] audit: type=1403 audit(344464.623:2): policy loaded auid=4294967295 ses=4294967295
+[    1.591015] selinux: SELinux: Loaded file_contexts
+[    1.591023] selinux: 
+[    1.624527] init: init second stage started!
+[    1.641529] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    1.643526] init: Overriding previous property 'persist.sys.usb.config':'adb' with new value 'none'
+[    1.643810] init: Couldn't load property file '/system/build.prop': open() failed: No such file or directory: No such file or directory
+[    1.643835] init: Couldn't load property file '/system_ext/etc/build.prop': open() failed: No such file or directory: No such file or directory
+[    1.643852] init: Couldn't load property file '/system_ext/default.prop': open() failed: No such file or directory: No such file or directory
+[    1.643868] init: Couldn't load property file '/system_ext/build.prop': open() failed: No such file or directory: No such file or directory
+[    1.643883] init: Couldn't load property file '/system_ext/default.prop': open() failed: No such file or directory: No such file or directory
+[    1.643900] init: Couldn't load property file '/system_ext/build.prop': open() failed: No such file or directory: No such file or directory
+[    1.643916] init: Couldn't load property file '/vendor/default.prop': open() failed: No such file or directory: No such file or directory
+[    1.696436] audit: type=1400 audit(344464.730:3): avc:  denied  { sys_nice } for  pid=442 comm="ueventd" capability=23  scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.696580] ueventd: ueventd started!
+[    1.697944] selinux: SELinux: Loaded file_contexts
+[    1.697951] selinux: 
+[    1.698071] ueventd: Parsing file /system/etc/ueventd.rc...
+[    1.698114] ueventd: Added '/vendor/etc/ueventd.rc' to import list
+[    1.698123] ueventd: Added '/odm/etc/ueventd.rc' to import list
+[    1.698311] ueventd: Parsing file /vendor/etc/ueventd.rc...
+[    1.698331] ueventd: Unable to read config file '/vendor/etc/ueventd.rc': open() failed: No such file or directory
+[    1.698345] ueventd: Parsing file /odm/etc/ueventd.rc...
+[    1.698359] ueventd: Unable to read config file '/odm/etc/ueventd.rc': open() failed: No such file or directory
+[    1.932371] audit: type=1400 audit(344464.966:4): avc:  denied  { entrypoint } for  pid=452 comm="init" path="/system/bin/logd" dev="rootfs" ino=1293 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.933737] audit: type=1400 audit(344464.970:5): avc:  denied  { map } for  pid=452 comm="logd" path="/system/bin/logd" dev="rootfs" ino=1293 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.933764] audit: type=1400 audit(344464.970:6): avc:  denied  { read } for  pid=452 comm="logd" path="/system/bin/logd" dev="rootfs" ino=1293 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.933821] audit: type=1400 audit(344464.970:7): avc:  denied  { execute } for  pid=452 comm="logd" path="/system/bin/logd" dev="rootfs" ino=1293 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.934577] audit: type=1400 audit(344464.970:8): avc:  denied  { getattr } for  pid=452 comm="logd" path="/system/bin/logd" dev="rootfs" ino=1293 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.934801] audit: type=1400 audit(344464.970:9): avc:  denied  { read } for  pid=452 comm="logd" name="bin" dev="rootfs" ino=1187 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.934992] audit: type=1400 audit(344464.970:10): avc:  denied  { open } for  pid=452 comm="logd" path="/system/lib64/libbase.so" dev="rootfs" ino=1517 scontext=u:r:logd:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.940862] logd: libprocessgroup: Failed to read task profiles from /etc/task_profiles.json
+[    1.940905] logd: libprocessgroup: Loading /etc/task_profiles.json for [452] failed
+[    1.941080] logd: libprocessgroup: Failed to find SCHED_SP_BACKGROUNDtask profile: No such file or directory
+[    1.945860] logd.auditd: start
+[    1.945887] logd.klogd: 1945868265
+[    1.955688] Mass Storage Function, version: 2009/09/11
+[    1.955700] LUN: removable read only CD-ROM file: (no medium)
+[    1.961471] file system registered
+[    1.963190] type=1400 audit(344464.980:14): avc: denied { module_request } for comm="init" kmod="fs-functionfs" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=system permissive=1 ppid=0 pcomm="swapper/0"
+[    1.963295] type=1400 audit(344464.983:15): avc: denied { read } for comm="vndservicemanag" name="vndbinder" dev="binder" ino=6 scontext=u:r:recovery:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.963465] type=1400 audit(344464.983:16): avc: denied { write } for comm="vndservicemanag" name="vndbinder" dev="binder" ino=6 scontext=u:r:recovery:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.963497] f_cdev_alloc: port_name:at_usb0 (0000000000000000) portno:(0)
+[    1.963540] type=1400 audit(344464.983:17): avc: denied { open } for comm="vndservicemanag" path="/dev/binderfs/vndbinder" dev="binder" ino=6 scontext=u:r:recovery:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.963603] type=1400 audit(344464.983:18): avc: denied { ioctl } for comm="vndservicemanag" path="/dev/binderfs/vndbinder" dev="binder" ino=6 ioctlcmd=0x6209 scontext=u:r:recovery:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    1.968706] f_cdev_alloc: port_name:at_usb1 (0000000000000000) portno:(1)
+[    1.970103] f_cdev_alloc: port_name:at_usb2 (0000000000000000) portno:(2)
+[    1.992388] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x00
+[    1.992399] pmi632_charger: smblib_handle_hvdcp_detect_done: IRQ: hvdcp-detect-done falling
+[    1.992403] pmi632_charger: smblib_handle_hvdcp_check_timeout: IRQ: smblib_handle_hvdcp_check_timeout falling
+[    1.992406] pmi632_charger: smblib_handle_sdp_enumeration_done: IRQ: sdp-enumeration-done falling
+[    1.992409] pmi632_charger: smblib_handle_slow_plugin_timeout: IRQ: slow-plugin-timeout falling
+[    1.992441] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x00
+[    1.992740] water_detection soc:somc_water_detection: Connection status is changed to 1
+[    1.992746] water_detection soc:somc_water_detection: wdet_polling_set: state 0 -> 1
+[    1.992760] water_detection soc:somc_water_detection: wdet_polling_set: Polling stop
+[    2.000227] PKCS#7 signature not signed with a trusted key
+[    2.000251] sec_touchscreen: disagrees about version of symbol module_layout
+[    2.000809] sec_ts 1-0048: [sec_input] after_init_work_start_store: - start
+[    2.000815] sec_ts 1-0048: [sec_input] start after_init_work
+[    2.000832] sec_ts 1-0048: [sec_input] sec_ts_after_init_work: session_work start
+[    2.000839] sec_ts 1-0048: [sec_input] sec_ts_after_init: start
+[    2.000842] sec_ts 1-0048: [sec_input] sec_ts_after_init: request_irq = 229
+[    2.001146] sec_ts 1-0048: [sec_input] sec_ts_after_init: ret 0
+[    2.001153] sec_ts 1-0048: [sec_input] Change irq was disable
+[    2.001159] sec_ts 1-0048: [sec_input] sec_ts_after_init: ts =  SEC_TS_READ_DEVICE_ID = 34 deviceID = 138132712
+[    2.002743] sec_ts 1-0048: [sec_input] sec_ts_after_init: TOUCH DEVICE ID : 53, 45, 37, 61, 00
+[    2.017607] sec_ts 1-0048: [sec_input] sec_ts_after_init: TOUCH STATUS : 20 || 00, 02, 00, 00
+[    2.017621] sec_ts 1-0048: [sec_input] no irq change [disable]
+[    2.017914] sec_ts 1-0048: [sec_input] sec_ts_read_calibration_report: count:4, pass count:4, fail count:0, status:0xA2
+[    2.017920] sec_ts 1-0048: [sec_input] sec_ts_firmware_update_on_probe: initial firmware update touch_module_id_0x82.img, cal:A2
+[    2.020927] firmware touch_module_id_0x82.img: _request_firmware_load: firmware state wait timeout: rc = -2
+[    2.020987] sec_ts 1-0048: [sec_input] sec_ts_firmware_update_on_probe: firmware is not available
+[    2.020992] sec_ts 1-0048: [sec_input] sec_ts_after_init: fail firmware update on probe
+[    2.021275] sec_ts 1-0048: [sec_input] sec_ts_read_information: AC, 37, 61
+[    2.021769] sec_ts 1-0048: [sec_input] sec_ts_read_information: nTX:E, nRX:1F, rY:2520, rX:1080
+[    2.021973] sec_ts 1-0048: [sec_input] sec_ts_read_information: STATUS : 20
+[    2.022262] sec_ts 1-0048: [sec_input] sec_ts_read_information: TOUCH STATUS : 00, 02, 00, 00
+[    2.022494] sec_ts 1-0048: [sec_input] sec_ts_read_information: Functions : 61
+[    2.022697] sec_ts 1-0048: [sec_input] sec_ts_read_information: Stamina mode : 0
+[    2.022899] sec_ts 1-0048: [sec_input] sec_ts_read_information: Side touch : 255
+[    2.023188] sec_ts 1-0048: [sec_input] sec_ts_read_information: Doze timeout : 249
+[    2.023525] sec_ts 1-0048: [sec_input] Change irq enabled
+[    2.023533] sec_ts 1-0048: [sec_input] sec_ts_after_init: success
+[    2.023540] sec_ts 1-0048: [sec_input] after_init_work done
+[    2.039361] sec_ts 1-0048: [sec_input] After: Unblank
+[    2.039378] sec_ts 1-0048: [sec_input] start@2.39364472
+[    2.039384] sec_ts 1-0048: [sec_input] sec_ts_resume: start
+[    2.039389] sec_ts 1-0048: [sec_input] sec_ts_resume: already power on
+[    2.039395] sec_ts 1-0048: [sec_input] sec_ts_resume: end
+[    2.039401] sec_ts 1-0048: [sec_input] end@2.39388222
+[    2.400062] pmi632_charger: smblib_icl_change_work: icl_settled=0
+[    2.440999] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x01
+[    2.441145] pmi632_charger: smblib_handle_apsd_done: IRQ: apsd-done rising; SDP detected
+[    2.441149] pmi632_charger: smblib_handle_hvdcp_detect_done: IRQ: hvdcp-detect-done falling
+[    2.441152] pmi632_charger: smblib_handle_hvdcp_check_timeout: IRQ: smblib_handle_hvdcp_check_timeout falling
+[    2.441156] pmi632_charger: smblib_handle_sdp_enumeration_done: IRQ: sdp-enumeration-done falling
+[    2.441159] pmi632_charger: smblib_handle_slow_plugin_timeout: IRQ: slow-plugin-timeout falling
+[    2.441178] pmi632_charger: usb_source_change_irq_handler: APSD_STATUS = 0x01
+[    2.445329] msm-dwc3 4e00000.ssusb: DWC3 exited from low power mode
+[    3.318475] EXT4-fs (mmcblk0p2): warning: maximal mount count reached, running e2fsck is recommended
+[    3.319939] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: 
+[    3.321215] SELinux:  Context u:object_r:vendor_persist_time_file:s0 is not valid (left unmapped).
+[    3.354391] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    3.354401] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    3.354541] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    3.354545] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    3.354743] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    3.354749] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    3.354881] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    3.354885] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    3.361977] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    3.361986] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    3.362121] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    3.362124] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    3.362299] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    3.362303] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    3.362434] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    3.362437] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    3.375784] EXT4-fs (mmcblk0p66): recovery complete
+[    3.375798] EXT4-fs (mmcblk0p66): mounted filesystem with ordered data mode. Opts: 
+[    5.388775] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    5.388788] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    5.388918] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    5.388924] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    5.389111] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    5.389117] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    5.389235] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    5.389242] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    5.398583] EXT4-fs (mmcblk0p84): mounted filesystem with ordered data mode. Opts: 
+[    5.409621] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: 
+[    5.422363] EXT4-fs (dm-1): mounted filesystem without journal. Opts: 
+[    5.633068] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.644028] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    5.644909] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.659832] EXT4-fs (dm-3): mounted filesystem without journal. Opts: 
+[    5.668944] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    5.668958] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    5.669087] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    5.669092] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    5.669282] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    5.669288] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    5.669414] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    5.669419] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    5.682644] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    5.683639] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.701519] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    5.702360] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.718133] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    5.718730] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.734290] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    5.734976] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.750222] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    5.750840] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.766034] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    5.766730] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    5.785515] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    5.785528] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    5.785656] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    5.785661] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    5.785851] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    5.785857] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    5.785974] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    5.785979] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    5.800255] FAT-fs (mmcblk1p1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+[    7.005033] init: starting service 'adbd'...
+[    7.005563] init: Created socket '/dev/socket/adbd', mode 660, user 1000, group 1000
+[    7.041775] read descriptors
+[    7.041788] read strings
+[    7.042476] init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/system/etc/init/hw/init.rc:201)
+[    7.047933] android_work: did not send uevent (0 0 0000000000000000)
+[    7.048270] init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/init.recovery.usb.rc:116)
+[    7.048891] init: Command 'symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/init.recovery.usb.rc:120) took 0ms and failed: symlink() failed: File exists
+[    7.049020] init: Command 'write /config/usb_gadget/g1/UDC ${sys.usb.controller}' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/init.recovery.usb.rc:121) took 0ms and failed: Unable to write to file '/config/usb_gadget/g1/UDC': Unable to write file contents: Device or resource busy
+[    7.186839] msm-dwc3 4e00000.ssusb: Avail curr from USB = 100
+[    7.187026] pmi632_charger: smblib_set_icl_current: set ICL to 50000uA
+[    7.187945] pmi632_charger: somc_aicl_irq_handler: IRQ: aicl-done
+[    7.280475] type=1400 audit(1680566034.725:505): avc: denied { read } for comm="recovery" scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=netlink_kobject_uevent_socket permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    7.310484] android_work: sent uevent USB_STATE=CONNECTED
+[    7.317020] android_work: sent uevent USB_STATE=DISCONNECTED
+[    7.453485] android_work: sent uevent USB_STATE=CONNECTED
+[    7.491445] configfs-gadget gadget: high-speed config #1: b
+[    7.491522] msm-dwc3 4e00000.ssusb: Avail curr from USB = 500
+[    7.491653] pmi632_charger: smblib_set_icl_current: set ICL to 500000uA
+[    7.491721] android_work: sent uevent USB_STATE=CONFIGURED
+[    7.498472] pmi632_charger: chg_state_change_irq_handler: IRQ: chg-state-change
+[    7.507404] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7600
+[    7.796693] pmi632_charger: somc_aicl_irq_handler: IRQ: aicl-done
+[    7.796723] pmi632_charger: smblib_icl_change_work: icl_settled=500000
+[    8.164949] type=1400 audit(1680566035.608:506): avc: denied { setattr } for comm="recovery" name="recovery" dev="rootfs" ino=15424 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    8.173857] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    8.173865] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    8.173995] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    8.173999] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    8.174194] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    8.174199] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    8.174327] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    8.174331] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    8.181364] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    8.181372] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    8.181518] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    8.181522] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    8.181693] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    8.181697] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    8.181830] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    8.181834] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    8.188798] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    8.188805] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    8.188940] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    8.188944] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    8.189108] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    8.189114] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    8.189246] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    8.189250] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    8.193814] type=1400 audit(1680566035.638:507): avc: denied { setattr } for comm="recovery" name="log.gz" dev="rootfs" ino=3502 scontext=u:r:recovery:s0 tcontext=u:object_r:rootfs:s0 tclass=file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    8.193925] type=1400 audit(1680566035.638:508): avc: denied { fsetid } for comm="recovery" capability=4 scontext=u:r:recovery:s0 tcontext=u:r:recovery:s0 tclass=capability permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    8.199208] type=1400 audit(1680566035.641:509): avc: denied { create } for comm="recovery" name="twadbfifo" scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1 ppid=1 pcomm="init" pgid=462 pgcomm="recovery"
+[    8.199306] type=1400 audit(1680566035.641:510): avc: denied { read } for comm="recovery" name="twadbfifo" dev="tmpfs" ino=11981 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1 ppid=1 pcomm="init" pgid=462 pgcomm="recovery"
+[    8.199370] type=1400 audit(1680566035.641:511): avc: denied { open } for comm="recovery" path="/tmp/twadbfifo" dev="tmpfs" ino=11981 scontext=u:r:recovery:s0 tcontext=u:object_r:tmpfs:s0 tclass=fifo_file permissive=1 ppid=1 pcomm="init" pgid=462 pgcomm="recovery"
+[    8.199432] type=1400 audit(1680566035.641:512): avc: denied { ioctl } for comm="recovery" path="/dev/block/dm-0" dev="tmpfs" ino=3418 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    8.211482] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    8.212277] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    8.216631] type=1400 audit(1680566035.658:513): avc: denied { ioctl } for comm="recovery" path="/dev/block/dm-0" dev="tmpfs" ino=3418 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    8.227618] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    8.228526] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    8.234534] type=1400 audit(1680566035.678:514): avc: denied { ioctl } for comm="recovery" path="/dev/block/dm-0" dev="tmpfs" ino=3418 ioctlcmd=0x5331 scontext=u:r:recovery:s0 tcontext=u:object_r:dm_device:s0 tclass=blk_file permissive=1 ppid=1 pcomm="init" pgid=1 pgcomm="init"
+[    8.244947] EXT4-fs (dm-0): warning: mounting unchecked fs, running e2fsck is recommended
+[    8.245494] EXT4-fs (dm-0): mounted filesystem without journal. Opts: 
+[    8.257448] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    8.257460] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    8.257586] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    8.257592] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[    8.257773] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0xb64a61e6)
+[    8.257779] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 1th superblock
+[    8.257903] F2FS-fs (mmcblk0p86): Magic Mismatch, valid(0xf2f52010) - read(0x8913abeb)
+[    8.257909] F2FS-fs (mmcblk0p86): Can't find valid F2FS filesystem in 2th superblock
+[   10.297411] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7600
+[   12.214185] i2c_geni 4a88000.i2c: i2c error :-107
+[   19.933869] pmi632_charger: somc_aicl_irq_handler: IRQ: aicl-done
+[   19.946802] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7600
+[   32.267871] i2c_geni 4a88000.i2c: i2c error :-107
+[   32.981445] pmi632_charger: somc_aicl_irq_handler: IRQ: aicl-done
+[   32.985719] ALG: cap_learning_update: [SOMC CL][OFF] charge_status:1 bsoc_cp:7600
