@@ -1,19 +1,19 @@
 # mount point	fstype	device					device2				    flags
-/system		        ext4    /dev/block/mapper/system                        flags=slotselect;backup=1;wipeningui=1
-/vendor		        ext4    /dev/block/mapper/vendor                        flags=slotselect;backup=1;wipeningui=1
-/product		    ext4    /dev/block/mapper/product                       flags=slotselect;backup=1;wipeningui=1
+/system		        ext4    /dev/block/mapper/system                        flags=slotselect;backup=1
+/vendor		        ext4    /dev/block/mapper/vendor                        flags=slotselect;backup=1
+/product		    ext4    /dev/block/mapper/product                       flags=slotselect;backup=1
 
 /system_image	    emmc    /dev/block/mapper/system                        flags=slotselect;display="System";flashimg=1;
 /vendor_image       emmc    /dev/block/mapper/vendor                        flags=slotselect;display="Vendor";flashimg=1;
 /product_image      emmc    /dev/block/mapper/product                       flags=slotselect;display="Product";flashimg=1;
 
+/data               f2fs    /dev/block/by-name/userdata                     flags=display="Userdata";fileencryption=aes-256-xts:aes-256-cts:v2+emmc_optimized+wrappedkey_v0,metadata_encryption=aes-256-xts:wrappedkey_v0;wrappedkey;keydirectory=/metadata/vold/metadata_encryption
 /metadata           ext4    /dev/block/by-name/metadata                     flags=display="Metadata"
-/data               f2fs    /dev/block/by-name/userdata                     flags=display="Userdata"
-
+/persist            ext4    /dev/block/by-name/persist                      flags=display="Persist"
 /boot               emmc    /dev/block/by-name/boot                         flags=slotselect;display="Boot";flashimg
 /odm                ext4    /dev/block/by-name/oem                          flags=slotselect;display="OEM"
 
-/persist            ext4    /dev/block/by-name/persist                      flags=display="Persist"
+/misc               emmc    /dev/block/by-name/misc
 
 # Removable storage
 /sdcard1	    auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1		flags=display="MicroSD";storage;wipeingui;removable

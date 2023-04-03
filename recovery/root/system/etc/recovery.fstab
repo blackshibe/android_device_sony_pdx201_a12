@@ -37,7 +37,7 @@
 # everything that can be specified in twrp.flags without breaking is specified there instead
 
 #<src>                                                 <mnt_point>            <type>  <mnt_flags and options>                            <fs_mgr_flags>
-/dev/block/bootdevice/by-name/boot                      /boot                   emmc
+/dev/block/bootdevice/by-name/boot                        /boot                   emmc
 
 # /dev/block/mapper/system                                /system                ext4    ro,barrier=1,discard                                 wait,slotselect
 # /dev/block/mapper/product                               /product               ext4    ro,barrier=1,discard                                 wait,slotselect
@@ -54,5 +54,7 @@
 # /dev/block/bootdevice/by-name/bluetooth                 /vendor/bt_firmware    vfat    ro,shortname=lower,uid=1002,gid=3002,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0 wait,slotselect
 # 
 
-# unneeded
-/dev/block/bootdevice/by-name/misc                      /misc                  emmc    defaults                                             defaults
+# Need to have this entry in here even though the mount point itself is no longer needed.
+# The update_engine code looks for this entry in order to determine the boot device address
+# and fails if it does not find it.
+/dev/block/bootdevice/by-name/misc                      /misc                   emmc    defaults defaults

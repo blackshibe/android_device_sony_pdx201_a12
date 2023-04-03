@@ -10,11 +10,11 @@ adapted for Android 12 based on kernel info from from https://github.com/lineage
 
 ## Problems
 
--   some partitions aren't mounted [ ]
--   backups and flash partitions aren't configured [ ]
--   FBE [ ]
--   ALWAYS reboots back to recovery after booting into recovery once [ ]
--         fixed with `dd if=/dev/zero of=/dev/block/platform/soc/4744000.sdhci/by-name/misc`
+-   some partitions can't mount
+-   backups and flash partitions aren't configured
+-   FBE (android.hardware.keymaster not loading)
+-   flashing images doesn't work (android.hardware.boot not loading/missing)
+-   ALWAYS reboots back to recovery after booting into recovery once (fixed with `dd if=/dev/zero of=/dev/block/platform/soc/4744000.sdhci/by-name/misc`)
 
 ## Compiling
 

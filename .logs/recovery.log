@@ -1,4 +1,4 @@
-Starting TWRP 3.7.0_12-0-2fa94a72 on Thu Jan  1 17:50:47 1970
+Starting TWRP 3.7.0_12-0-2fa94a72 on Sun Jan  4 23:29:11 1970
  (pid 464)
 RECOVERY_SDCARD_ON_DATA := true
 I:Lun file '/config/usb_gadget/g1/functions/mass_storage.0/lun.0/file'
@@ -8,6 +8,7 @@ I:Found brightness file at '/sys/class/backlight/panel0-backlight/brightness'
 I:TWFunc::Set_Brightness: Setting brightness control to 1200
 I:TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 I:LANG: en
+I:AB_OTA_UPDATER := true
 I:TW_EXCLUDE_NANO := true
 Starting the UI...
 Skipping adf graphics -- not present in build tree
@@ -181,19 +182,19 @@ ro.bootmode=unknown
 ro.hardware=qcom
 ro.revision=0
 ro.bootloader=xboot
-ro.boottime.adbd=2004594208
-ro.boottime.init=1538045776
-ro.boottime.init.selinux=84510946
-ro.boottime.init.first_stage=34481097
-ro.boottime.init.cold_boot_wait=242
-ro.boottime.logd=1945133994
-ro.boottime.vendor.keymaster-4-0-qti=2007550094
-ro.boottime.ueventd=1694967979
-ro.boottime.recovery=1963900350
-ro.boottime.keystore2=1954996807
-ro.boottime.servicemanager=1949734984
-ro.boottime.hwservicemanager=1947405817
-ro.boottime.vndservicemanager=1952193838
+ro.boottime.adbd=2010784157
+ro.boottime.init=1542675256
+ro.boottime.init.selinux=84249436
+ro.boottime.init.first_stage=34419430
+ro.boottime.init.cold_boot_wait=240
+ro.boottime.logd=1947646234
+ro.boottime.ueventd=1699540897
+ro.boottime.recovery=1969854778
+ro.boottime.keystore2=1958096339
+ro.boottime.keystore_auth=1965405038
+ro.boottime.servicemanager=1952460193
+ro.boottime.hwservicemanager=1949957744
+ro.boottime.vndservicemanager=1955027276
 ro.odm.build.date=Thu Mar 30 23:55:10 CEST 2023
 ro.odm.build.date.utc=1680213310
 ro.odm.build.version.incremental=eng.blacks.20230330.235354
@@ -228,15 +229,15 @@ ro.build.description=twrp_pdx201-eng 16.1.0 SP2A.220405.004 eng.blacks.20230330.
 ro.build.characteristics=default
 ro.secure=0
 ro.system.build.id=SP2A.220405.004
-ro.system.build.date=Thu Mar 30 23:55:10 CEST 2023
-ro.system.build.date.utc=1680213310
+ro.system.build.date=Tue Apr  4 00:47:31 CEST 2023
+ro.system.build.date.utc=1680562051
 ro.system.build.tags=test-keys
 ro.system.build.type=eng
 ro.system.build.version.sdk=32
 ro.system.build.version.release=16.1.0
-ro.system.build.version.incremental=eng.blacks.20230330.235354
+ro.system.build.version.incremental=eng.blacks.20230404.002747
 ro.system.build.version.release_or_codename=16.1.0
-ro.system.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03302355:eng/test-keys
+ro.system.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe04040047:eng/test-keys
 ro.treble.enabled=true
 ro.product.cpu.abi=arm64-v8a
 ro.product.cpu.abilist=arm64-v8a
@@ -270,15 +271,15 @@ ro.system_ext.build.version.release_or_codename=16.1.0
 ro.system_ext.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03302355:eng/test-keys
 ro.actionable_compatible_property.enabled=true
 ro.vendor.build.id=SP2A.220405.004
-ro.vendor.build.date=Thu Mar 30 23:55:10 CEST 2023
-ro.vendor.build.date.utc=1680213310
+ro.vendor.build.date=Tue Apr  4 01:39:06 CEST 2023
+ro.vendor.build.date.utc=1680565146
 ro.vendor.build.tags=test-keys
 ro.vendor.build.type=eng
 ro.vendor.build.version.sdk=32
 ro.vendor.build.version.release=16.1.0
-ro.vendor.build.version.incremental=eng.blacks.20230330.235354
+ro.vendor.build.version.incremental=eng.blacks.20230404.014010
 ro.vendor.build.version.release_or_codename=16.1.0
-ro.vendor.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe03302355:eng/test-keys
+ro.vendor.build.fingerprint=Sony/twrp_pdx201/pdx201:16.1.0/SP2A.220405.004/blackshibe04040139:eng/test-keys
 ro.vendor.product.cpu.abilist=arm64-v8a
 ro.vendor.product.cpu.abilist32=
 ro.vendor.product.cpu.abilist64=arm64-v8a
@@ -336,13 +337,12 @@ ro.system.product.cpu.abilist64=arm64-v8a
 ro.postinstall.fstab.prefix=/system
 twrp.crash_counter=0
 twrp.action_complete=0
-crypto.ready=1
 prepdecrypt.loglevel=2
 ro.boot.slot_suffix=_b
 ro.boot.fstab_suffix=emmc
 ro.hwui.use_vulkan=
 ro.board.platform=trinket
-ro.hardware.keystore_desede=true
+ro.build.ab_update=true
 pm.dexopt.ab-ota=speed-profile
 pm.dexopt.shared=speed
 pm.dexopt.cmdline=verify
@@ -364,21 +364,23 @@ init.svc.logd=running
 init.svc.ueventd=running
 init.svc.recovery=running
 init.svc.keystore2=running
+init.svc.keystore_auth=stopped
 init.svc.servicemanager=running
 init.svc.hwservicemanager=running
 init.svc.vndservicemanager=running
 init.svc.adbd=restarting
-init.svc_debug_pid.adbd=486
-init.svc_debug_pid.logd=454
-init.svc_debug_pid.vendor.keymaster-4-0-qti=487
-init.svc_debug_pid.ueventd=444
+init.svc_debug_pid.adbd=485
+init.svc_debug_pid.logd=453
+init.svc_debug_pid.ueventd=443
 init.svc_debug_pid.recovery=464
-init.svc_debug_pid.keystore2=458
-init.svc_debug_pid.servicemanager=456
-init.svc_debug_pid.hwservicemanager=455
-init.svc_debug_pid.vndservicemanager=457
+init.svc_debug_pid.keystore2=457
+init.svc_debug_pid.keystore_auth=
+init.svc_debug_pid.servicemanager=455
+init.svc_debug_pid.hwservicemanager=454
+init.svc_debug_pid.vndservicemanager=456
 keystore.crash_count=0
 ro.logd.kernel=true
+ro.product.ab_ota_partitions=boot,system,product,vendor,vbmeta_system
 persist.debug.dalvik.vm.core_platform_api_policy=just-warn
 pm.dexopt.post-boot=extract
 pm.dexopt.boot-after-ota=extract
@@ -406,15 +408,10 @@ ro.odm.build.version.release_or_codename=16.1.0
 ro.odm.product.cpu.abilist=arm64-v8a
 ro.odm.product.cpu.abilist32=
 ro.odm.product.cpu.abilist64=arm64-v8a
-init.svc.vendor.keymaster-4-0-qti=running
 vendor.usb.controller=4e00000.dwc3
 vendor.gatekeeper.disable_spu=true
 ro.vendor.build.security_patch=2099-12-31
 ro.vndk.version=32
-ro.crypto.volume.filenames_mode=aes-256-cts
-ro.crypto.allow_encrypt_override=true
-ro.crypto.type=file
-ro.crypto.state=encrypted
 
 => Linking mtab
 => Processing /etc/recovery.fstab
@@ -424,41 +421,66 @@ I:Processing '/boot'
 I:Processing '/misc'
 I:Processing remaining twrp.flags
 I:Processing '/data'
+I:FBE contents 'aes-256-xts', filenames 'aes-256-cts:v2+emmc_optimized+wrappedkey_v0'
+I:setting Key_Directory to: /metadata/vold/metadata_encryption
 I:Processing '/metadata'
 I:Processing '/odm'
 I:Processing '/persist'
 I:Created '/persist' folder.
-I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-01-01--17-50-48
+I:TWFunc::Fixup_Time: Pre-fix date and time: 1970-01-04--23-29-12
 I:TWFunc::Fixup_Time: Setting time offset from file /sys/class/rtc/rtc0/since_epoch
 I:TWFunc::Fixup_Time: will attempt to use the ats files now.
-I:TWFunc::Fixup_Time: Setting time offset from file /persist/time/ats_2, offset 1680221564802
-I:TWFunc::Fixup_Time: Date and time corrected: 2023-03-31--18-03-31
+I:TWFunc::Fixup_Time: Setting time offset from file /persist/time/ats_2, offset 1680221564767
+I:TWFunc::Fixup_Time: Date and time corrected: 2023-04-03--23-41-56
 I:Processing '/product'
 I:Created '/product' folder.
-E:Unhandled flag: 'wipeningui=1'
 I:Processing '/product_image'
 I:Processing '/sdcard1'
 I:Created '/sdcard1' folder.
 I:Processing '/system'
 I:Created '/system_root' folder.
-E:Unhandled flag: 'wipeningui=1'
 I:Processing '/system_image'
 I:Processing '/usb_otg'
 I:Created '/usb_otg' folder.
 I:Processing '/vendor'
-E:Unhandled flag: 'wipeningui=1'
 I:Processing '/vendor_image'
 I:Done processing fstab files
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 I:Setting up '/data' as data/media emulated storage.
-I:No recovery folder found. Using default folder.
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
-I:Decrypt adopted storage starting
-I:PageManager::LoadFileToBuffer loading filename: '/data/system/storage.xml' directly
-I:No /data/system/storage.xml for adopted storage
+DEBUG:prepdecrypt::Running prepdecrypt script for TWRP...
+I:Unable to decrypt metadata encryption
+I:FBE setup failed. Trying FDE...I:prepdecrypt::File Based Encryption (FBE) is present.
+DEBUG:prepdecrypt::SDK version: 32
+DEBUG:prepdecrypt::DEFAULTPROP variable set to prop.default.
+DEBUG:prepdecrypt::A/B device detected! Finding current boot slot...
+DEBUG:prepdecrypt::Current boot slot: _b
+DEBUG:prepdecrypt::Device has recovery partition!
+DEBUG:prepdecrypt::Resetprop binary found!
+DEBUG:prepdecrypt::Recovery/Fastbootd mode boot detected.
+I:prepdecrypt::SETPATCH=false
+DEBUG:prepdecrypt::OS version exists! ro.build.version.release=16.1.0
+DEBUG:prepdecrypt::prop.default value: ro.build.version.release=16.1.0
+DEBUG:prepdecrypt::Security Patch Level exists! ro.build.version.security_patch=2099-12-31
+DEBUG:prepdecrypt::prop.default value: ro.build.version.security_patch=2099-12-31
+I:prepdecrypt::crypto.ready=1
+I:prepdecrypt::Script complete. Device ready for decryption.
+fscrypt_is_native: 'file'
 Updating partition details...
-I:Data backup size is 4MB, free: 102721MB.
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 I:checking for twrp app
 ...done
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+Unable to mount storage
 /super | /dev/block/by-name/super | Size: 0MB
    Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img 
    Alternate_Block_Device: /dev/block/by-name/super
@@ -472,14 +494,13 @@ I:checking for twrp app
 I:Unmounting main partitions...
 I:Overriding ro.build.product with value: "pdx201" from property ro.build.product in /system/build.prop
 I:Overriding ro.build.fingerprint with value: "Sony/XQ-AU52_EEA/XQ-AU52:12/59.2.A.0.463/059002A000046302402528438:user/release-keys" from property ro.system.build.fingerprint in /system/build.prop
-I:Overriding ro.build.version.incremental with value: "eng.blacks.20230328.180951" from property ro.build.version.incremental in /system/build.prop
+I:Overriding ro.build.version.incremental with value: "eng.blacks.20230331.233059" from property ro.build.version.incremental in /system/build.prop
 I:Overriding ro.product.device with value: "pdx201" from property ro.product.system.device in /system/build.prop
 I:Overriding ro.product.model with value: "Xperia 10 II" from property ro.product.system.model in /system/build.prop
 I:Overriding ro.product.name with value: "lineage_pdx201" from property ro.product.system.name in /system/build.prop
 copying '/data/misc/keystore/persistent.sqlite' to '/tmp/misc/keystore/persistent.sqlite'
 SELinux contexts loaded from /file_contexts
 Full SELinux support is present.
-I:No recovery folder found. Using default folder.
 I:Switching packages (TWRP)
 
 
@@ -510,8 +531,8 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/data | /dev/block/mmcblk0p86 | Size: 104475MB Used: 4MB Free: 102721MB Backup Size: 4MB
-   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Is_Encrypted Is_Decrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
+/data | /dev/block/mmcblk0p86 | Size: 0MB Used: 0MB Free: 0MB Backup Size: 0MB
+   Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_During_Factory_Reset Wipe_Available_in_GUI IsPresent Can_Be_Encrypted Is_Encrypted Has_Data_Media Can_Encrypt_Backup Use_Userdata_Encryption Is_Storage Is_Settings_Storage 
    Symlink_Path: /data/media
    Symlink_Mount_Point: /sdcard
    Primary_Block_Device: /dev/block/mmcblk0p86
@@ -525,6 +546,7 @@ Partition Logs:
    Fstab_File_System: f2fs
    Backup_Method: files
    MTP_Storage_ID: 65537
+   Metadata Key Directory: /metadata/vold/metadata_encryption
 
 /metadata | /dev/block/mmcblk0p66 | Size: 11MB Used: 0MB Free: 11MB Backup Size: 0MB
    Flags: Can_Be_Mounted Can_Be_Wiped IsPresent 
@@ -565,7 +587,7 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/product | /dev/block/mapper/product_b | Size: 939MB Used: 369MB Free: 570MB Backup Size: 369MB
+/product | /dev/block/mapper/product_b | Size: 941MB Used: 370MB Free: 570MB Backup Size: 370MB
    Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up Wipe_Available_in_GUI IsPresent SlotSelect 
    Primary_Block_Device: /dev/block/mapper/product
    Display_Name: Product
@@ -578,7 +600,7 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/product_image | /dev/block/mapper/product_b | Size: 970MB
+/product_image | /dev/block/mapper/product_b | Size: 971MB
    Flags: IsPresent Can_Flash_Img SlotSelect 
    Primary_Block_Device: /dev/block/mapper/product
    Display_Name: Product
@@ -591,7 +613,7 @@ Partition Logs:
    Fstab_File_System: emmc
    Backup_Method: dd
 
-/sdcard1 | /dev/block/mmcblk1p1 | Size: 30428MB Used: 12320MB Free: 18107MB Backup Size: 12320MB
+/sdcard1 | /dev/block/mmcblk1p1 | Size: 30428MB Used: 13091MB Free: 17336MB Backup Size: 13091MB
    Flags: Can_Be_Mounted Can_Be_Wiped Wipe_Available_in_GUI Removable IsPresent Is_Storage 
    Primary_Block_Device: /dev/block/mmcblk1p1
    Alternate_Block_Device: /dev/block/mmcblk1
@@ -606,7 +628,7 @@ Partition Logs:
    Backup_Method: files
    MTP_Storage_ID: 65538
 
-/system_root | /dev/block/mapper/system_b | Size: 2087MB Used: 826MB Free: 1260MB Backup Size: 826MB
+/system_root | /dev/block/mapper/system_b | Size: 2050MB Used: 912MB Free: 1138MB Backup Size: 912MB
    Flags: Can_Be_Mounted Can_Be_Backed_Up IsPresent SlotSelect 
    Primary_Block_Device: /dev/block/mapper/system
    Display_Name: System
@@ -619,7 +641,7 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/system_image | /dev/block/mapper/system_b | Size: 2155MB
+/system_image | /dev/block/mapper/system_b | Size: 2116MB
    Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
    Primary_Block_Device: /dev/block/mapper/system
    Display_Name: System
@@ -647,7 +669,7 @@ Partition Logs:
    Backup_Method: files
    MTP_Storage_ID: 65539
 
-/vendor | /dev/block/mapper/vendor_b | Size: 463MB Used: 438MB Free: 25MB Backup Size: 438MB
+/vendor | /dev/block/mapper/vendor_b | Size: 452MB Used: 423MB Free: 29MB Backup Size: 423MB
    Flags: Can_Be_Mounted Can_Be_Wiped Can_Be_Backed_Up IsPresent SlotSelect 
    Primary_Block_Device: /dev/block/mapper/vendor
    Display_Name: Vendor
@@ -660,7 +682,7 @@ Partition Logs:
    Fstab_File_System: ext4
    Backup_Method: files
 
-/vendor_image | /dev/block/mapper/vendor_b | Size: 471MB
+/vendor_image | /dev/block/mapper/vendor_b | Size: 460MB
    Flags: Can_Be_Backed_Up IsPresent Can_Flash_Img SlotSelect 
    Primary_Block_Device: /dev/block/mapper/vendor
    Display_Name: Vendor
@@ -683,30 +705,18 @@ Partition Logs:
    Current_File_System: emmc
    Backup_Method: dd
 
-I:No recovery folder found. Using default folder.
 I:Attempt to load settings from settings file...
 I:InfoManager file '/.twrps' not found.
-I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
-I:Version number saved to '/data/recovery/.version'
+I:Unable to open: /data/recovery/.version. Data may be unmounted. Error: No such file or directory
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 I:Unable to mount '/usb_otg'
 I:Actual block device: '', current file system: 'vfat'
 I:TWFunc::Set_Brightness: Setting brightness control to 1200
-I:Starting MTP
-I:Cannot find file /sys/class/android_usb/android0/idVendor
-I:Cannot find file /sys/class/android_usb/android0/idProduct
-I:[MTP] Starting MTP
-I:sending message to add 65537 '/data/media' 'Userdata'
-I:Message sent, add storage ID: 65537 '/data/media'
-I:sending message to add 65538 '/sdcard1' 'MicroSD'
-I:Message sent, add storage ID: 65538 '/sdcard1'
-MTP Enabled
 I:Switching packages (TWRP)
 I:Set page: 'system_readonly'
-I:[MTP] created new mtpserver object
-E:[MTP] Failed to start usb driver!
-I:[MTP] mtppipe add storage 65537 '/data/media'
-I:[MTP] mtppipe add storage 65538 '/sdcard1'
 I:operation_start: 'Toggle System Mount'
 I:operation_end - status=0
 I:Set page: 'main'
@@ -715,45 +725,38 @@ I:Set page: 'main2'
 I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
+I:Recreating /data/recovery/ folder.
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Path /data/recovery/log.gz does not exist. Unable to copy file to /data/recovery/last_log.gz
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
 I:Starting Adb Backup FIFO
 I:PageManager::LoadFileToBuffer loading filename: '/twres/languages/en.xml' directly
 parsing languageFile
 parsing languageFile done
 I:Translating partition display names
-I:No recovery folder found. Using default folder.
 I:Backup folder set to '/data/media/TWRP/BACKUPS/QV723P9B3A'
 I:checking for twrp app
+I:Can't probe device /dev/block/mmcblk0p86
+I:Unable to mount '/data'
+I:Actual block device: '/dev/block/mmcblk0p86', current file system: 'f2fs'
+I:Data partition cannot be mounted during app check
 I:App not installed
 I:Switching packages (TWRP)
 I:Set page: 'main'
 I:Set page: 'clear_vars'
 I:Set page: 'main2'
-I:Set page: 'advanced'
-I:Set page: 'main'
-I:Set page: 'clear_vars'
-I:Set page: 'main2'
-I:Set page: 'install'
-I:Set page: 'flash_confirm'
-I:Set page: 'flash_zip'
-I:operation_start: 'Flashing'
-Installing zip file '/sdcard1/lineage-19.1-20230331-UNOFFICIAL-pdx201.zip'
-Unmounting System...
-I:AB zip
-Flashing A/B zip to inactive slot: A
-Failed to parse build number in post-build-incremental=eng.blacks.20230329.002827.
-update_engine_sideload I 03-31 13:04:17   621   621 [INFO:sideload_main.cc(193)] Update Engine Sideloading starting
-cutils-trace E 03-31 13:04:17   621   621 Error opening trace file: No such file or directory (2)
-update_engine_sideload E 03-31 13:04:17   621   621 [ERROR:boot_control_android.cc(64)] Error getting bootctrl HIDL module.
-update_engine_sideload E 03-31 13:04:17   621   621 [ERROR:sideload_main.cc(147)] Error initializing the BootControlInterface.
-Updater process ended with ERROR: 1
-To flash additional zips, please reboot recovery to switch to the updated slot.
-I:Install took 0 second(s).
-Error installing zip file '/sdcard1/lineage-19.1-20230331-UNOFFICIAL-pdx201.zip'
-Updating partition details...
-I:Data backup size is 4MB, free: 102721MB.
-I:checking for twrp app
-...done
-I:Set page: 'flash_done'
+I:Set page: 'mount'
+I:Set page: 'decrypt'
+I:Set page: 'trydecrypt'
+I:operation_start: 'Decrypt'
+fscrypt_is_native: 'file'
+Failed to decrypt data.
+I:Set page: 'decrypt'
 I:operation_end - status=1
-I:TWFunc::Set_Brightness: Setting brightness control to 5
-I:TWFunc::Set_Brightness: Setting brightness control to 0

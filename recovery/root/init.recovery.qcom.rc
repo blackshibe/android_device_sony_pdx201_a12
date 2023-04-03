@@ -25,17 +25,35 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-import /init.recovery.qcom_decrypt.fbe.rc
+import /init.recovery.qcom_decrypt.rc
+
+service keymaster-4-0 /system/bin/android.hardware.keymaster@4.0-service-qti
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
+service keystore_auth /system/bin/keystore_auth
+    oneshot
+    user system
+    group root
+    disabled
+    seclabel u:r:recovery:s0
 
 on init
     setprop prepdecrypt.loglevel 2
-    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/vendor/lib64
+    start gatekeeper-1-0
 
 on fs
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
+    start keystore_auth
 
 on boot
     setprop sys.usb.config adb
     insmod /vendor/lib/modules/sec_touchscreen.ko
     write /sys/devices/virtual/sec/tsp/after_work 1
+
+on fs
+    echo "temp fixing /misc partition"
+    dd if=/dev/zero of=/dev/block/platform/soc/4744000.sdhci/by-name/misc
